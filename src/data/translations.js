@@ -26,7 +26,7 @@ export const translations = {
     navCalculators: "হার্ট ও স্বাস্থ্য ক্যালকুলেটর",
     navAbout: "আমাদের পরিচিতি",
     navContact: "যোগাযোগ",
-    navAppointment: "সিরিয়াল বুকিং",
+    navAppointment: "ডাক্তার সিরিয়াল দিন",
     navReportPortal: "অনলাইন রিপোর্ট",
     navEmergency: "জরুরি সেবা (২৪/৭)",
     navDoctorSchedulePdf: "ডাক্তার শিডিউল (PDF)",
@@ -61,7 +61,9 @@ export const translations = {
     card4Action: "রিপোর্ট খুঁজুন",
 
     // Buttons & CTAs
-    btnBookAppointment: "ডাক্তার সিরিয়াল বুক করুন",
+    btnBookAppointment: "ডাক্তার সিরিয়াল দিন",
+    btnAiDoctorSelect: "এআই দিয়ে ডাক্তার সিলেক্ট করুন",
+    btnTestPrice: "টেস্ট প্রাইজ",
     btnCallHotline: "হটলাইনে কল করুন",
     btnDownloadPdf: "শিডিউল PDF ডাউনলোড",
     btnLearnMore: "বিস্তারিত জানুন",
@@ -193,6 +195,8 @@ export const translations = {
 
     // Buttons & CTAs
     btnBookAppointment: "Book Doctor Serial",
+    btnAiDoctorSelect: "Select Doctor with AI",
+    btnTestPrice: "Test Price",
     btnCallHotline: "Call Central Hotline",
     btnDownloadPdf: "Download Schedule PDF",
     btnLearnMore: "Learn More",

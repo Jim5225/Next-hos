@@ -12,7 +12,7 @@ import {
   Download 
 } from 'lucide-react';
 
-export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, onEmergencyClick }) {
+export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, onEmergencyClick, onOpenTestPrice }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -29,7 +29,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
 
   return (
     <header className="sticky top-[37px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
-      <div className="max-w-7xl mx-auto px-4 py-2.5 sm:py-3 flex items-center justify-between gap-4">
+      <div className="max-w-7xl mx-auto px-4 py-2.5 sm:py-3 flex items-center justify-between gap-3">
         
         {/* Brand Logo & Title */}
         <a href="#home" className="flex items-center gap-3 group focus:outline-none">
@@ -70,7 +70,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
             <a
               key={item.href}
               href={item.href}
-              className={`px-2.5 py-1.5 rounded-lg text-xs font-bold transition-all relative flex items-center gap-1 ${
+              className={`px-2 py-1.5 rounded-lg text-xs font-bold transition-all relative flex items-center gap-1 ${
                 item.isAi
                   ? 'text-purple-700 bg-purple-50 hover:bg-purple-100 font-extrabold'
                   : 'text-slate-700 hover:text-nexus-700 hover:bg-nexus-50/70'
@@ -92,37 +92,46 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           ))}
         </nav>
 
-        {/* Action Buttons: Serial, Report, Doctor Schedule PDF & Emergency */}
-        <div className="hidden md:flex items-center gap-2">
+        {/* Action Buttons: Report, AI Doctor Select, Test Price, Doctor Serial, Emergency */}
+        <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
           
           {/* Online Report Download Button */}
           <button
             onClick={onDownloadReport}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold text-nexus-800 bg-nexus-50 hover:bg-nexus-100 border border-nexus-300 shadow-sm hover:shadow transition-all active:scale-95"
+            className="flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-bold text-nexus-800 bg-nexus-50 hover:bg-nexus-100 border border-nexus-300 shadow-xs hover:shadow transition-all active:scale-95"
             title={t.navReportPortal}
           >
             <FileText className="w-3.5 h-3.5 text-nexus-600" />
-            <span>{t.navReportPortal}</span>
+            <span className="hidden 2xl:inline">{t.navReportPortal}</span>
           </button>
 
-          {/* AI Doctor Finder Button */}
+          {/* 1. AI Doctor Finder Button - Placed RIGHT BEFORE Doctor Serial */}
           <a
             href="#ai-doctor"
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-black text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-md shadow-purple-600/25 transition-all active:scale-95 border border-purple-300/40"
-            title={lang === 'bn' ? 'লক্ষণ মিলিয়ে বিশেষজ্ঞ ডাক্তার খুঁজুন' : 'Find Doctor with AI'}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-black text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-md shadow-purple-600/25 transition-all active:scale-95 border border-purple-300/40 ring-1 ring-purple-400/40"
+            title={t.btnAiDoctorSelect}
           >
             <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
-            <span className="hidden xl:inline">{lang === 'bn' ? 'এআই ডক্টর ম্যাচ' : 'AI Doctor Match'}</span>
-            <span className="xl:hidden">{lang === 'bn' ? 'এআই ডক্টর' : 'AI Match'}</span>
+            <span>{t.btnAiDoctorSelect}</span>
           </a>
 
-          {/* Doctor Appointment / Serial Button */}
+          {/* 2. Test Price Button - Placed RIGHT HERE next to AI Doctor Select and before Doctor Serial */}
+          <button
+            onClick={onOpenTestPrice}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-extrabold text-amber-950 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-600 shadow-md shadow-amber-400/25 transition-all active:scale-95 border border-amber-300"
+            title={t.btnTestPrice}
+          >
+            <span className="w-2 h-2 rounded-full bg-cardiac-600 animate-ping" />
+            <span>{t.btnTestPrice}</span>
+          </button>
+
+          {/* 3. Doctor Appointment / Serial Button */}
           <button
             onClick={onBookAppointment}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-bold text-white bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 shadow-md shadow-nexus-600/30 hover:shadow-lg transition-all active:scale-95 border border-nexus-500/30"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-extrabold text-white bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 shadow-md shadow-nexus-600/30 hover:shadow-lg transition-all active:scale-95 border border-nexus-500/30"
           >
             <Calendar className="w-3.5 h-3.5 text-white" />
-            <span>{t.navAppointment}</span>
+            <span>{t.btnBookAppointment}</span>
           </button>
 
           {/* Emergency Trigger */}
@@ -137,10 +146,16 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex md:hidden items-center gap-1.5">
+          <button
+            onClick={onOpenTestPrice}
+            className="px-2 py-1.5 rounded-lg text-[11px] font-extrabold text-amber-950 bg-amber-400 shadow-xs"
+          >
+            {t.btnTestPrice}
+          </button>
           <button
             onClick={onBookAppointment}
-            className="px-3 py-1.5 rounded-lg text-xs font-bold text-white bg-nexus-600 shadow-sm"
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-bold text-white bg-nexus-600 shadow-xs"
           >
             {lang === 'bn' ? 'সিরিয়াল' : 'Serial'}
           </button>
@@ -180,6 +195,41 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           ))}
 
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
+            
+            {/* 1. AI Doctor Select */}
+            <a
+              href="#ai-doctor"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 shadow-sm"
+            >
+              <Sparkles className="w-4 h-4 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+              <span>{t.btnAiDoctorSelect}</span>
+            </a>
+
+            {/* 2. Test Price */}
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenTestPrice();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-amber-950 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 shadow-sm border border-amber-300"
+            >
+              <span className="w-2 h-2 rounded-full bg-cardiac-600 animate-ping" />
+              <span>{t.btnTestPrice}</span>
+            </button>
+
+            {/* 3. Doctor Appointment / Serial */}
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onBookAppointment();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-extrabold text-white bg-nexus-600 shadow-sm"
+            >
+              <Calendar className="w-4 h-4" />
+              <span>{t.btnBookAppointment}</span>
+            </button>
+
             <a
               href="https://nexushospitalmymensingh.com/wp-content/uploads/2025/05/Nexus-doctors-schedule.pdf"
               target="_blank"

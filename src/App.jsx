@@ -16,8 +16,9 @@ import AppointmentModal from './components/AppointmentModal';
 import ReportDownloadModal from './components/ReportDownloadModal';
 import EmergencyModal from './components/EmergencyModal';
 import AdminModal from './components/AdminModal';
+import TestPriceModal from './components/TestPriceModal';
 import { translations } from './data/translations';
-import { PhoneCall, Calendar, FileText, Sparkles, HeartPulse } from 'lucide-react';
+import { PhoneCall, Calendar, FileText, Sparkles, HeartPulse, Tag } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState(() => {
@@ -29,6 +30,7 @@ export default function App() {
   const [reportModalOpen, setReportModalOpen] = useState(false);
   const [emergencyModalOpen, setEmergencyModalOpen] = useState(false);
   const [adminModalOpen, setAdminModalOpen] = useState(false);
+  const [testPriceModalOpen, setTestPriceModalOpen] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('nexus_lang', lang);
@@ -60,6 +62,7 @@ export default function App() {
         onBookAppointment={() => handleOpenAppointment(null)}
         onDownloadReport={() => setReportModalOpen(true)}
         onEmergencyClick={() => setEmergencyModalOpen(true)}
+        onOpenTestPrice={() => setTestPriceModalOpen(true)}
       />
 
       {/* 3. Main Page Sections */}
@@ -72,6 +75,7 @@ export default function App() {
           onBookAppointment={() => handleOpenAppointment(null)}
           onDownloadReport={() => setReportModalOpen(true)}
           onEmergencyClick={() => setEmergencyModalOpen(true)}
+          onOpenTestPrice={() => setTestPriceModalOpen(true)}
         />
 
         {/* Advanced Cardiac Cath Lab & German Siemens CT Scan Spotlight */}
@@ -149,34 +153,47 @@ export default function App() {
       {/* Floating Action Buttons for Quick Access (Bottom Right) */}
       <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-2.5 items-end no-print">
         
+        {/* 1. Quick AI Doctor Finder Floating Pill */}
+        <a
+          href="#ai-doctor"
+          className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-xs font-black shadow-xl shadow-purple-600/40 transition-all hover:scale-105 active:scale-95 border border-purple-300 ring-2 ring-purple-400/60 animate-pulse-slow"
+          title={t.btnAiDoctorSelect}
+        >
+          <Sparkles className="w-4 h-4 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+          <span>{t.btnAiDoctorSelect}</span>
+        </a>
+
+        {/* 2. Quick Test Price Floating Pill */}
+        <button
+          type="button"
+          onClick={() => setTestPriceModalOpen(true)}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-slate-950 text-xs font-black shadow-xl shadow-amber-500/35 transition-all hover:scale-105 active:scale-95 border border-amber-300 ring-2 ring-amber-300/50"
+          title={t.btnTestPrice}
+        >
+          <span className="w-2 h-2 rounded-full bg-cardiac-600 animate-ping" />
+          <span>{t.btnTestPrice}</span>
+        </button>
+
+        {/* 3. Quick Doctor Appointment Floating Pill */}
+        <button
+          type="button"
+          onClick={() => handleOpenAppointment(null)}
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 text-white text-xs font-extrabold shadow-xl shadow-nexus-600/35 transition-all hover:scale-105 active:scale-95 border border-nexus-400/40"
+          title={t.btnBookAppointment}
+        >
+          <Calendar className="w-4 h-4" />
+          <span>{t.btnBookAppointment}</span>
+        </button>
+
         {/* Quick Report Download Floating Pill */}
         <button
+          type="button"
           onClick={() => setReportModalOpen(true)}
           className="flex items-center gap-2 px-3.5 py-2 rounded-full bg-slate-900 hover:bg-slate-800 text-white text-xs font-bold shadow-lg shadow-slate-900/30 transition-all hover:scale-105 active:scale-95 border border-slate-700"
           title={t.navReportPortal}
         >
           <FileText className="w-4 h-4 text-emerald-400" />
           <span className="hidden sm:inline">{t.navReportPortal}</span>
-        </button>
-
-        {/* Quick AI Doctor Finder Floating Pill */}
-        <a
-          href="#ai-doctor"
-          className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-xs font-black shadow-xl shadow-purple-600/40 transition-all hover:scale-105 active:scale-95 border border-purple-300 ring-2 ring-purple-400/60 animate-pulse-slow"
-          title={lang === 'bn' ? 'লক্ষণ মিলিয়ে ডাক্তার নির্বাচন' : 'Choose Specialist with AI'}
-        >
-          <Sparkles className="w-4 h-4 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
-          <span>{lang === 'bn' ? 'এআই ডক্টর ম্যাচিং' : 'AI Doctor Match'}</span>
-        </a>
-
-        {/* Quick Doctor Appointment Floating Pill */}
-        <button
-          onClick={() => handleOpenAppointment(null)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-nexus-600 hover:bg-nexus-700 text-white text-xs font-bold shadow-xl shadow-nexus-600/35 transition-all hover:scale-105 active:scale-95 border border-nexus-400/40"
-          title={t.navAppointment}
-        >
-          <Calendar className="w-4 h-4" />
-          <span>{lang === 'bn' ? 'সিরিয়াল বুকিং' : 'Book Serial'}</span>
         </button>
 
         {/* 24/7 Emergency Hotline Floating Circle */}
@@ -197,6 +214,14 @@ export default function App() {
         lang={lang} 
         t={t} 
         selectedDoctorId={selectedDoctorId}
+      />
+
+      <TestPriceModal
+        isOpen={testPriceModalOpen}
+        onClose={() => setTestPriceModalOpen(false)}
+        lang={lang}
+        t={t}
+        onBookAppointment={(dept) => handleOpenAppointment(null)}
       />
 
       <ReportDownloadModal 

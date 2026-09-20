@@ -18,7 +18,7 @@ import {
   Phone
 } from 'lucide-react';
 
-export default function HeroSection({ lang, t, onBookAppointment, onDownloadReport, onEmergencyClick }) {
+export default function HeroSection({ lang, t, onBookAppointment, onDownloadReport, onEmergencyClick, onOpenTestPrice }) {
   return (
     <section id="home" className="relative overflow-hidden bg-gradient-to-b from-nexus-50/60 via-white to-slate-50 pt-8 pb-16 lg:pt-12 lg:pb-20 border-b border-slate-200">
       
@@ -38,45 +38,48 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
           
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-50 border border-amber-300 text-amber-900 text-xs font-bold">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-            <span>{lang === 'bn' ? '১০০% দালালমুক্ত ও ১০০% কমিশনমুক্ত সেবা' : '100% Broker-Free & Ethical Care'}</span>
+            <span>{t.badgeBrokerFree}</span>
           </div>
-
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cardiac-50 border border-cardiac-200 text-cardiac-800 text-xs font-bold">
-            <Zap className="w-3.5 h-3.5 text-cardiac-600" />
-            <span>{lang === 'bn' ? 'জার্মান সিমেন্স সিটি স্ক্যানে ৩০% ছাড়' : '30% Discount on Siemens CT'}</span>
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-medium">
+            <Clock className="w-3.5 h-3.5 text-nexus-600" />
+            <span>{t.heroTimeBadge}</span>
           </div>
         </div>
 
-        {/* Main 2-Column Hero Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-8 items-center">
+        {/* Main Hero Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           
-          {/* Left Column: Heading, Description & Action Buttons */}
-          <div className="lg:col-span-7 space-y-5 text-left">
+          {/* Left Column: Heading, Value Props & CTAs */}
+          <div className="lg:col-span-7 space-y-6">
             
-            <h1 className="text-3xl sm:text-4xl lg:text-[44px] font-black text-slate-900 leading-[1.2] tracking-tight">
-              <span>{t.heroTitle1}</span>{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-nexus-700 via-emerald-600 to-cardiac-600">
-                {t.heroTitleHighlight}
-              </span>
-            </h1>
+            <div className="space-y-3">
+              <div className="inline-flex items-center gap-2 text-xs uppercase tracking-widest font-black text-cardiac-600 bg-cardiac-50 px-3 py-1 rounded-md border border-cardiac-200">
+                <Activity className="w-3.5 h-3.5" />
+                <span>{lang === 'bn' ? 'ময়মনসিংহের প্রথম পূর্ণাঙ্গ ক্যাথ ল্যাব' : 'First Full-Fledged Cath Lab in Mymensingh'}</span>
+              </div>
+              
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.2]">
+                {t.heroTitle}
+              </h1>
+              
+              <p className="text-base sm:text-lg text-slate-600 max-w-2xl font-normal leading-relaxed pt-1">
+                {t.heroSubtitle}
+              </p>
+            </div>
 
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
-              {t.heroDescription}
-            </p>
-
-            {/* Core Pill Features Checklist */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 gap-2.5 py-1 text-xs sm:text-sm font-semibold text-slate-700">
+            {/* Quick Value Points */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm font-semibold text-slate-700">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                <span>{lang === 'bn' ? 'করোনারি এনজিওগ্রাম (CAG) ২০,০০০/-' : 'Coronary Angiogram 20,000 BDT'}</span>
+                <span>{lang === 'bn' ? 'মাত্র ২০,০০০ টাকায় করোনারি এনজিওগ্রাম (CAG)' : 'Coronary Angiogram at only 20,000 BDT'}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                <span>{lang === 'bn' ? '২৪/৭ সিসিইউ ও নিবিড় পরিচর্যা (ICU)' : '24/7 CCU & Critical ICU Beds'}</span>
+                <span>{lang === 'bn' ? 'জার্মান সিমেন্স ১২৮ স্লাইস আল্ট্রা সিটি স্ক্যান' : 'Siemens 128-Slice Ultra CT Scan'}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                <span>{lang === 'bn' ? 'নবজাতক নিবিড় পরিচর্যা কেন্দ্র (NICU)' : 'Modern NICU / SCABU for Babies'}</span>
+                <span>{lang === 'bn' ? 'দালালমুক্ত শতভাগ স্বচ্ছ স্বাস্থ্যসেবা' : '100% Broker-Free Transparent Hospital'}</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
@@ -84,11 +87,34 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
               </div>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons: Ordered strictly per user requirement:
+                1. এআই দিয়ে ডাক্তার সিলেক্ট করুন (AI Doctor Select)
+                2. টেস্ট প্রাইজ (Test Price)
+                3. ডাক্তার সিরিয়াল দিন (Doctor Serial) */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               
-              {/* Book Doctor Serial */}
+              {/* 1. AI Doctor Select Button */}
+              <a
+                href="#ai-doctor"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-extrabold text-sm shadow-lg shadow-purple-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all border border-purple-300 ring-2 ring-purple-400/40"
+              >
+                <Sparkles className="w-4 h-4 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+                <span>{t.btnAiDoctorSelect}</span>
+              </a>
+
+              {/* 2. Test Price Button */}
               <button
+                type="button"
+                onClick={onOpenTestPrice}
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 hover:to-amber-700 text-slate-950 font-black text-sm shadow-lg shadow-amber-400/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all border border-amber-300"
+              >
+                <span className="w-2 h-2 rounded-full bg-cardiac-600 animate-ping" />
+                <span>{t.btnTestPrice}</span>
+              </button>
+
+              {/* 3. Book Doctor Serial Button */}
+              <button
+                type="button"
                 onClick={onBookAppointment}
                 className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 text-white font-extrabold text-sm shadow-lg shadow-nexus-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all border border-nexus-400/40"
               >
@@ -99,10 +125,10 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
               {/* Cath Lab Package Explore */}
               <a
                 href="#cath-lab"
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-cardiac-50 hover:bg-cardiac-100 text-cardiac-700 font-bold text-sm border border-cardiac-300 shadow-sm transition-all"
+                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-cardiac-50 hover:bg-cardiac-100 text-cardiac-700 font-bold text-sm border border-cardiac-300 shadow-xs transition-all"
               >
                 <HeartPulse className="w-4 h-4 text-cardiac-600" />
-                <span>{lang === 'bn' ? 'ক্যাথ ল্যাব ও CAG প্যাকেজ' : 'Cath Lab & Packages'}</span>
+                <span>{lang === 'bn' ? 'ক্যাথ ল্যাব প্যাকেজ' : 'Cath Lab Packages'}</span>
               </a>
 
               {/* Call Hotline */}
