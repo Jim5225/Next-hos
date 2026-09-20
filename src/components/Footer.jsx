@@ -41,7 +41,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
               </div>
             </div>
 
-            <p className="text-xs text-slate-400 leading-relaxed">
+            <p className="text-xs text-slate-300 leading-relaxed font-normal">
               {t.footerDesc}
             </p>
 
@@ -49,7 +49,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
               "{t.slogan}"
             </div>
 
-            <div className="flex items-center gap-2 text-[11px] text-slate-400">
+            <div className="flex items-center gap-2 text-[11px] text-slate-300">
               <ShieldCheck className="w-4 h-4 text-emerald-400 flex-shrink-0" />
               <span>{lang === 'bn' ? '১০০% দালালমুক্ত ও কমিশনমুক্ত স্বাস্থ্যসেবা' : '100% Broker-Free & Commission-Free'}</span>
             </div>
@@ -61,7 +61,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
             <h4 className="text-xs uppercase font-black tracking-widest text-emerald-400">
               {t.footerQuickLinks}
             </h4>
-            <ul className="space-y-2 text-xs text-slate-400">
+            <ul className="space-y-2 text-xs text-slate-300">
               <li>
                 <a href="#home" className="hover:text-white transition-colors">{t.navHome}</a>
               </li>
@@ -108,7 +108,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
             <h4 className="text-xs uppercase font-black tracking-widest text-cardiac-400">
               {t.footerDepartments}
             </h4>
-            <ul className="space-y-2 text-xs text-slate-400">
+            <ul className="space-y-2 text-xs text-slate-300">
               <li>{lang === 'bn' ? 'কার্ডিওলজি ও ক্যাথ ল্যাব' : 'Cardiology & Cath Lab'}</li>
               <li>{lang === 'bn' ? '২৪/৭ সিসিইউ ও আইসিইউ' : '24/7 CCU & ICU'}</li>
               <li>{lang === 'bn' ? 'এনআইসিইউ (নবজাতক)' : 'NICU / SCABU'}</li>
@@ -133,7 +133,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
               >
                 <Phone className="w-4 h-4 text-amber-400 flex-shrink-0 animate-bounce" />
                 <div>
-                  <div className="text-[10px] text-slate-400">{lang === 'bn' ? 'সেন্ট্রাল হটলাইন' : 'Central Hotline'}</div>
+                  <div className="text-[10px] text-slate-300">{lang === 'bn' ? 'সেন্ট্রাল হটলাইন' : 'Central Hotline'}</div>
                   <div className="font-black text-white font-mono text-sm">০৯৬১১৬৭৮৯২২</div>
                 </div>
               </a>
@@ -149,7 +149,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
                 </div>
               </a>
 
-              <div className="flex items-start gap-2 pt-1 text-slate-400">
+              <div className="flex items-start gap-2 pt-1 text-slate-300">
                 <MapPin className="w-4 h-4 text-emerald-400 flex-shrink-0 mt-0.5" />
                 <span className="text-[11px] leading-relaxed">
                   {t.address}
@@ -160,7 +160,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
             <div className="pt-2 flex items-center gap-2">
               <button
                 onClick={onAdminClick}
-                className="text-[11px] text-slate-500 hover:text-slate-300 transition-colors"
+                className="text-[11px] text-slate-400 hover:text-slate-200 transition-colors"
               >
                 {t.navAdmin}
               </button>
@@ -171,7 +171,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
         </div>
 
         {/* Bottom Strip: Copyright */}
-        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <div className="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400 font-medium">
           <div className="text-center sm:text-left">
             © 2012-2026 Nexus Cardiac Hospital & Research Ltd. - All Right Reserved.
           </div>

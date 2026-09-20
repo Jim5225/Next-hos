@@ -28,7 +28,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
   ];
 
   return (
-    <header className="sticky top-[37px] z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all">
+    <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-xs transition-all">
       <div className="max-w-7xl mx-auto px-4 py-2.5 sm:py-3 flex items-center justify-between gap-3">
         
         {/* Brand Logo & Title */}
@@ -39,8 +39,8 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
             
             <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-nexus-700 via-nexus-800 to-slate-950 p-2 shadow-md flex items-center justify-center border border-nexus-500/40">
               <svg viewBox="0 0 100 100" className="w-full h-full">
-                {/* Hospital Cross in vibrant green */}
-                <path d="M38 18 h24 v22 h22 v24 h-22 v22 h-24 v-22 h-22 v-24 h22 z" fill="#10b981" />
+                {/* Hospital Cross in vibrant clinical emerald */}
+                <path d="M38 18 h24 v22 h22 v24 h-22 v22 h-24 v-22 h-22 v-24 h22 z" fill="#14b8a6" />
                 {/* Cardiac Heart with EKG pulse overlay */}
                 <path d="M50 35 C58 24 74 25 80 37 C87 51 68 67 50 82 C32 67 13 51 20 37 C26 25 42 24 50 35 Z" fill="#e11d48" opacity="0.95" />
                 <path d="M30 52 L42 52 L46 44 L52 62 L56 48 L60 52 L70 52" stroke="#ffffff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
@@ -51,14 +51,14 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           {/* Hospital Typography */}
           <div className="flex flex-col">
             <div className="flex items-baseline gap-1.5">
-              <span className="text-xl sm:text-2xl font-black tracking-tight text-nexus-900 group-hover:text-nexus-700 transition-colors">
+              <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-950 group-hover:text-nexus-700 transition-colors">
                 NEXUS
               </span>
-              <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider text-cardiac-600">
+              <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-cardiac-600">
                 Cardiac Hospital
               </span>
             </div>
-            <span className="text-[11px] sm:text-xs font-semibold text-slate-500 line-clamp-1">
+            <span className="text-[11px] sm:text-xs font-semibold text-slate-600 line-clamp-1">
               {lang === 'bn' ? 'নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিঃ • ময়মনসিংহ' : 'Nexus Cardiac Hospital & Research Ltd., Mymensingh'}
             </span>
           </div>

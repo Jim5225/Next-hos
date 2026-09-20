@@ -206,19 +206,19 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
                   <div className="font-semibold text-slate-800 line-clamp-2">
                     {lang === 'bn' ? doc.degreesBn : doc.degrees}
                   </div>
-                  <div className="text-[11px] text-slate-500 line-clamp-1 font-medium">
+                  <div className="text-[11px] text-slate-600 line-clamp-1 font-medium">
                     {lang === 'bn' ? doc.designationBn : doc.designation}
                   </div>
                 </div>
 
                 {/* Chamber Room & Visiting Schedule */}
-                <div className="space-y-1.5 text-xs text-slate-600">
-                  <div className="flex items-center gap-1.5 font-bold text-slate-800">
-                    <MapPin className="w-3.5 h-3.5 text-nexus-600 flex-shrink-0" />
+                <div className="space-y-1.5 text-xs text-slate-700">
+                  <div className="flex items-center gap-1.5 font-bold text-slate-900">
+                    <MapPin className="w-3.5 h-3.5 text-nexus-700 flex-shrink-0" />
                     <span>{lang === 'bn' ? doc.roomBn : doc.room}</span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-slate-500">
-                    <Clock className="w-3.5 h-3.5 text-slate-400 flex-shrink-0" />
+                  <div className="flex items-center gap-1.5 text-slate-700 font-medium">
+                    <Clock className="w-3.5 h-3.5 text-slate-500 flex-shrink-0" />
                     <span>{lang === 'bn' ? doc.visitingHoursBn : doc.visitingHours}</span>
                   </div>
                 </div>
@@ -229,7 +229,7 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center gap-2">
                 <button
                   onClick={() => onBookDoctor(doc.id)}
-                  className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 text-white font-extrabold text-xs shadow-md shadow-nexus-600/20 active:scale-95 transition-all"
+                  className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-gradient-to-r from-nexus-700 to-nexus-800 hover:from-nexus-800 hover:to-nexus-900 text-white font-extrabold text-xs shadow-md shadow-nexus-700/20 active:scale-95 transition-all"
                 >
                   <Calendar className="w-3.5 h-3.5" />
                   <span>{lang === 'bn' ? 'সিরিয়াল বুকিং' : 'Book Serial'}</span>

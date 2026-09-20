@@ -3,16 +3,16 @@ import { Phone, MapPin, Clock, ShieldCheck, Sparkles, UserCheck, HeartPulse, Tru
 
 export default function Topbar({ lang, setLang, t, onEmergencyClick, onAdminClick }) {
   return (
-    <aside aria-label="Announcement & Hotlines" className="bg-gradient-to-r from-nexus-950 via-slate-900 to-nexus-900 text-white text-xs py-2 px-4 border-b border-nexus-800/60 sticky top-0 z-50">
+    <aside aria-label="Announcement & Hotlines" className="relative z-40 bg-slate-950 text-slate-200 text-xs py-2 px-4 border-b border-slate-800">
       <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2.5">
         
         {/* Left: Cath Lab & CAG Package / Broker-free Announcement */}
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cardiac-600 to-amber-500 text-white font-extrabold text-[11px] uppercase tracking-wider shadow-sm animate-pulse">
-            <HeartPulse className="w-3 h-3 text-white" />
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cardiac-600 to-rose-600 text-white font-black text-[11px] uppercase tracking-wider shadow-sm">
+            <HeartPulse className="w-3 h-3 text-white animate-pulse" />
             {lang === 'bn' ? 'ক্যাথ ল্যাব • CAG ২০,০০০/-' : 'Cath Lab • CAG 20k'}
           </span>
-          <span className="hidden md:inline text-emerald-200 font-medium">
+          <span className="hidden md:inline text-slate-300 font-medium">
             {t.cagBannerText}
           </span>
         </div>

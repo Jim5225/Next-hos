@@ -423,12 +423,12 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
         {/* Test Items Grid */}
         <div className="p-4 sm:p-6 overflow-y-auto flex-1 space-y-3">
           
-          <div className="flex items-center justify-between text-xs text-slate-500 font-semibold px-1">
+          <div className="flex items-center justify-between text-xs text-slate-700 font-bold px-1">
             <span>
               {lang === 'bn' ? `মোট ${filteredTests.length} টি টেস্ট ও প্যাকেজ পাওয়া গেছে` : `Found ${filteredTests.length} tests and packages`}
             </span>
-            <span className="text-emerald-700 font-bold flex items-center gap-1">
-              <ShieldCheck className="w-3.5 h-3.5" />
+            <span className="text-emerald-800 font-extrabold flex items-center gap-1">
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
               {lang === 'bn' ? '১০০% কমিশনমুক্ত মূল্য' : 'Zero Commission'}
             </span>
           </div>
@@ -437,32 +437,32 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
             {filteredTests.map((test) => (
               <div 
                 key={test.id}
-                className="p-4 rounded-2xl bg-white border border-slate-200 hover:border-nexus-400 shadow-xs hover:shadow-md transition-all flex flex-col justify-between group space-y-3"
+                className="p-4 rounded-2xl bg-white border border-slate-200/90 hover:border-nexus-500 shadow-2xs hover:shadow-md transition-all flex flex-col justify-between group space-y-3"
               >
                 <div className="space-y-1.5">
                   <div className="flex items-center justify-between gap-2">
-                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+                    <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-700 border border-slate-200">
                       {lang === 'bn' ? test.deptBn : test.deptEn}
                     </span>
                     {test.badgeBn && (
                       <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
                         test.badgeBn.includes('৩০%') || test.badgeBn.includes('প্যাকেজ')
-                          ? 'bg-amber-100 text-amber-900 border border-amber-300'
-                          : 'bg-emerald-50 text-emerald-700 border border-emerald-200'
+                          ? 'bg-amber-100 text-amber-950 border border-amber-300'
+                          : 'bg-emerald-50 text-emerald-800 border border-emerald-200'
                       }`}>
                         {lang === 'bn' ? test.badgeBn : test.badgeEn}
                       </span>
                     )}
                   </div>
 
-                  <h4 className="font-extrabold text-sm text-slate-900 group-hover:text-nexus-800 transition-colors leading-snug">
+                  <h4 className="font-black text-sm text-slate-950 group-hover:text-nexus-800 transition-colors leading-snug">
                     {lang === 'bn' ? test.nameBn : test.nameEn}
                   </h4>
 
-                  <div className="text-[11px] text-slate-500 space-y-0.5">
-                    <div>⏱ ডেলিভারি: <strong>{lang === 'bn' ? test.deliveryTimeBn : test.deliveryTimeEn}</strong></div>
+                  <div className="text-[11px] text-slate-700 space-y-0.5 font-medium">
+                    <div>⏱ ডেলিভারি: <strong className="text-slate-900">{lang === 'bn' ? test.deliveryTimeBn : test.deliveryTimeEn}</strong></div>
                     {test.fastingBn && (
-                      <div className="text-amber-700 font-semibold">⚠️ {lang === 'bn' ? test.fastingBn : test.fastingEn}</div>
+                      <div className="text-amber-800 font-bold">⚠️ {lang === 'bn' ? test.fastingBn : test.fastingEn}</div>
                     )}
                   </div>
                 </div>
@@ -471,11 +471,11 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                 <div className="pt-2.5 border-t border-slate-100 flex items-center justify-between">
                   <div>
                     <div className="flex items-baseline gap-1.5">
-                      <span className="text-lg font-black text-slate-900 font-mono">
+                      <span className="text-lg font-black text-slate-950 font-mono">
                         {lang === 'bn' ? test.price : test.priceEn}
                       </span>
                       {test.regularPrice && (
-                        <span className="text-xs text-slate-400 line-through font-mono">
+                        <span className="text-xs text-slate-500 line-through font-mono font-medium">
                           {test.regularPrice}
                         </span>
                       )}
@@ -487,7 +487,7 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                       onClose();
                       onBookAppointment();
                     }}
-                    className="px-3 py-1.5 rounded-xl bg-nexus-600 hover:bg-nexus-700 text-white font-extrabold text-xs shadow-2xs transition-all active:scale-95"
+                    className="px-3 py-1.5 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-black text-xs shadow-2xs transition-all active:scale-95"
                   >
                     {lang === 'bn' ? 'বুক করুন' : 'Book Test'}
                   </button>

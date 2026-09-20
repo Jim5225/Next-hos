@@ -90,7 +90,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   activeTab === 'cathlab'
                     ? 'bg-gradient-to-r from-cardiac-600 to-rose-600 text-white shadow-md'
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
                 <HeartPulse className="w-4 h-4" />
@@ -102,7 +102,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   activeTab === 'ctscan'
                     ? 'bg-gradient-to-r from-amber-600 to-emerald-600 text-white shadow-md'
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
                 <BadgePercent className="w-4 h-4" />
@@ -114,7 +114,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   activeTab === 'why-nexus'
                     ? 'bg-gradient-to-r from-nexus-600 to-teal-600 text-white shadow-md'
-                    : 'text-slate-400 hover:text-white'
+                    : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
                 <ShieldCheck className="w-4 h-4" />
@@ -351,27 +351,27 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
             <div className="rounded-3xl bg-slate-800/90 border border-slate-700 p-5 sm:p-8 shadow-2xl overflow-x-auto">
               <table className="w-full text-left text-xs sm:text-sm">
                 <thead>
-                  <tr className="border-b border-slate-700 text-slate-400 uppercase text-[11px] tracking-wider">
+                  <tr className="border-b border-slate-700 text-slate-200 uppercase text-[11px] tracking-wider font-bold">
                     <th className="py-3 px-3">সুবিধা ও সেবার মান</th>
-                    <th className="py-3 px-3 text-emerald-400 font-extrabold bg-emerald-950/30 rounded-t-xl">
+                    <th className="py-3 px-3 text-emerald-400 font-extrabold bg-emerald-950/40 rounded-t-xl border-t border-x border-emerald-500/30">
                       নেক্সাস কার্ডিয়াক হসপিটাল
                     </th>
-                    <th className="py-3 px-3 text-slate-400">অন্যান্য হাসপাতাল / ক্লিনিক</th>
+                    <th className="py-3 px-3 text-slate-300">অন্যান্য হাসপাতাল / ক্লিনিক</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-700/60">
                   {comparisons.map((c, i) => (
                     <tr key={i} className="hover:bg-slate-800/50 transition-colors">
                       <td className="py-3 px-3 font-semibold text-white">
-                        {c.feature}
+                         {c.feature}
                       </td>
-                      <td className="py-3 px-3 font-bold text-emerald-300 bg-emerald-950/20">
+                      <td className="py-3 px-3 font-bold text-emerald-300 bg-emerald-950/20 border-x border-emerald-500/20">
                         <div className="flex items-center gap-1.5">
                           <Check className="w-4 h-4 text-emerald-400 flex-shrink-0" />
                           <span>{c.nexus}</span>
                         </div>
                       </td>
-                      <td className="py-3 px-3 text-slate-400">
+                      <td className="py-3 px-3 text-slate-300">
                         <div className="flex items-center gap-1.5">
                           <X className="w-4 h-4 text-rose-400 flex-shrink-0" />
                           <span>{c.others}</span>
