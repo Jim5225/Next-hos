@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "name": "ডাঃ জালাল উদ্দীন",
+    "specialty": "স্নায়ু রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, ডিপিএইচ",
+    "institute": "এমডি (নিউরো মেডিসিন), এমসিপি (আমেরিকা) , অধ্যাপক ও বিভাগীয় প্রধান (অবঃ) , স্নায়ুরোগ বিভাগ , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2025/05/Nexus-Hospital-Mymensingh-Logo.png",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-jalal-uddin/"
+  },
+  {
+    "id": 2,
+    "name": "ডাঃ গোবিন্দ কান্তি পাল",
+    "specialty": "হৃদরোগ ও মেডিসিন বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য)",
+    "institute": "এমডি কার্ডিওলজি (জাতীয় হৃদরোগ ইন্সটিটিউট ও হাসপাতাল, বিএসএমএমইউ) , সহযোগী অধ্যাপক ও বিভাগীয় প্রধান (কার্ডিওলজি) , ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-গোবিন্দ-কান্তি-পাল.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-gobinda-kanti-pal/"
+  },
+  {
+    "id": 3,
+    "name": "ডাঃ আফরোজা ইসলাম",
+    "specialty": "মহিলাদের স্তন ও পায়ুপথ রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "এফসিপিএস (সার্জারি) , সহকারী অধ্যাপক (সার্জারি বিভাগ), ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/femaile-doctor-avator-image.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-afroza-islam/"
+  },
+  {
+    "id": 4,
+    "name": "ডাঃ বিলকিস বেগম",
+    "specialty": "শিশু ও নবজাতক বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, ডিসিএইচ (ঢাকা)",
+    "institute": "এমডি (নবজাতক স্বাস্থ্য) , সহযোগী অধ্যাপক , শিশু বিভাগ , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/femaile-doctor-avator-image.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-bilkis-begum/"
+  },
+  {
+    "id": 5,
+    "name": "প্রফেসর ডাঃ হাসিবুর রহমান",
+    "specialty": "চর্ম ও যৌনরোগ বিশেষজ্ঞ লেজার ও কসমেটিক ডার্মাটোসার্জন",
+    "degrees": "এমবিবিএস, এফসিপিএস (ডার্মাটোলজি এন্ড ভিডি)",
+    "institute": "এমআরসিপিএস (গ্লাসগো-ইউকে) , কনসাল্টেন্ট, ডার্মাটোলজি এন্ড ভেনেরিওলজি , এভারকেয়ার হাসপাতাল, ঢাকা",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/প্রফেসর-ডাঃ-হাসিবুর-রহমান.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/professor-dr-hasibur-rahman/"
+  },
+  {
+    "id": 6,
+    "name": "ডাঃ আশেক মাহমুদ ফেরদাউস",
+    "specialty": "কলোরেক্টাল সার্জন",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য), এফসিপিএস (সার্জারী)",
+    "institute": "বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয় , সহকারী অধ্যাপক, কলোরেক্টাল সার্জারী , ময়মনসিংহ মেডিকেল কলেজ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডঃ-মোঃ-আশেক-মাহমুদ-ফেরদৌস.webp",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-md-ashek-mahmud-ferdaus/"
+  },
+  {
+    "id": 7,
+    "name": "ডাঃ জহির উদ্দিন শরীফ",
+    "specialty": "মেডিসিন ও হৃদরোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "এফসিপিএস (মেডিসিন) , এমডি (কার্ডিওলজি), এমএসপি (আমেরিকা) , কনসাল্টেন্ট (কার্ডিওলজি বিভাগ) , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/Dr.-Jahir-Uddin-Mohammed-Sharif.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-jahir-uddin-mohammed-sharif/"
+  },
+  {
+    "id": 8,
+    "name": "ডাঃ ফারহানা আখতার",
+    "specialty": "মনোরোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস (ঢাকা)",
+    "institute": "এমডি (মনোরোগ)",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-ফারহানা-আখতার-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-farhana-akhter/"
+  },
+  {
+    "id": 9,
+    "name": "ডাঃ এম এ কে আজাদ",
+    "specialty": "জেনারেল , ল্যাপারোস্কোপিক ও লেজার সার্জন",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "এফসিপিএস (সার্জারী) , প্রিন্সিপাল , শেখ হাসিনা মেডিকেল কলেজ, জামালপুর , সাবেক বিভাগীয় প্রধান (সার্জারী বিভাগ) , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল, ময়মনসিংহ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/অধ্যাপক-ডাঃ-এম-এ-কে-আজাদ.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/professor-dr-m-a-k-azad/"
+  },
+  {
+    "id": 10,
+    "name": "ডাঃ মুশাহিদা আননূর (রেনু)",
+    "specialty": "গাইনী ও প্রসূতি বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, ডিপিএইচ",
+    "institute": "এমডি (নিউরো মেডিসিন), এমসিপি (আমেরিকা) , অধ্যাপক ও বিভাগীয় প্রধান (অবঃ) , স্নায়ুরোগ বিভাগ , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/femaile-doctor-avator-image.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mushahida-annoor-renu/"
+  },
+  {
+    "id": 11,
+    "name": "ডাঃ মাহমুদ জাভেদ (পরাগ)",
+    "specialty": "মেডিসিন, কিডনী ও হাইপারটেনশন রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস (ঢাকা), এমডি (নেফ্রোলজি), এফএএসএন (আমেরিকা)",
+    "institute": "এফএসিপি (ইন্টারনাল মেডিসিন, আমেরিকা) , সহযোগী অধ্যাপক ও বিভাগীয় প্রধান, কিডনী রোগ বিভাগ , কমিউনিটি বেজড মেডিকেল কলেজ হাসপাতাল, ময়মনসিংহ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-মাহমুদ-জাভেদ-হাসান-পরাগ.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mahmud-javed-hasan-parag/"
+  },
+  {
+    "id": 12,
+    "name": "লেঃ কর্ণেল ডাঃ মাহবুব আলম",
+    "specialty": "জেনারেল ও ল্যাপারোস্কোপিক সার্জন",
+    "degrees": "এমবিবিএস (ঢাকা), এমএস (জেনারেল সার্জারী)",
+    "institute": "এমএসএএস (ল্যাপারোস্কোপিক সার্জারী), ইউকে , সার্জিক্যাল গ্যাস্ট্রোএন্টেরলজি ও লিভার ট্রান্সপ্ল্যান্ট ফেলোশিপ (Sir Gahgram Hospital, India) , সহযোগী অধ্যাপক এবং ক্লাসিফাইড স্পেশালাইজড সার্জন , (সম্মিলিত সামরিক হাসপাতাল, ময়মনসিংহ)",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/লেঃ-কর্ণেল-ডাঃ-এএসএম-মাহবুব-আলম-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/lieutenant-colonel-dr-asm-mahbub-alam/"
+  },
+  {
+    "id": 13,
+    "name": "ডাঃ টি আই খান ওয়াসিম",
+    "specialty": "হৃদরোগ,মেডিসিন ও বাতজ্বর বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, এমডি (কার্ডিওলজি)",
+    "institute": "এমএসিপি (আমেরিকা) , বাংলাদেশ সিভিল সার্ভিস (বিসিএস-স্বাস্থ্য) , ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল , উচ্চতর প্রশিক্ষণঃ জাপান ও ভারত",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-টি-আই-খান-ওয়াসিম.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-t-i-khan-wasim/"
+  },
+  {
+    "id": 14,
+    "name": "ডাঃ নাজমা পারভীন আনসারী",
+    "specialty": "প্যাথলজি বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, ডিসিপি",
+    "institute": "এমডি (প্যাথলজি), অধ্যাপক ও বিভাগীয় প্রধান, কমিউনিটি বেজড মেডিকেল কলেজ, ময়মনসিংহ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-নাজমা-পারভীন-আনসারী-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-nazma-parvin-ansari/"
+  },
+  {
+    "id": 15,
+    "name": "ডাঃ মাহবুবা হোসেন (শাওন)",
+    "specialty": "মুখ ও দন্ত রোগ বিশেষজ্ঞ ও সার্জন",
+    "degrees": "বিডিএস (ডিইউ)",
+    "institute": "ডেন্টাল সার্জন , কমিউনিটি বেজড মেডিকেল কলেজ বাংলাদেশ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-মাহবুবা-হোসেন-শাওন-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mahbuba-hossain-shaon/"
+  },
+  {
+    "id": 16,
+    "name": "ডাঃ মুক্তাদিরা",
+    "specialty": "এক্স-রে,ইউএসজি,সিটি স্ক্যান এন্ড এমআরআই স্পেশালিষ্ট",
+    "degrees": "এমবিবিএস (ডিইউ)",
+    "institute": "এমডি ( রেডিওলজী এন্ড ইমেজিং), সহকারী অধ্যাপক,, কমিউনিটি বেজড মেডিকেল কলেজ, বাংলাদেশ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-মুক্তাদিরা-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-muktdira/"
+  },
+  {
+    "id": 17,
+    "name": "ডাঃ রায়হান রোতাপ খান",
+    "specialty": "মেডিসিন বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "এফসিপিএস (মেডিসিন) , সহযোগী অধ্যাপক (মেডিসিন) , ময়মনসিং মেডিকেল কলেজ হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-রায়হান-রোতাপ-খান-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-raihan-rotap-khan/"
+  },
+  {
+    "id": 18,
+    "name": "ডাঃ নূর-এ-মুছাব্বির (পুনম)",
+    "specialty": "ডায়াবেটিস, থাইরয়েড ও হরমোন রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "ডি-ইম (বঙ্গবন্ধু শেখ মুজিব মেডিক্যাল বিশ্ববিদ্যালয়) , ডায়াবেটিস, থাইরয়েড ও হরমোন রোগ বিভাগ , ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-নূর-এ-মুছাব্বির-পুনম.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-noor-e-musabbir-poonam/"
+  },
+  {
+    "id": 19,
+    "name": "ডাঃ সাজিদুর রহমান সিদ্দিক",
+    "specialty": "হৃদরোগ, মেডিসিন, ডায়াবেটিস ও বাতজ্বর বিশেষজ্ঞ",
+    "degrees": "অধ্যাপক ও বিভাগীয় প্রধান, কার্ডিওলজি বিভাগ",
+    "institute": "শহীদ সৈয়দ নজরুল ইসলাম মেডিকেল কলেজ হাসপাতাল, কিশোরগঞ্জ , সহকারী অধ্যাপক (এক্স.), ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/অধ্যাপক-ডাঃ-এ-কে-এম-সাজিদুর-রহমান-সিদ্দিক-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/professor-dr-a-k-m-sajidur-rahman-siddique/"
+  },
+  {
+    "id": 20,
+    "name": "ডাঃ মামুনুর রশিদ চৌধুরী",
+    "specialty": "হাড়, জোড়া, মেরুদন্ড, বাতব্যথা, পঙ্গুরোগ বিশেষজ্ঞ ও ট্রমা সার্জন",
+    "degrees": "এমবিবিএস (ঢাকা), ডি-অর্থো (ঢাকা)",
+    "institute": "সহযোগী অধ্যাপক ও ইউনিট প্রধান, অর্থো সার্জারী বিভাগ , কমিউনিটি বেজড্ মেডিকেল কলেজ ও হাসপাতাল, ময়মনসিংহ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/ডাঃ-মামুনুর-রশিদ-চৌধুরী-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mamunur-rashid-chowdhury/"
+  },
+  {
+    "id": 21,
+    "name": "ডাঃ আবু জাফর সালাহউদ্দিন",
+    "specialty": "কিডনী, মেডিসিন ও হাইপারটেনশন বিশেষজ্ঞ",
+    "degrees": "এম.বি.বি.এস (ঢাকা), বি.সি.এস (স্বাস্থ্য)",
+    "institute": "রেজিষ্ট্রার, নেফ্রোলজি বিভাগ , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল , (এক্স) বঙ্গবন্ধু শেখ মুজিব মেডিকেল বিশ্ববিদ্যালয়",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/37-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-abu-zafar-muhammad-salahuddin/"
+  },
+  {
+    "id": 22,
+    "name": "ডাঃ শফিকুল হক (শরীফ)",
+    "specialty": "নবজাতক ও শিশু-কিশোর রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "ডিসিএইচ (বি.এস.এম.এম.ইউ) , জুনিয়র কনসালটেন্ট ও আবাসিক চিকিৎসক (শিশু বিভাগ) , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/35-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-muhammad-shafiqul-haque-sharif/"
+  },
+  {
+    "id": 23,
+    "name": "প্রফেসর ডাঃ আজিজুল হক",
+    "specialty": "নবজাতক ও শিশু-কিশোর রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস, এফসিপিএস (শিশু)",
+    "institute": "ডিএইচপিইডি (অস্ট্রেলিয়া) , অধ্যাপক ও প্রাক্তন বিভাগীয় প্রধান (শিশু বিভাগ) , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/প্রফেসর-ডাঃ-মোঃ-আজিজুল-হক-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/professor-dr-md-azizul-haque/"
+  },
+  {
+    "id": 24,
+    "name": "ডাঃ মাজহারুল আলম",
+    "specialty": "নাক, কান, গলা রোগ বিশেষজ্ঞ ও সার্জন",
+    "degrees": "এম.বি.বি.এস, বি.সি.এস (স্বাস্থ্য)",
+    "institute": "এফ.এ.সি.এস (আমেরিকা), এফ.আই.সি.এস (আমেরিকা) , সহযোগী অধ্যাপক (ই.এন.টি) , ময়মন��িংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-মাজহারুল-আলম-সিদ্দিকী.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mazharul-alam-siddique/"
+  },
+  {
+    "id": 25,
+    "name": "ডাঃ মোঃ বদর উদ্দীন",
+    "specialty": "ইউরোলজিস্ট ও এন্ড্রোলজিস্ট",
+    "degrees": "এমবিবিএস (ঢাকা), বিসিএস (স্বাস্থ্য)",
+    "institute": "এমএস-ইউরোলজি (ঢাবি) , কিডনী, মুত্রথলি, মুত্রনালী, প্রষ্টেট, সেক্স ও পুরুষ জননতন্ত্র বিশেষজ্ঞ ও সার্জন , সহযোগী অধ্যাপক ও সাবেক বিভাগীয় প্রধান , ইউরোলজি বিভাগ , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-মোঃ-বদর-উদ্দীন-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-md-bodor-uddin/"
+  },
+  {
+    "id": 26,
+    "name": "ডাঃ মাহমুদুল হাসান (শিবলী)",
+    "specialty": "চক্ষু বিশেষজ্ঞ, ফ্যাকো ও রেটিনা সার্জন",
+    "degrees": "এমবিবিএস, ডিও (ডিইউ), এফভিআরএস (এন আই ও)",
+    "institute": "(অভজারভশীপ কর্ণিয়া ও লেসিক) (এসএনইসি, সিঙ্গাপুর) , অধ্যাপক ও বিভাগীয় প্রধান (চক্ষু) , রাষ্ট্রপতি আব্দুল হামিদ মেডিকেল কলেজ, কিশোরগঞ্জ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/প্রফেসর-ডাঃ-মাহমুদুল-হাসান-ছিদ্দিকী-শিবলী.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mahmudul-hasan-siddiquie-shibli/"
+  },
+  {
+    "id": 27,
+    "name": "ডাঃ এস.কে. অপু",
+    "specialty": "হৃদরোগ, মেডিসিন ও বাতজ্বর বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, ডি-কার্ড (কার্ডিওলজী)",
+    "institute": "সিনিয়র কনসালটেন্ট (হৃদরোগ বিভাগ) এক্স , ময়মনসিংহ মেডিকেল কলেজ ও হাসপাতাল , চীফ কনসালটেন্ট ও ইনচার্জ সিসিইউ , নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিমিটেড",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-এস.কে.-অপু-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-s-k-apu/"
+  },
+  {
+    "id": 28,
+    "name": "ডাঃ আদনান কায়সার",
+    "specialty": "বার্ন এন্ড প্লাস্টিক সার্জন",
+    "degrees": "এম.বি.বি.এস (ডিএমসি)",
+    "institute": "এম.এস (প্লাস্টিক সার্জারী) , সহযোগী অধ্যাপক , বার্ন ও প্লাস্টিক সার্জারী ব��ভাগ , শহীদ তাজউদ্দীন আহমদ মেডিকেল কলেজ হাসপাতাল, গাজীপুর",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-আদনান-কায়সার.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-adnan-kaiser/"
+  },
+  {
+    "id": 29,
+    "name": "ডাঃ সানজিদা খান",
+    "specialty": "জেনারেল ও ল্যাপারোস্কোপিক সার্জন",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "এফসিপিএস (সার্জারী) , এমআরসিএস (PB) , জুনিয়র কনসালটেন্ট , ময়মনসিংহ মেডিকেল কলেজ হাসপাতাল",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-সানজিদা-খান-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-sanjida-khan/"
+  },
+  {
+    "id": 30,
+    "name": "ডাঃ মির্জ্জা মানজুরুল হক",
+    "specialty": "নবজাতক, শিশু ও কিশোর রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস (ঢাকা), ডিসিএইচ (ডি.ইউ)",
+    "institute": "অধ্যাপক, শিশু বিভাগ , এক্স প্রিন্সিপাল,কমিউনিটি বেজড মেডিকেল কলেজ ও হাসপাতাল , ময়মনসিংহ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/অধ্যাপক-ডাঃ-মির্জ্জা-মানজুরুল-হক-scaled.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/professor-dr-mirza-manzurul-haque/"
+  },
+  {
+    "id": 31,
+    "name": "ডাঃ খন্দকার আবুল হাসনাত",
+    "specialty": "মুখ ও দন্ত রোগ বিশেষজ্ঞ ও সার্জন",
+    "degrees": "বি.ডি.এস (ডি.ইউ), এম.পি.এইচ",
+    "institute": "পি.জি.টি (বি.এস.এম.এম.ইউ) , মেডিকেল অফিসার (ডেন্টাল) এক্স ,ডায়াবেটিক এসোসিয়েশন অব বাংলাদেশ (বারডেম) ঢাকা , কনসালটেন্ট, হুদহুদ ডেন্টাল (এক্স)",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-খন্দকার-আবুল-হাসনাত.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-khondoker-abul-hasnat/"
+  },
+  {
+    "id": 32,
+    "name": "ডাঃ জয় প্রকাশ বিশ্বাস",
+    "specialty": "প্যাথলজি বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, বিসিএস (স্বাস্থ্য)",
+    "institute": "এম.ফিল-প্যাথলজি (বিএসএমএমইউ) , সহযোগী অধ্যাপক ও বিভাগীয় প্রধান , নেত্রকোণা মেডিকেল কলেজ, নেত্রকোণা",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/nexus-male-doctor.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-joy-prokash-bishwas/"
+  },
+  {
+    "id": 33,
+    "name": "ডাঃ মোঃ হাসিমুল এহেছান",
+    "specialty": "মেডিসিন ও হৃদরোগ বিশেষজ্ঞ",
+    "degrees": "এম.বি.বি.এস, বি.সি.এস (স্বাস্থ্য)",
+    "institute": "এম.ডি (কার্ডিওলজী, বি.এস.এম.এম.ইউ) , এম.এ.সি.পি (মেডিসিন, আমেরিকা) , মেম্বার, ইউরোপিয়ান সোসাইটি অব কার্ডিওলজি , রেজিস্ট্রার, ময়মনসিংহ মেডিকেল কলেজ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-মোঃ-হাসিমুল-এহেছান-স���হাগ.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-md-hasimul-ehsan-sohag/"
+  },
+  {
+    "id": 34,
+    "name": "ডাঃ তোফায়েল উদ্দিন",
+    "specialty": "হৃদরোগ বিশেষজ্ঞ",
+    "degrees": "এম.বি.বি.এস, ডি-কার্ড [ডি.ইউ], সি.সি.ডি [বারডেম], এম.এ.সি.পি (আমেরিকা)",
+    "institute": "সহযোগী অধ্যাপক ও বিভাগীয় প্রধান, হৃদরোগ বিভাগ ,, কমিউনিটি বেজড মেডিকেল কলেজ হাসপাতাল, বাংলাদেশ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/Dr.-Tofael-Uddin-Ahmed-Russel.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-tofael-uddin-ahmed-russel/"
+  },
+  {
+    "id": 35,
+    "name": "ডাঃ স্বপন কুমার সেন",
+    "specialty": "চর্ম, এলার্জী ও যৌন রোগ বিশেষজ্ঞ",
+    "degrees": "এমবিবিএস, ডিডিভি (ডিইউ)",
+    "institute": "সহযোগী অধ্যাপক ও বিভাগীয় প্রধান (এক্স) , ডিপার্টমেন্ট অব ডার্মাটোলজি এন্ড ভেনেরিওলজি,, জেডএইচ সিকদার মেডিকেল কলেজ ও হাসপাতাল (প্রাঃ) লিমিটেড",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-স্বপন-কুমার-সেন.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-swapan-kumar-sen/"
+  },
+  {
+    "id": 36,
+    "name": "ডাঃ মোঃ শাহাদাত হোসেন",
+    "specialty": "হৃদরোগ, ডায়াবেটিস ও বাতজ্বর বিশেষজ্ঞ",
+    "degrees": "সহকারী অধ্যাপক (কার্ডিওলজি)",
+    "institute": "এমবিবিএস, বিসিএস (স্বাস্থ্য), সিসিডি (বারডেম) , ফেলোশীপ ট্রেনিং অন ইন্টারভেনশনাল কার্ডিওলজী , জাতীয় হৃদরোগ ইনষ্টিটিউট ও হাসপাতাল, ঢাকা",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/ডাঃ-মোঃ-শাহাদাত-হোসেন-তুহিন.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-mohammad-shahadat-hossain-tuhin/"
+  },
+  {
+    "id": 37,
+    "name": "শাহনাজ পারভীন সিনথি",
+    "specialty": "ডায়েট কনসালটেন্ট এন্ড পুষ্টিবিশেষজ্ঞ",
+    "degrees": "ড���য়েট কনসালটেন্ট এন্ড পুষ্টিবিশেষজ্ঞ",
+    "institute": "নোয়াখালী বিজ্ঞান ও প্রযুক্তি বিশ্ববিদ্যালয় , পিজিটিঃ ( নিউট্রিশন এন্ড থেরাপিউটিক ডায়েট ) , ডায়েট কাউন্সেলিং সেন্টার ,ক্লিনিক্যাল নিউট্রিশন এন্ড ডায়েটেটিক্স (ডিসিসি)",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/10/শাহনাজ-পারভীন-সিনথি.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/shahnaz-parveen-synthia/"
+  },
+  {
+    "id": 38,
+    "name": "ডাঃ আঞ্জুমান আরা শিল্পী",
+    "specialty": "চক্ষু রোগ বিশেষজ্ঞ",
+    "degrees": "এম.বি.বি.এস, ডি.ও (এনআইও)",
+    "institute": "জুনিয়র কনসালটেন্ট, , চক্ষু বিভাগ , কমিউনিটি বেজড মেডিকেল কলেজ, বাংলাদেশ",
+    "imageUrl": "https://nexushospitalmymensingh.com/wp-content/uploads/2024/09/femaile-doctor-avator-image.jpg",
+    "profileUrl": "https://nexushospitalmymensingh.com/doctor-profile/dr-anjuman-ara-begum-shilpi/"
+  }
+]

@@ -1,0 +1,81 @@
+export const sampleReports = [
+  {
+    billId: "NEX-10021",
+    patientName: "Md. Rafiqul Islam",
+    patientNameBn: "মোঃ রফিকুল ইসলাম",
+    age: "52 Yrs",
+    gender: "Male",
+    phone: "01711234567",
+    date: "2026-09-18",
+    testName: "Coronary Angiogram (CAG) Procedure Report",
+    testNameBn: "করোনারি এনজিওগ্রাম (CAG) ক্যাথ ল্যাব রিপোর্ট",
+    department: "Cardiology & Cath Lab",
+    departmentBn: "কার্ডিওলজি ও ক্যাথ ল্যাব বিভাগ",
+    referredBy: "Dr. Gobinda Kanti Pal, Associate Professor (Cardiology)",
+    referredByBn: "ডাঃ গোবিন্দ কান্তি পাল, সহযোগী অধ্যাপক (কার্ডিওলজি)",
+    status: "Completed",
+    statusBn: "রিপোর্ট প্রস্তুত ও ডেলিভার্ড",
+    consultant: "Dr. T. I. Khan Wasim, MBBS, MD (Cardiology)",
+    consultantBn: "ডাঃ টি আই খান ওয়াসিম, এমবিবিএস, এমডি (কার্ডিওলজি)",
+    summary: "Selective coronary angiography via right radial approach. LMCA: Normal. LAD: 85% critical mid-vessel stenosis. LCx: Minor irregularities. RCA: Dominant, patent. Recommendation: PTCA with Drug-Eluting Stent (DES) to mid LAD.",
+    findings: [
+      { param: "Arterial Access", result: "Right Radial Artery 6F", normal: "Radial / Femoral", status: "Optimal" },
+      { param: "Left Main (LMCA)", result: "Normal caliber, no lesion", normal: "No stenosis", status: "Normal" },
+      { param: "Left Anterior Desc. (LAD)", result: "85% discrete mid stenosis", normal: "<50%", status: "Abnormal" },
+      { param: "Left Circumflex (LCx)", result: "Smooth caliber, 20% plaque", normal: "No stenosis", status: "Mild" },
+      { param: "Right Coronary (RCA)", result: "Dominant vessel, patent", normal: "Patent", status: "Normal" }
+    ]
+  },
+  {
+    billId: "NEX-10022",
+    patientName: "Begum Shirin Akhter",
+    patientNameBn: "বেগম শিরিন আক্তার",
+    age: "45 Yrs",
+    gender: "Female",
+    phone: "01819876543",
+    date: "2026-09-19",
+    testName: "Siemens Multi-Slice CT Scan of Brain (Plain)",
+    testNameBn: "জার্মান সিমেন্স মাল্টি-স্লাইস ব্রেইন সিটি স্ক্যান",
+    department: "Radiology & Imaging",
+    departmentBn: "রেডিওলজি ও সিটি স্ক্যান বিভাগ",
+    referredBy: "Prof. Dr. Jalal Uddin, Neurologist",
+    referredByBn: "অধ্যাপক ডাঃ জালাল উদ্দীন, স্নায়ুরোগ বিশেষজ্ঞ",
+    status: "Completed",
+    statusBn: "রিপোর্ট প্রস্তুত ও ডেলিভার্ড",
+    consultant: "Dr. Muktdira, MBBS (DU), Radiologist",
+    consultantBn: "ডাঃ মুক্তাদিরা, এমবিবিএস (ডিইউ), রেডিওলজিস্ট",
+    summary: "Axial multi-slice sections through the brain using German Siemens scanner. No acute intracerebral hemorrhage, acute infarction, or space occupying lesion seen. Ventricles and basal cisterns are symmetrical.",
+    findings: [
+      { param: "Intracranial Hemorrhage", result: "None Detected", normal: "Negative", status: "Normal" },
+      { param: "Acute Ischemic Infarction", result: "None Detected", normal: "Negative", status: "Normal" },
+      { param: "Midline Shift", result: "No midline shift", normal: "Nil", status: "Normal" },
+      { param: "Ventricular System", result: "Normal size & morphology", normal: "Normal", status: "Normal" }
+    ]
+  },
+  {
+    billId: "NEX-10023",
+    patientName: "Alhaj Anisur Rahman",
+    patientNameBn: "আলহাজ্ব আনিসুর রহমান",
+    age: "61 Yrs",
+    gender: "Male",
+    phone: "01912334455",
+    date: "2026-09-19",
+    testName: "2D & Color Doppler Echocardiogram",
+    testNameBn: "কালার ডপলার ইকোকার্ডিওগ্রাম (Echo)",
+    department: "Cardiology Department",
+    departmentBn: "কার্ডিওলজি বিভাগ",
+    referredBy: "Dr. Jahir Uddin Sharif",
+    referredByBn: "ডাঃ জহির উদ্দিন শরীফ, মেডিসিন ও হৃদরোগ বিশেষজ্ঞ",
+    status: "Completed",
+    statusBn: "রিপোর্ট প্রস্তুত ও ডেলিভার্ড",
+    consultant: "Dr. Md. Shahadat Hossain, Assistant Prof.",
+    consultantBn: "ডাঃ মোঃ শাহাদাত হোসেন, সহকারী অধ্যাপক (কার্ডিওলজি)",
+    summary: "Concentric left ventricular hypertrophy with preserved systolic function (EF 62%). Grade-I LV diastolic dysfunction. Valves structurally normal.",
+    findings: [
+      { param: "Ejection Fraction (EF)", result: "62%", normal: "55% - 70%", status: "Normal" },
+      { param: "LV Internal Dimension (LVIDd)", result: "4.8 cm", normal: "3.8 - 5.2 cm", status: "Normal" },
+      { param: "Interventricular Septum (IVS)", result: "1.2 cm", normal: "0.6 - 1.1 cm", status: "Mild LVH" },
+      { param: "Diastolic Function", result: "Grade I Dysfunction", normal: "Normal", status: "Grade I" }
+    ]
+  }
+];
