@@ -331,7 +331,7 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
                   </div>
                   <div className="text-right">
                     <span className="text-[10px] uppercase font-bold text-slate-400 block">টোকেন নং</span>
-                    <span className="text-2xl font-black text-cardiac-600 font-mono">
+                    <span className="text-2xl font-black text-emerald-600 font-mono">
                       #{tokenData.serialNumber}
                     </span>
                   </div>

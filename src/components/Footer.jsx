@@ -37,7 +37,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
 
               <div>
                 <div className="text-lg font-black tracking-tight text-white">NEXUS</div>
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-cardiac-400">Cardiac Hospital & Research Ltd.</div>
+                <div className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400">Cardiac Hospital & Research Ltd.</div>
               </div>
             </div>
 
@@ -68,11 +68,11 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
               <li>
                 <a href="#cath-lab" className="hover:text-white transition-colors flex items-center gap-1.5">
                   <span>{t.navCathLab}</span>
-                  <span className="px-1.5 py-0.2 rounded bg-cardiac-900 text-cardiac-300 text-[10px] font-bold">CAG 20k</span>
+                  <span className="px-1.5 py-0.2 rounded bg-emerald-950 text-emerald-300 text-[10px] font-bold">CAG 20k</span>
                 </a>
               </li>
               <li>
-                <a href="#ai-doctor" className="hover:text-white transition-colors text-purple-300 font-semibold">{t.navAiDoctor}</a>
+                <a href="#ai-doctor" className="hover:text-white transition-colors text-emerald-300 font-semibold">{t.navAiDoctor}</a>
               </li>
               <li>
                 <a href="#doctors" className="hover:text-white transition-colors">{t.navDoctors}</a>
@@ -94,9 +94,9 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
                   href="https://nexushospitalmymensingh.com/wp-content/uploads/2025/05/Nexus-doctors-schedule.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  className="hover:text-amber-300 transition-colors flex items-center gap-1 font-bold text-slate-300"
+                  className="hover:text-emerald-300 transition-colors flex items-center gap-1 font-bold text-slate-300"
                 >
-                  <Download className="w-3.5 h-3.5 text-amber-400" />
+                  <Download className="w-3.5 h-3.5 text-emerald-400" />
                   <span>{t.navDoctorSchedulePdf}</span>
                 </a>
               </li>
@@ -105,7 +105,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
 
           {/* Col 3: Specialized Departments (2 cols) */}
           <div className="lg:col-span-2 space-y-3">
-            <h4 className="text-xs uppercase font-black tracking-widest text-cardiac-400">
+            <h4 className="text-xs uppercase font-black tracking-widest text-emerald-400">
               {t.footerDepartments}
             </h4>
             <ul className="space-y-2 text-xs text-slate-300">
@@ -122,7 +122,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
 
           {/* Col 4: Emergency Contacts & Hotlines (3 cols) */}
           <div className="lg:col-span-3 space-y-3">
-            <h4 className="text-xs uppercase font-black tracking-widest text-amber-400">
+            <h4 className="text-xs uppercase font-black tracking-widest text-sky-400">
               {t.footerEmergencyDesk}
             </h4>
 
@@ -131,7 +131,7 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
                 href="tel:09611678922"
                 className="flex items-center gap-2 p-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 transition-colors"
               >
-                <Phone className="w-4 h-4 text-amber-400 flex-shrink-0 animate-bounce" />
+                <Phone className="w-4 h-4 text-emerald-400 flex-shrink-0 animate-bounce" />
                 <div>
                   <div className="text-[10px] text-slate-300">{lang === 'bn' ? 'সেন্ট্রাল হটলাইন' : 'Central Hotline'}</div>
                   <div className="font-black text-white font-mono text-sm">০৯৬১১৬৭৮৯২২</div>
@@ -140,11 +140,11 @@ export default function Footer({ lang, t, onBookAppointment, onDownloadReport, o
 
               <a 
                 href="tel:01712421714"
-                className="flex items-center gap-2 p-2.5 rounded-xl bg-cardiac-950/60 hover:bg-cardiac-900/60 border border-cardiac-500/30 transition-colors"
+                className="flex items-center gap-2 p-2.5 rounded-xl bg-sky-950/60 hover:bg-sky-900/60 border border-sky-500/30 transition-colors"
               >
-                <Truck className="w-4 h-4 text-rose-400 flex-shrink-0" />
+                <Truck className="w-4 h-4 text-sky-400 flex-shrink-0" />
                 <div>
-                  <div className="text-[10px] text-rose-300">{lang === 'bn' ? '২৪ ঘণ্টা এম্বুলেন্স' : '24/7 Ambulance'}</div>
+                  <div className="text-[10px] text-sky-300">{lang === 'bn' ? '২৪ ঘণ্টা এম্বুলেন্স' : '24/7 Ambulance'}</div>
                   <div className="font-black text-white font-mono text-xs">০১৭১২-৪২১৭১৪</div>
                 </div>
               </a>

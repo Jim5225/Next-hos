@@ -361,7 +361,7 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
         {/* Header */}
         <div className="p-4 sm:p-5 bg-gradient-to-r from-nexus-900 via-slate-900 to-nexus-950 text-white flex items-center justify-between no-print">
           <div className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400">
+            <div className="w-9 h-9 rounded-xl bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400">
               <BadgePercent className="w-5 h-5" />
             </div>
             <div>
@@ -410,7 +410,7 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
                   selectedCategory === cat.id
-                    ? 'bg-nexus-700 text-white shadow-xs'
+                    ? 'bg-nexus-600 text-white shadow-xs'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
                 }`}
               >
@@ -447,8 +447,8 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                     {test.badgeBn && (
                       <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
                         test.badgeBn.includes('৩০%') || test.badgeBn.includes('প্যাকেজ')
-                          ? 'bg-amber-100 text-amber-950 border border-amber-300'
-                          : 'bg-emerald-50 text-emerald-800 border border-emerald-200'
+                          ? 'bg-emerald-100 text-emerald-950 border border-emerald-300'
+                          : 'bg-sky-50 text-sky-900 border border-sky-200'
                       }`}>
                         {lang === 'bn' ? test.badgeBn : test.badgeEn}
                       </span>
@@ -462,7 +462,7 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                   <div className="text-[11px] text-slate-700 space-y-0.5 font-medium">
                     <div>⏱ ডেলিভারি: <strong className="text-slate-900">{lang === 'bn' ? test.deliveryTimeBn : test.deliveryTimeEn}</strong></div>
                     {test.fastingBn && (
-                      <div className="text-amber-800 font-bold">⚠️ {lang === 'bn' ? test.fastingBn : test.fastingEn}</div>
+                      <div className="text-sky-900 font-bold">ℹ️ {lang === 'bn' ? test.fastingBn : test.fastingEn}</div>
                     )}
                   </div>
                 </div>

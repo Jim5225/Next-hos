@@ -205,19 +205,19 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
   };
 
   return (
-    <section id="ai-doctor" className="py-16 sm:py-20 bg-gradient-to-b from-purple-50/40 via-white to-slate-50 border-b border-slate-200 relative overflow-hidden">
+    <section id="ai-doctor" className="py-16 sm:py-20 bg-gradient-to-b from-nexus-50/30 via-white to-slate-50 border-b border-slate-200 relative overflow-hidden">
       
-      {/* Decorative Gradient Shapes */}
-      <div className="absolute top-10 left-10 w-72 h-72 bg-purple-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-indigo-200/30 rounded-full blur-3xl pointer-events-none -z-10" />
+      {/* Decorative Ambient Background Glows */}
+      <div className="absolute top-10 left-10 w-72 h-72 bg-nexus-400/10 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 right-10 w-80 h-80 bg-emerald-400/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-purple-100 border border-purple-200 text-purple-900 text-xs font-black uppercase tracking-wider shadow-xs">
-            <Sparkles className="w-3.5 h-3.5 text-purple-600 animate-spin" style={{ animationDuration: '6s' }} />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-black uppercase tracking-wider shadow-xs">
+            <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
             <span>{lang === 'bn' ? 'স্মার্ট এআই ডক্টর ফাইন্ডার' : 'Smart AI Doctor Finder'}</span>
           </div>
 
@@ -233,8 +233,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
 
         {/* Interactive Search Box */}
         <div className="max-w-2xl mx-auto mb-8">
-          <div className="relative rounded-2xl bg-white shadow-xl shadow-purple-500/10 border-2 border-purple-200 p-2 flex items-center gap-2 transition-all focus-within:border-purple-500 focus-within:ring-4 focus-within:ring-purple-200">
-            <Search className="w-5 h-5 text-purple-500 ml-2 flex-shrink-0" />
+          <div className="relative rounded-2xl bg-white shadow-xl shadow-nexus-900/5 border-2 border-slate-200 p-2 flex items-center gap-2 transition-all focus-within:border-nexus-600 focus-within:ring-4 focus-within:ring-nexus-100">
+            <Search className="w-5 h-5 text-nexus-600 ml-2 flex-shrink-0" />
             <input 
               type="text"
               value={query}
@@ -246,11 +246,11 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
             <button
               onClick={() => handleAnalyze()}
               disabled={analyzing}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-extrabold text-xs shadow-md shadow-purple-500/20 active:scale-95 transition-all flex items-center gap-1.5 flex-shrink-0 disabled:opacity-50"
+              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 hover:from-nexus-800 hover:to-emerald-700 text-white font-extrabold text-xs shadow-md shadow-nexus-700/20 active:scale-95 transition-all flex items-center gap-1.5 flex-shrink-0 disabled:opacity-50"
             >
               {analyzing ? (
                 <>
-                  <Sparkles className="w-4 h-4 animate-spin" />
+                  <Sparkles className="w-4 h-4 animate-spin text-emerald-200" />
                   <span>{lang === 'bn' ? "বিশ্লেষণ হচ্ছে..." : "Matching..."}</span>
                 </>
               ) : (
@@ -276,7 +276,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
                   setQuery(s.queryText);
                   handleAnalyze(s.id);
                 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white hover:bg-purple-50 border border-slate-200 hover:border-purple-300 text-slate-700 hover:text-purple-900 text-xs font-semibold shadow-xs hover:shadow transition-all"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white hover:bg-nexus-50 border border-slate-200 hover:border-nexus-300 text-slate-700 hover:text-nexus-800 text-xs font-semibold shadow-xs hover:shadow transition-all"
               >
                 <span>{s.icon}</span>
                 <span>{lang === 'bn' ? s.label : s.labelEn}</span>
@@ -288,24 +288,24 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
         {/* AI Recommendation Result Card */}
         {recommendation && (
           <div className="max-w-4xl mx-auto animate-fadeIn">
-            <div className="rounded-3xl bg-gradient-to-br from-white via-purple-50/40 to-indigo-50/40 border-2 border-purple-200 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+            <div className="rounded-3xl bg-white border-2 border-emerald-500/40 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
               
               {/* Badge */}
               <div className="flex flex-wrap items-center justify-between gap-2 mb-5">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-black">
-                  <Sparkles className="w-3.5 h-3.5 text-purple-600" />
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-xs font-black border border-emerald-200">
+                  <Sparkles className="w-3.5 h-3.5 text-emerald-600" />
                   <span>{lang === 'bn' ? "এআই ক্লিনিক্যাল ম্যাচিং সম্পন্ন" : "AI Clinical Match Complete"}</span>
                 </div>
                 
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cardiac-100 text-cardiac-800 text-xs font-bold border border-cardiac-200">
-                  <AlertCircle className="w-3.5 h-3.5 text-cardiac-600" />
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-nexus-50 text-nexus-800 text-xs font-bold border border-nexus-200">
+                  <AlertCircle className="w-3.5 h-3.5 text-nexus-600" />
                   <span>{lang === 'bn' ? recommendation.urgencyBn : recommendation.urgency}</span>
                 </span>
               </div>
 
               {/* Rationale */}
-              <div className="mb-6 p-4 rounded-2xl bg-white/80 border border-purple-100 space-y-1">
-                <div className="text-xs font-black text-purple-950 uppercase tracking-wider">
+              <div className="mb-6 p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+                <div className="text-xs font-black text-slate-900 uppercase tracking-wider">
                   {lang === 'bn' ? "রোগীর লক্ষণ বিশ্লেষণ:" : "Clinical Symptom Analysis:"}
                 </div>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -322,14 +322,14 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
                   <img 
                     src={recommendation.primaryDoctor.image} 
                     alt={recommendation.primaryDoctor.name}
-                    className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-2 border-purple-200 shadow-sm flex-shrink-0"
+                    className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-2 border-nexus-200 shadow-sm flex-shrink-0"
                     onError={(e) => {
                       e.target.src = 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600';
                     }}
                   />
 
                   <div className="space-y-1 text-center sm:text-left flex-1">
-                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-100 text-emerald-800">
+                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-600 text-white shadow-xs">
                       {lang === 'bn' ? "সেরা প্রস্তাবিত বিশেষজ্ঞ" : "Top Recommended Specialist"}
                     </span>
                     <h3 className="text-base sm:text-lg font-black text-slate-900 leading-tight">
@@ -344,7 +344,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
                     <p className="text-[11px] text-slate-600 font-semibold">
                       {lang === 'bn' ? recommendation.primaryDoctor.designationBn : recommendation.primaryDoctor.designation}
                     </p>
-                    <div className="text-[11px] text-purple-700 font-bold pt-1">
+                    <div className="text-[11px] text-emerald-700 font-bold pt-1">
                       📍 {lang === 'bn' ? recommendation.primaryDoctor.roomBn : recommendation.primaryDoctor.room} • {lang === 'bn' ? recommendation.primaryDoctor.visitingHoursBn : recommendation.primaryDoctor.visitingHours}
                     </div>
                   </div>
@@ -355,7 +355,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
                 <div className="lg:col-span-4 flex flex-col gap-2.5">
                   <button
                     onClick={() => onBookDoctor(recommendation.primaryDoctor.id)}
-                    className="w-full py-3 px-4 rounded-xl bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 text-white font-extrabold text-xs shadow-md shadow-nexus-600/30 flex items-center justify-center gap-2 active:scale-95 transition-all"
+                    className="w-full py-3 px-4 rounded-xl bg-nexus-600 hover:bg-nexus-700 text-white font-extrabold text-xs shadow-md shadow-nexus-600/30 flex items-center justify-center gap-2 active:scale-95 transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{lang === 'bn' ? "ডাক্তার সিরিয়াল বুক করুন" : "Book Doctor Serial"}</span>
@@ -372,7 +372,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
               </div>
 
               {/* Recommended Diagnostic Tests */}
-              <div className="mt-6 pt-5 border-t border-purple-200/80">
+              <div className="mt-6 pt-5 border-t border-slate-200">
                 <div className="text-xs font-black text-slate-800 mb-2">
                   {lang === 'bn' ? "প্রস্তাবিত প্রয়োজনীয় ডায়াগনস্টিক টেস্ট:" : "Recommended Preliminary Diagnostic Tests:"}
                 </div>
@@ -380,7 +380,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
                   {(lang === 'bn' ? recommendation.testsBn : recommendation.tests).map((test, i) => (
                     <span 
                       key={i}
-                      className="px-3 py-1 rounded-xl bg-white border border-purple-200 text-slate-800 text-xs font-semibold shadow-2xs"
+                      className="px-3 py-1 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 text-xs font-semibold shadow-2xs"
                     >
                       ✓ {test}
                     </span>

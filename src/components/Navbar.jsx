@@ -40,9 +40,9 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
             <div className="relative w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-gradient-to-br from-nexus-700 via-nexus-800 to-slate-950 p-2 shadow-md flex items-center justify-center border border-nexus-500/40">
               <svg viewBox="0 0 100 100" className="w-full h-full">
                 {/* Hospital Cross in vibrant clinical emerald */}
-                <path d="M38 18 h24 v22 h22 v24 h-22 v22 h-24 v-22 h-22 v-24 h22 z" fill="#14b8a6" />
+                <path d="M38 18 h24 v22 h22 v24 h-22 v22 h-24 v-22 h-22 v-24 h22 z" fill="#10b981" />
                 {/* Cardiac Heart with EKG pulse overlay */}
-                <path d="M50 35 C58 24 74 25 80 37 C87 51 68 67 50 82 C32 67 13 51 20 37 C26 25 42 24 50 35 Z" fill="#e11d48" opacity="0.95" />
+                <path d="M50 35 C58 24 74 25 80 37 C87 51 68 67 50 82 C32 67 13 51 20 37 C26 25 42 24 50 35 Z" fill="#0284c7" opacity="0.95" />
                 <path d="M30 52 L42 52 L46 44 L52 62 L56 48 L60 52 L70 52" stroke="#ffffff" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
               </svg>
             </div>
@@ -54,7 +54,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
               <span className="text-xl sm:text-2xl font-black tracking-tight text-slate-950 group-hover:text-nexus-700 transition-colors">
                 NEXUS
               </span>
-              <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-cardiac-600">
+              <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-emerald-600">
                 Cardiac Hospital
               </span>
             </div>
@@ -72,14 +72,14 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
               href={item.href}
               className={`px-2 py-1.5 rounded-lg text-xs font-bold transition-all relative flex items-center gap-1 ${
                 item.isAi
-                  ? 'text-purple-700 bg-purple-50 hover:bg-purple-100 font-extrabold'
+                  ? 'text-emerald-700 bg-emerald-50 hover:bg-emerald-100 font-extrabold border border-emerald-200/70'
                   : 'text-slate-700 hover:text-nexus-700 hover:bg-nexus-50/70'
               }`}
             >
-              {item.isAi && <Sparkles className="w-3.5 h-3.5 text-purple-600 animate-spin" style={{ animationDuration: '6s' }} />}
+              {item.isAi && <Sparkles className="w-3.5 h-3.5 text-emerald-600" />}
               <span>{item.label}</span>
               {item.badge && (
-                <span className="text-[10px] font-black px-1.5 py-0.2 rounded-full bg-cardiac-100 text-cardiac-700 border border-cardiac-300">
+                <span className="text-[10px] font-black px-1.5 py-0.2 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-300">
                   {item.badge}
                 </span>
               )}
@@ -98,37 +98,37 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           {/* Online Report Download Button */}
           <button
             onClick={onDownloadReport}
-            className="flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-bold text-nexus-800 bg-nexus-50 hover:bg-nexus-100 border border-nexus-300 shadow-xs hover:shadow transition-all active:scale-95"
+            className="flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-bold text-nexus-800 bg-nexus-50 hover:bg-nexus-100 border border-nexus-200 shadow-xs hover:shadow transition-all active:scale-95"
             title={t.navReportPortal}
           >
             <FileText className="w-3.5 h-3.5 text-nexus-600" />
             <span className="hidden 2xl:inline">{t.navReportPortal}</span>
           </button>
 
-          {/* 1. AI Doctor Finder Button - Placed RIGHT BEFORE Doctor Serial */}
+          {/* 1. AI Doctor Finder Button - Clean Blue & Emerald Accent */}
           <a
             href="#ai-doctor"
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-black text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 shadow-md shadow-purple-600/25 transition-all active:scale-95 border border-purple-300/40 ring-1 ring-purple-400/40"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-extrabold text-white bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 hover:from-nexus-800 hover:to-emerald-700 shadow-md shadow-nexus-700/20 transition-all active:scale-95 border border-emerald-400/30"
             title={t.btnAiDoctorSelect}
           >
-            <Sparkles className="w-3.5 h-3.5 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+            <Sparkles className="w-3.5 h-3.5 text-emerald-200 animate-spin" style={{ animationDuration: '6s' }} />
             <span>{t.btnAiDoctorSelect}</span>
           </a>
 
-          {/* 2. Test Price Button - Placed RIGHT HERE next to AI Doctor Select and before Doctor Serial */}
+          {/* 2. Test Price Button - Crisp Clinical White & Medical Green */}
           <button
             onClick={onOpenTestPrice}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-extrabold text-amber-950 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 hover:from-amber-400 hover:to-amber-600 shadow-md shadow-amber-400/25 transition-all active:scale-95 border border-amber-300"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-extrabold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border-2 border-emerald-500 shadow-xs hover:shadow transition-all active:scale-95"
             title={t.btnTestPrice}
           >
-            <span className="w-2 h-2 rounded-full bg-cardiac-600 animate-ping" />
+            <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
             <span>{t.btnTestPrice}</span>
           </button>
 
-          {/* 3. Doctor Appointment / Serial Button */}
+          {/* 3. Doctor Appointment / Serial Button - Dominant Trust Royal Blue */}
           <button
             onClick={onBookAppointment}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-extrabold text-white bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 shadow-md shadow-nexus-600/30 hover:shadow-lg transition-all active:scale-95 border border-nexus-500/30"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-extrabold text-white bg-nexus-600 hover:bg-nexus-700 shadow-md shadow-nexus-600/30 hover:shadow-lg transition-all active:scale-95 border border-nexus-500/40"
           >
             <Calendar className="w-3.5 h-3.5 text-white" />
             <span>{t.btnBookAppointment}</span>
@@ -137,7 +137,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           {/* Emergency Trigger */}
           <button
             onClick={onEmergencyClick}
-            className="flex items-center justify-center p-2 rounded-lg bg-cardiac-50 hover:bg-cardiac-100 text-cardiac-600 border border-cardiac-200 transition-colors"
+            className="flex items-center justify-center p-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 transition-colors"
             title={t.navEmergency}
           >
             <PhoneCall className="w-4 h-4 animate-bounce" />
@@ -149,7 +149,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
         <div className="flex md:hidden items-center gap-1.5">
           <button
             onClick={onOpenTestPrice}
-            className="px-2 py-1.5 rounded-lg text-[11px] font-extrabold text-amber-950 bg-amber-400 shadow-xs"
+            className="px-2 py-1.5 rounded-lg text-[11px] font-extrabold text-emerald-800 bg-emerald-100 border border-emerald-300 shadow-xs"
           >
             {t.btnTestPrice}
           </button>
@@ -179,15 +179,15 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center justify-between px-3.5 py-2.5 rounded-lg text-sm font-semibold ${
-                item.isAi ? 'bg-purple-50 text-purple-700' : 'text-slate-700 hover:bg-nexus-50 hover:text-nexus-700'
+                item.isAi ? 'bg-emerald-50 text-emerald-800 border border-emerald-200/60' : 'text-slate-700 hover:bg-nexus-50 hover:text-nexus-700'
               }`}
             >
               <div className="flex items-center gap-2">
-                {item.isAi && <Sparkles className="w-4 h-4 text-purple-600" />}
+                {item.isAi && <Sparkles className="w-4 h-4 text-emerald-600" />}
                 <span>{item.label}</span>
               </div>
               {item.badge && (
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-cardiac-100 text-cardiac-700">
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800">
                   {item.badge}
                 </span>
               )}
@@ -200,9 +200,9 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
             <a
               href="#ai-doctor"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-white bg-gradient-to-r from-purple-600 via-indigo-600 to-pink-600 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-white bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 shadow-sm"
             >
-              <Sparkles className="w-4 h-4 text-amber-300 animate-spin" style={{ animationDuration: '6s' }} />
+              <Sparkles className="w-4 h-4 text-emerald-200" />
               <span>{t.btnAiDoctorSelect}</span>
             </a>
 
@@ -212,9 +212,9 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
                 setMobileMenuOpen(false);
                 onOpenTestPrice();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-amber-950 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 shadow-sm border border-amber-300"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-emerald-800 bg-emerald-50 border-2 border-emerald-500 shadow-sm"
             >
-              <span className="w-2 h-2 rounded-full bg-cardiac-600 animate-ping" />
+              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
               <span>{t.btnTestPrice}</span>
             </button>
 
@@ -224,7 +224,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
                 setMobileMenuOpen(false);
                 onBookAppointment();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-extrabold text-white bg-nexus-600 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-extrabold text-white bg-nexus-600 hover:bg-nexus-700 shadow-sm"
             >
               <Calendar className="w-4 h-4" />
               <span>{t.btnBookAppointment}</span>
@@ -254,7 +254,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
                 setMobileMenuOpen(false);
                 onEmergencyClick();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold text-white bg-cardiac-600 shadow-md shadow-cardiac-600/30"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold text-emerald-800 bg-emerald-100 border border-emerald-300"
             >
               <PhoneCall className="w-4 h-4" />
               <span>{t.navEmergency}</span>

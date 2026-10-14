@@ -106,7 +106,7 @@ export default function ServicesSection({ lang, t, onBookAppointment }) {
                         </div>
                         <span className={`text-[10px] font-black px-2 py-0.5 rounded-full flex-shrink-0 ${
                           s.price.includes('20,000') || s.price.includes('30%')
-                            ? 'bg-amber-100 text-amber-900 border border-amber-300'
+                            ? 'bg-emerald-100 text-emerald-900 border border-emerald-300'
                             : 'bg-slate-100 text-slate-600'
                         }`}>
                           {s.price}
@@ -154,7 +154,7 @@ export default function ServicesSection({ lang, t, onBookAppointment }) {
 
           <a
             href="tel:09611678922"
-            className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cardiac-600 to-rose-600 hover:from-cardiac-500 hover:to-rose-500 text-white font-extrabold text-xs shadow-md whitespace-nowrap active:scale-95 transition-all"
+            className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-xs shadow-md whitespace-nowrap active:scale-95 transition-all"
           >
             {lang === 'bn' ? 'সরাসরি হটলাইনে যোগাযোগ' : 'Call Direct Hotline'}
           </a>

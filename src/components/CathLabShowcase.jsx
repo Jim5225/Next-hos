@@ -69,8 +69,8 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 space-y-3">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cardiac-950 border border-cardiac-500/40 text-cardiac-300 text-xs font-black uppercase tracking-wider shadow-sm">
-            <HeartPulse className="w-3.5 h-3.5 text-cardiac-400 animate-heartbeat" />
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-950/80 border border-emerald-500/40 text-emerald-300 text-xs font-black uppercase tracking-wider shadow-sm">
+            <HeartPulse className="w-3.5 h-3.5 text-emerald-400 animate-heartbeat" />
             <span>{lang === 'bn' ? 'ময়মনসিংহের পাইওনিয়ার কার্ডিয়াক কেয়ার' : 'Pioneer Cardiac Care in Mymensingh'}</span>
           </div>
 
@@ -89,11 +89,11 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 onClick={() => setActiveTab('cathlab')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   activeTab === 'cathlab'
-                    ? 'bg-gradient-to-r from-cardiac-600 to-rose-600 text-white shadow-md'
+                    ? 'bg-nexus-600 text-white shadow-md'
                     : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
-                <HeartPulse className="w-4 h-4" />
+                <HeartPulse className="w-4 h-4 text-emerald-300" />
                 <span>{lang === 'bn' ? 'ক্যাথ ল্যাব ও CAG (২০k)' : 'Cath Lab & CAG Package'}</span>
               </button>
 
@@ -101,7 +101,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 onClick={() => setActiveTab('ctscan')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   activeTab === 'ctscan'
-                    ? 'bg-gradient-to-r from-amber-600 to-emerald-600 text-white shadow-md'
+                    ? 'bg-emerald-600 text-white shadow-md'
                     : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
@@ -113,11 +113,11 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 onClick={() => setActiveTab('why-nexus')}
                 className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
                   activeTab === 'why-nexus'
-                    ? 'bg-gradient-to-r from-nexus-600 to-teal-600 text-white shadow-md'
+                    ? 'bg-nexus-700 text-white shadow-md'
                     : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
-                <ShieldCheck className="w-4 h-4" />
+                <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 <span>{lang === 'bn' ? '১০০% দালালমুক্ত সুবিধা' : '100% Broker-Free'}</span>
               </button>
             </div>
@@ -132,11 +132,11 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
             {/* Left Box: Visual & Key Metric Cards */}
             <div className="lg:col-span-6 space-y-4">
               
-              <div className="rounded-3xl bg-gradient-to-br from-cardiac-950/90 via-slate-800 to-slate-900 border border-cardiac-600/30 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-cardiac-600/10 rounded-full blur-2xl pointer-events-none" />
+              <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-nexus-950 border border-nexus-600/30 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-600/10 rounded-full blur-2xl pointer-events-none" />
 
                 <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 rounded-full bg-cardiac-500/20 text-cardiac-300 text-xs font-extrabold border border-cardiac-500/30">
+                  <span className="px-3 py-1 rounded-full bg-nexus-500/20 text-nexus-300 text-xs font-extrabold border border-nexus-500/30">
                     24/7 Digital Cath Lab
                   </span>
                   <span className="text-xs font-semibold text-emerald-400 flex items-center gap-1">
@@ -150,12 +150,12 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 </h3>
 
                 {/* Price Display */}
-                <div className="my-4 p-4 rounded-2xl bg-black/40 border border-cardiac-500/30 flex items-baseline justify-between">
+                <div className="my-4 p-4 rounded-2xl bg-black/40 border border-slate-700/60 flex items-baseline justify-between">
                   <div>
                     <span className="text-xs text-slate-400 uppercase tracking-wider block font-bold">
                       {lang === 'bn' ? 'প্যাকেজ মূল্য (কোনো গোপন খরচ নেই)' : 'Full Package Fee (No Hidden Costs)'}
                     </span>
-                    <span className="text-3xl sm:text-4xl font-black text-amber-400 font-mono">
+                    <span className="text-3xl sm:text-4xl font-black text-emerald-400 font-mono">
                       ২০,০০০/-
                     </span>
                     <span className="text-xs text-slate-300 ml-2 font-semibold">
@@ -185,7 +185,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <button
                     onClick={() => onBookAppointment(null)}
-                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-cardiac-600 to-rose-600 hover:from-cardiac-500 hover:to-rose-500 text-white font-black text-xs shadow-lg shadow-cardiac-600/30 transition-all"
+                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-nexus-600 hover:bg-nexus-500 text-white font-black text-xs shadow-lg shadow-nexus-600/30 transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{lang === 'bn' ? 'ক্যাথ ল্যাব অ্যাপয়েন্টমেন্ট' : 'Book Cath Lab Serial'}</span>
@@ -194,7 +194,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                     href="tel:09611678922"
                     className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 transition-colors font-mono"
                   >
-                    <Phone className="w-4 h-4 text-amber-400" />
+                    <Phone className="w-4 h-4 text-emerald-400" />
                     <span>০৯৬১১৬৭৮৯২২</span>
                   </a>
                 </div>
@@ -258,14 +258,14 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center animate-fadeIn">
             
             <div className="lg:col-span-6 space-y-4">
-              <div className="rounded-3xl bg-gradient-to-br from-amber-950/80 via-slate-800 to-slate-900 border border-amber-500/40 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/10 rounded-full blur-2xl pointer-events-none" />
+              <div className="rounded-3xl bg-gradient-to-br from-slate-950 via-slate-900 to-nexus-950 border border-nexus-600/30 p-6 sm:p-8 shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-nexus-500/10 rounded-full blur-2xl pointer-events-none" />
 
                 <div className="flex items-center justify-between mb-4">
-                  <span className="px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-extrabold border border-amber-500/40">
+                  <span className="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 text-xs font-extrabold border border-sky-500/40">
                     German SIEMENS Technology
                   </span>
-                  <span className="px-3 py-1 rounded-full bg-cardiac-600 text-white text-xs font-black animate-pulse">
+                  <span className="px-3 py-1 rounded-full bg-emerald-600 text-white text-xs font-black animate-pulse">
                     {lang === 'bn' ? '৩০% বিশেষ ছাড়!' : 'Flat 30% OFF!'}
                   </span>
                 </div>
@@ -278,8 +278,8 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                   {lang === 'bn' ? ct.descriptionBn : ct.description}
                 </p>
 
-                <div className="mt-5 p-4 rounded-2xl bg-black/40 border border-amber-500/30">
-                  <div className="text-xs font-bold text-amber-300 mb-1">
+                <div className="mt-5 p-4 rounded-2xl bg-black/40 border border-nexus-500/30">
+                  <div className="text-xs font-bold text-emerald-300 mb-1">
                     {lang === 'bn' ? '★ কেন নেক্সাসের সিমেন্স সিটি স্ক্যান আলাদা?' : '★ Why Siemens CT Scan at Nexus?'}
                   </div>
                   <ul className="text-xs text-slate-300 space-y-1.5">
@@ -301,16 +301,16 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <button
                     onClick={() => onBookAppointment(null)}
-                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-amber-600 to-emerald-600 text-white font-black text-xs shadow-lg transition-all"
+                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-nexus-600 to-emerald-600 hover:from-nexus-500 hover:to-emerald-500 text-white font-black text-xs shadow-lg transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{lang === 'bn' ? 'সিটি স্ক্যান বুক করুন' : 'Book CT Scan'}</span>
                   </button>
                   <a
                     href="tel:09611678922"
-                    className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800 text-white font-bold text-xs border border-slate-700 font-mono"
+                    className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 font-mono"
                   >
-                    <Phone className="w-4 h-4 text-amber-400" />
+                    <Phone className="w-4 h-4 text-emerald-400" />
                     <span>০৯৬১১৬৭৮৯২২</span>
                   </a>
                 </div>
@@ -322,14 +322,14 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
               {ct.features.map((item, index) => (
                 <div 
                   key={index}
-                  className="p-4 sm:p-5 rounded-2xl bg-slate-800/70 hover:bg-slate-800 border border-slate-700/70 hover:border-amber-500/50 transition-all group"
+                  className="p-4 sm:p-5 rounded-2xl bg-slate-800/70 hover:bg-slate-800 border border-slate-700/70 hover:border-nexus-500/50 transition-all group"
                 >
                   <div className="flex items-start gap-3.5">
-                    <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-400 flex-shrink-0 group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 rounded-xl bg-nexus-500/15 border border-nexus-500/30 flex items-center justify-center text-emerald-400 flex-shrink-0 group-hover:scale-110 transition-transform">
                       <Scan className="w-5 h-5" />
                     </div>
                     <div className="space-y-1">
-                      <h4 className="font-extrabold text-sm sm:text-base text-white group-hover:text-amber-300 transition-colors">
+                      <h4 className="font-extrabold text-sm sm:text-base text-white group-hover:text-emerald-300 transition-colors">
                         {lang === 'bn' ? item.titleBn : item.title}
                       </h4>
                       <p className="text-xs text-slate-300 leading-relaxed font-normal">

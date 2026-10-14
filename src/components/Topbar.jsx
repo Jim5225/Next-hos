@@ -8,7 +8,7 @@ export default function Topbar({ lang, setLang, t, onEmergencyClick, onAdminClic
         
         {/* Left: Cath Lab & CAG Package / Broker-free Announcement */}
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cardiac-600 to-rose-600 text-white font-black text-[11px] uppercase tracking-wider shadow-sm">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-600 text-white font-black text-[11px] uppercase tracking-wider shadow-sm">
             <HeartPulse className="w-3 h-3 text-white animate-pulse" />
             {lang === 'bn' ? 'ক্যাথ ল্যাব • CAG ২০,০০০/-' : 'Cath Lab • CAG 20k'}
           </span>
@@ -23,20 +23,20 @@ export default function Topbar({ lang, setLang, t, onEmergencyClick, onAdminClic
           {/* Central Hotline */}
           <a 
             href="tel:09611678922" 
-            className="flex items-center gap-1 text-amber-300 hover:text-white font-bold transition-colors"
+            className="flex items-center gap-1 text-emerald-300 hover:text-white font-bold transition-colors"
           >
-            <Phone className="w-3.5 h-3.5 text-amber-300 animate-bounce" />
+            <Phone className="w-3.5 h-3.5 text-emerald-400" />
             <span>{lang === 'bn' ? 'হটলাইন:' : 'Hotline:'}</span>
-            <span className="text-white underline decoration-amber-400 font-mono tracking-wide">০৯৬১১৬৭৮৯২২</span>
+            <span className="text-white underline decoration-emerald-500 font-mono tracking-wide">০৯৬১১৬৭৮৯২২</span>
           </a>
 
           {/* 24/7 Dedicated Ambulance */}
           <a 
             href="tel:01712421714" 
-            className="hidden sm:flex items-center gap-1 text-rose-300 hover:text-white font-bold transition-colors"
+            className="hidden sm:flex items-center gap-1 text-sky-300 hover:text-white font-bold transition-colors"
             title={lang === 'bn' ? '২৪ ঘণ্টা এম্বুলেন্স সার্ভিস' : '24/7 Ambulance'}
           >
-            <Truck className="w-3.5 h-3.5 text-rose-400" />
+            <Truck className="w-3.5 h-3.5 text-sky-400" />
             <span className="text-white font-mono">০১৭১২-৪২১৭১৪</span>
           </a>
 

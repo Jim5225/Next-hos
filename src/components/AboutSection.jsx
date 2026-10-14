@@ -109,13 +109,13 @@ export default function AboutSection({ lang, t, onBookAppointment }) {
                     <div className="text-[10px] text-slate-400 uppercase font-bold">
                       {lang === 'bn' ? 'সেন্ট্রাল হটলাইন' : 'Central Hotline'}
                     </div>
-                    <div className="text-sm font-black text-amber-400 font-mono">
+                    <div className="text-sm font-black text-emerald-400 font-mono">
                       ০৯৬১১৬৭৮৯২২
                     </div>
                   </div>
                   <a
                     href="tel:09611678922"
-                    className="px-3.5 py-1.5 rounded-xl bg-cardiac-600 hover:bg-cardiac-700 text-white text-xs font-bold transition-all"
+                    className="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all shadow-xs"
                   >
                     {lang === 'bn' ? 'কল দিন' : 'Call'}
                   </a>
