@@ -28,6 +28,7 @@ World-class, trustworthy clinical aesthetic with high contrast and zero visual c
   1. `[এআই দিয়ে ডাক্তার সিলেক্ট করুন]` (AI Doctor Finder) ➔ **Solid Bright Blue (`bg-blue-600 hover:bg-blue-700 text-white`)**
   2. `[টেস্ট প্রাইজ]` (Test Price Catalog) ➔ **Solid Bright Clinical Green (`bg-emerald-600 hover:bg-emerald-700 text-white`)**
   3. `[ডাক্তার সিরিয়াল দিন]` (Doctor Appointment / Serial) ➔ **Solid Bright Royal Blue (`bg-blue-700 hover:bg-blue-800 text-white`)**
+  4. `[অনলাইন রিপোর্ট ডাউনলোড]` (Report Download) ➔ **Solid Bright Clinical Green (`bg-emerald-600 hover:bg-emerald-700 text-white`) placed immediately beside Doctor Serial**
 
 ---
 
@@ -52,11 +53,16 @@ Every Nexus-style hospital application must contain these 6 foundational modules
 - Clear breakdown of: Test Name, Department, Price in BDT, Sample collection instructions, Delivery turnaround time.
 
 ### 4. Secure Patient Lab Report Portal (অনলাইন রিপোর্ট ডাউনলোড)
-- **Patient Authentication:** Mobile Phone Number + Bill/Token ID.
+- **Patient Authentication:**
+  - **User ID / UID:** Test billing receipt ID (e.g., `NEX-10021`).
+  - **Password:** Registered mobile phone number provided during billing (e.g., `01711234567`).
+- **Dynamic Status Lifecycle:**
+  - `Ready (প্রস্তুত)`: Verified badge, findings table, consultant sign-off, and one-click PDF download & print.
+  - `Processing (প্রসেসিং চলছে)`: Animated progress bar (e.g., 80%), consultant review note, estimated completion time, automated SMS notice.
+  - `Pending (পেন্ডিং)`: Sample queued notice, estimated delivery date.
 - **Non-Destructive Read-Only Architecture:**
   - Web users have ZERO direct access or write permissions to the hospital core database.
   - Queries are dispatched through an encrypted read-only bridge with query caching.
-  - One-click PDF download/preview for verified patients.
 
 ### 5. 24/7 Emergency & Hotline Quick Bar
 - Top alert banner and floating quick-action buttons for:
