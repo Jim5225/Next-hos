@@ -62,6 +62,7 @@ export const translations = {
 
     // Buttons & CTAs
     btnBookAppointment: "ডাক্তার সিরিয়াল দিন",
+    btnDownloadReport: "অনলাইন রিপোর্ট ডাউনলোড",
     btnAiDoctorSelect: "এআই দিয়ে ডাক্তার সিলেক্ট করুন",
     btnTestPrice: "টেস্ট প্রাইজ",
     btnCallHotline: "হটলাইনে কল করুন",
@@ -195,6 +196,7 @@ export const translations = {
 
     // Buttons & CTAs
     btnBookAppointment: "Book Doctor Serial",
+    btnDownloadReport: "Download Online Report",
     btnAiDoctorSelect: "Select Doctor with AI",
     btnTestPrice: "Test Price",
     btnCallHotline: "Call Central Hotline",

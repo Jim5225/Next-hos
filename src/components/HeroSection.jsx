@@ -122,10 +122,20 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
                 <span>{t.btnBookAppointment}</span>
               </button>
 
+              {/* 4. Online Report Download Button - Solid Bright Green (Placed right beside Appointment) */}
+              <button
+                type="button"
+                onClick={onDownloadReport}
+                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
+              >
+                <FileText className="w-4 h-4 text-white" />
+                <span>{t.btnDownloadReport || (lang === 'bn' ? 'অনলাইন রিপোর্ট ডাউনলোড' : 'Download Online Report')}</span>
+              </button>
+
               {/* Cath Lab Package Explore - Solid Bright Green */}
               <a
                 href="#cath-lab"
-                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm shadow-md transition-all"
+                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow-md transition-all"
               >
                 <HeartPulse className="w-4 h-4 text-white" />
                 <span>{lang === 'bn' ? 'ক্যাথ ল্যাব প্যাকেজ' : 'Cath Lab Packages'}</span>

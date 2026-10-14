@@ -13,8 +13,8 @@ export const sampleReports = [
     departmentBn: "কার্ডিওলজি ও ক্যাথ ল্যাব বিভাগ",
     referredBy: "Dr. Gobinda Kanti Pal, Associate Professor (Cardiology)",
     referredByBn: "ডাঃ গোবিন্দ কান্তি পাল, সহযোগী অধ্যাপক (কার্ডিওলজি)",
-    status: "Completed",
-    statusBn: "রিপোর্ট প্রস্তুত ও ডেলিভার্ড",
+    status: "Ready",
+    statusBn: "রিপোর্ট প্রস্তুত (Ready)",
     consultant: "Dr. T. I. Khan Wasim, MBBS, MD (Cardiology)",
     consultantBn: "ডাঃ টি আই খান ওয়াসিম, এমবিবিএস, এমডি (কার্ডিওলজি)",
     summary: "Selective coronary angiography via right radial approach. LMCA: Normal. LAD: 85% critical mid-vessel stenosis. LCx: Minor irregularities. RCA: Dominant, patent. Recommendation: PTCA with Drug-Eluting Stent (DES) to mid LAD.",
@@ -40,16 +40,17 @@ export const sampleReports = [
     departmentBn: "রেডিওলজি ও সিটি স্ক্যান বিভাগ",
     referredBy: "Prof. Dr. Jalal Uddin, Neurologist",
     referredByBn: "অধ্যাপক ডাঃ জালাল উদ্দীন, স্নায়ুরোগ বিশেষজ্ঞ",
-    status: "Completed",
-    statusBn: "রিপোর্ট প্রস্তুত ও ডেলিভার্ড",
+    status: "Processing",
+    statusBn: "ল্যাবে প্রসেসিং চলছে (Processing)",
+    progress: 80,
+    expectedDelivery: "আজ রাত ৮:০০ টা",
+    statusNote: "স্ক্যান ইমেজ প্রসেসিং সম্পন্ন হয়েছে। কনসালটেন্ট রেডিওলজিস্টের চূড়ান্ত অ্যানালাইসিস ও স্বাক্ষর প্রক্রিয়াধীন। রিপোর্ট প্রস্তুত হওয়ামাত্রই আপনার মোবাইল নম্বরে নিশ্চিতকরণ এসএমএস যাবে।",
     consultant: "Dr. Muktdira, MBBS (DU), Radiologist",
     consultantBn: "ডাঃ মুক্তাদিরা, এমবিবিএস (ডিইউ), রেডিওলজিস্ট",
-    summary: "Axial multi-slice sections through the brain using German Siemens scanner. No acute intracerebral hemorrhage, acute infarction, or space occupying lesion seen. Ventricles and basal cisterns are symmetrical.",
+    summary: "Axial multi-slice sections through the brain using German Siemens scanner. Radiology verification in progress.",
     findings: [
-      { param: "Intracranial Hemorrhage", result: "None Detected", normal: "Negative", status: "Normal" },
-      { param: "Acute Ischemic Infarction", result: "None Detected", normal: "Negative", status: "Normal" },
-      { param: "Midline Shift", result: "No midline shift", normal: "Nil", status: "Normal" },
-      { param: "Ventricular System", result: "Normal size & morphology", normal: "Normal", status: "Normal" }
+      { param: "Scan Acquisition", result: "Complete (128 Slice)", normal: "Optimal", status: "Normal" },
+      { param: "Clinical Verification", result: "In Review by Consultant", normal: "Pending Sign-off", status: "Processing" }
     ]
   },
   {
@@ -66,16 +67,43 @@ export const sampleReports = [
     departmentBn: "কার্ডিওলজি বিভাগ",
     referredBy: "Dr. Jahir Uddin Sharif",
     referredByBn: "ডাঃ জহির উদ্দিন শরীফ, মেডিসিন ও হৃদরোগ বিশেষজ্ঞ",
-    status: "Completed",
-    statusBn: "রিপোর্ট প্রস্তুত ও ডেলিভার্ড",
+    status: "Pending",
+    statusBn: "নমুনা প্রক্রিয়াধীন (Pending)",
+    progress: 25,
+    expectedDelivery: "আগামীকাল দুপুর ১২:০০ টা",
+    statusNote: "ল্যাবরেটরিতে পরীক্ষার কিউ-তে রয়েছে। টেস্ট স্যাম্পল যাচাইকরণ চলছে। রিপোর্ট প্রস্তুত হলে অনলাইনে ডাউনলোড করা যাবে।",
     consultant: "Dr. Md. Shahadat Hossain, Assistant Prof.",
     consultantBn: "ডাঃ মোঃ শাহাদাত হোসেন, সহকারী অধ্যাপক (কার্ডিওলজি)",
-    summary: "Concentric left ventricular hypertrophy with preserved systolic function (EF 62%). Grade-I LV diastolic dysfunction. Valves structurally normal.",
+    summary: "Test sample queued in cardiology diagnostic unit.",
     findings: [
-      { param: "Ejection Fraction (EF)", result: "62%", normal: "55% - 70%", status: "Normal" },
-      { param: "LV Internal Dimension (LVIDd)", result: "4.8 cm", normal: "3.8 - 5.2 cm", status: "Normal" },
-      { param: "Interventricular Septum (IVS)", result: "1.2 cm", normal: "0.6 - 1.1 cm", status: "Mild LVH" },
-      { param: "Diastolic Function", result: "Grade I Dysfunction", normal: "Normal", status: "Grade I" }
+      { param: "Test Status", result: "Awaiting Consultant Evaluation", normal: "Queue #4", status: "Pending" }
+    ]
+  },
+  {
+    billId: "NEX-10024",
+    patientName: "Sumona Parvin",
+    patientNameBn: "সুমনা পারভীন",
+    age: "34 Yrs",
+    gender: "Female",
+    phone: "01700112233",
+    date: "2026-09-19",
+    testName: "Complete Blood Count (CBC) with ESR & Lipid Profile",
+    testNameBn: "রক্তের সিবিসি (CBC with ESR) ও লিপিড প্রোফাইল",
+    department: "Pathology & Biochemistry",
+    departmentBn: "প্যাথলজি ও বায়োকেমিস্ট্রি বিভাগ",
+    referredBy: "Dr. Md. Kamrul Islam",
+    referredByBn: "ডাঃ মোঃ কামরুল ইসলাম, মেডিসিন বিশেষজ্ঞ",
+    status: "Ready",
+    statusBn: "রিপোর্ট প্রস্তুত (Ready)",
+    consultant: "Dr. Nasrin Sultana, M.Phil (Pathology)",
+    consultantBn: "ডাঃ নাসরিন সুলতানা, এমফিল (প্যাথলজি)",
+    summary: "Mild microcytic hypochromic anemia. Lipid profile shows borderline hypercholesterolemia. Recommended dietary control & follow-up.",
+    findings: [
+      { param: "Hemoglobin (Hb)", result: "10.8 g/dL", normal: "12.0 - 16.0 g/dL", status: "Mild Low" },
+      { param: "ESR (Westergren)", result: "18 mm/1st hr", normal: "0 - 20 mm", status: "Normal" },
+      { param: "Total Cholesterol", result: "215 mg/dL", normal: "<200 mg/dL", status: "Borderline" },
+      { param: "Triglycerides", result: "160 mg/dL", normal: "<150 mg/dL", status: "Mild High" },
+      { param: "HDL Cholesterol", result: "48 mg/dL", normal: ">40 mg/dL", status: "Normal" }
     ]
   }
 ];

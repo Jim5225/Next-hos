@@ -9,10 +9,19 @@ import {
   HeartPulse, 
   Activity, 
   ShieldCheck, 
-  Download 
+  Download,
+  Stethoscope
 } from 'lucide-react';
 
-export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, onEmergencyClick, onOpenTestPrice }) {
+export default function Navbar({ 
+  lang, 
+  t, 
+  onBookAppointment, 
+  onDownloadReport, 
+  onEmergencyClick, 
+  onOpenTestPrice,
+  onOpenPrescription
+}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -92,17 +101,18 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           ))}
         </nav>
 
-        {/* Action Buttons: Report, AI Doctor Select, Test Price, Doctor Serial, Emergency */}
+        {/* Action Buttons: AI Doctor Select, Test Price, Doctor Serial, Report Download, Emergency */}
         <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
           
-          {/* Online Report Download Button */}
+          {/* SmartRx Prescription Software Portal Button */}
           <button
-            onClick={onDownloadReport}
-            className="flex items-center gap-1 px-2.5 py-2 rounded-lg text-xs font-bold text-nexus-800 bg-nexus-50 hover:bg-nexus-100 border border-nexus-200 shadow-xs hover:shadow transition-all active:scale-95"
-            title={t.navReportPortal}
+            onClick={onOpenPrescription}
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black text-white bg-gradient-to-r from-purple-700 via-indigo-700 to-nexus-700 hover:from-purple-600 hover:to-nexus-600 shadow-md shadow-purple-900/20 transition-all active:scale-95 border border-purple-400/30"
+            title="ডাক্তার প্রেসক্রিপশন সফটওয়্যার (SmartRx Pro)"
           >
-            <FileText className="w-3.5 h-3.5 text-nexus-600" />
-            <span className="hidden 2xl:inline">{t.navReportPortal}</span>
+            <Stethoscope className="w-3.5 h-3.5 text-amber-300" />
+            <span className="hidden xl:inline">{lang === 'bn' ? 'প্রেসক্রিপশন Rx' : 'Prescription Rx'}</span>
+            <span className="xl:hidden">Rx</span>
           </button>
 
           {/* 1. AI Doctor Finder Button - Solid Bright Blue */}
@@ -134,10 +144,20 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
             <span>{t.btnBookAppointment}</span>
           </button>
 
+          {/* 4. Online Report Download Button - Solid Bright Green (Placed right beside Appointment) */}
+          <button
+            onClick={onDownloadReport}
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/30 hover:shadow-lg transition-all active:scale-95"
+            title={lang === 'bn' ? 'অনলাইন টেস্ট রিপোর্ট ডাউনলোড' : 'Download Online Report'}
+          >
+            <FileText className="w-3.5 h-3.5 text-white" />
+            <span>{lang === 'bn' ? 'রিপোর্ট ডাউনলোড' : 'Report'}</span>
+          </button>
+
           {/* Emergency Trigger */}
           <button
             onClick={onEmergencyClick}
-            className="flex items-center justify-center p-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs transition-colors"
+            className="flex items-center justify-center p-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-xs transition-colors"
             title={t.navEmergency}
           >
             <PhoneCall className="w-4 h-4 animate-bounce" />
@@ -145,17 +165,18 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
 
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Action Buttons: Report, Serial, Test Price, Menu */}
         <div className="flex md:hidden items-center gap-1.5">
           <button
-            onClick={onOpenTestPrice}
-            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-emerald-600 shadow-xs"
+            onClick={onDownloadReport}
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-emerald-600 shadow-xs flex items-center gap-1"
           >
-            {t.btnTestPrice}
+            <FileText className="w-3 h-3 text-white" />
+            <span>{lang === 'bn' ? 'রিপোর্ট' : 'Report'}</span>
           </button>
           <button
             onClick={onBookAppointment}
-            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-blue-600 shadow-xs"
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-blue-700 shadow-xs"
           >
             {lang === 'bn' ? 'সিরিয়াল' : 'Serial'}
           </button>
@@ -196,6 +217,18 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
 
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
             
+            {/* 0. SmartRx Prescription Software Portal */}
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenPrescription();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-gradient-to-r from-purple-700 to-nexus-700 shadow-sm"
+            >
+              <Stethoscope className="w-4 h-4 text-amber-300" />
+              <span>{lang === 'bn' ? 'প্রেসক্রিপশন সফটওয়্যার (SmartRx)' : 'Prescription Software (SmartRx)'}</span>
+            </button>
+
             {/* 1. AI Doctor Select - Solid Bright Blue */}
             <a
               href="#ai-doctor"
