@@ -179,7 +179,7 @@ export default function AboutSection({ lang, t, onBookAppointment }) {
             <div className="pt-2 flex items-center gap-3">
               <button
                 onClick={onBookAppointment}
-                className="px-5 py-2.5 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-extrabold text-xs shadow-md active:scale-95 transition-all"
+                className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-md shadow-blue-600/30 active:scale-95 transition-all"
               >
                 {t.btnBookAppointment}
               </button>

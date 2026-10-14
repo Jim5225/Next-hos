@@ -93,41 +93,41 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
                 3. ডাক্তার সিরিয়াল দিন (Doctor Serial) */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               
-              {/* 1. AI Doctor Select Button - Medical Blue & Emerald Accent */}
+              {/* 1. AI Doctor Select Button - Solid Bright Blue */}
               <a
                 href="#ai-doctor"
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 hover:from-nexus-800 hover:to-emerald-700 text-white font-extrabold text-sm shadow-lg shadow-nexus-700/25 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all border border-emerald-400/40"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-sm shadow-lg shadow-blue-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
-                <Sparkles className="w-4 h-4 text-emerald-200 animate-spin" style={{ animationDuration: '6s' }} />
+                <Sparkles className="w-4 h-4 text-white animate-spin" style={{ animationDuration: '6s' }} />
                 <span>{t.btnAiDoctorSelect}</span>
               </a>
 
-              {/* 2. Test Price Button - Crisp White & Medical Green */}
+              {/* 2. Test Price Button - Solid Bright Green */}
               <button
                 type="button"
                 onClick={onOpenTestPrice}
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-black text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all border-2 border-emerald-500"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
-                <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+                <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
                 <span>{t.btnTestPrice}</span>
               </button>
 
-              {/* 3. Book Doctor Serial Button - Dominant Trust Royal Blue */}
+              {/* 3. Book Doctor Serial Button - Solid Bright Royal Blue */}
               <button
                 type="button"
                 onClick={onBookAppointment}
-                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-nexus-600 hover:bg-nexus-700 text-white font-extrabold text-sm shadow-lg shadow-nexus-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all border border-nexus-400/40"
+                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-600 text-white font-black text-sm shadow-lg shadow-blue-700/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
                 <Calendar className="w-4 h-4" />
                 <span>{t.btnBookAppointment}</span>
               </button>
 
-              {/* Cath Lab Package Explore */}
+              {/* Cath Lab Package Explore - Solid Bright Green */}
               <a
                 href="#cath-lab"
-                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-bold text-sm border border-emerald-300 shadow-xs transition-all"
+                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-emerald-700 hover:bg-emerald-600 text-white font-bold text-sm shadow-md transition-all"
               >
-                <HeartPulse className="w-4 h-4 text-emerald-600" />
+                <HeartPulse className="w-4 h-4 text-white" />
                 <span>{lang === 'bn' ? 'ক্যাথ ল্যাব প্যাকেজ' : 'Cath Lab Packages'}</span>
               </a>
 
@@ -247,7 +247,7 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
                     <button
                       type="button"
                       onClick={onBookAppointment}
-                      className="px-3.5 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-black transition-all shadow-xs"
+                      className="px-3.5 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-black transition-all shadow-md"
                     >
                       {lang === 'bn' ? 'বুক করুন' : 'Book Now'}
                     </button>
@@ -271,7 +271,7 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
                   </div>
                   <a
                     href="#cath-lab"
-                    className="px-2.5 py-1 rounded-lg bg-nexus-600 hover:bg-nexus-700 text-white text-[11px] font-black transition-colors shadow-2xs"
+                    className="px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-black transition-colors shadow-sm"
                   >
                     {lang === 'bn' ? 'অফার দেখুন' : 'View Offer'}
                   </a>

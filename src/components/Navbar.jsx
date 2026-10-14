@@ -105,30 +105,30 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
             <span className="hidden 2xl:inline">{t.navReportPortal}</span>
           </button>
 
-          {/* 1. AI Doctor Finder Button - Clean Blue & Emerald Accent */}
+          {/* 1. AI Doctor Finder Button - Solid Bright Blue */}
           <a
             href="#ai-doctor"
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-extrabold text-white bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 hover:from-nexus-800 hover:to-emerald-700 shadow-md shadow-nexus-700/20 transition-all active:scale-95 border border-emerald-400/30"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all active:scale-95"
             title={t.btnAiDoctorSelect}
           >
-            <Sparkles className="w-3.5 h-3.5 text-emerald-200 animate-spin" style={{ animationDuration: '6s' }} />
+            <Sparkles className="w-3.5 h-3.5 text-white animate-spin" style={{ animationDuration: '6s' }} />
             <span>{t.btnAiDoctorSelect}</span>
           </a>
 
-          {/* 2. Test Price Button - Crisp Clinical White & Medical Green */}
+          {/* 2. Test Price Button - Solid Bright Green */}
           <button
             onClick={onOpenTestPrice}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-extrabold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border-2 border-emerald-500 shadow-xs hover:shadow transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/30 transition-all active:scale-95"
             title={t.btnTestPrice}
           >
-            <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
             <span>{t.btnTestPrice}</span>
           </button>
 
-          {/* 3. Doctor Appointment / Serial Button - Dominant Trust Royal Blue */}
+          {/* 3. Doctor Appointment / Serial Button - Solid Bright Royal Blue */}
           <button
             onClick={onBookAppointment}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-extrabold text-white bg-nexus-600 hover:bg-nexus-700 shadow-md shadow-nexus-600/30 hover:shadow-lg transition-all active:scale-95 border border-nexus-500/40"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black text-white bg-blue-700 hover:bg-blue-600 shadow-md shadow-blue-700/30 hover:shadow-lg transition-all active:scale-95"
           >
             <Calendar className="w-3.5 h-3.5 text-white" />
             <span>{t.btnBookAppointment}</span>
@@ -137,7 +137,7 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
           {/* Emergency Trigger */}
           <button
             onClick={onEmergencyClick}
-            className="flex items-center justify-center p-2 rounded-lg bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 transition-colors"
+            className="flex items-center justify-center p-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white shadow-xs transition-colors"
             title={t.navEmergency}
           >
             <PhoneCall className="w-4 h-4 animate-bounce" />
@@ -149,13 +149,13 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
         <div className="flex md:hidden items-center gap-1.5">
           <button
             onClick={onOpenTestPrice}
-            className="px-2 py-1.5 rounded-lg text-[11px] font-extrabold text-emerald-800 bg-emerald-100 border border-emerald-300 shadow-xs"
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-emerald-600 shadow-xs"
           >
             {t.btnTestPrice}
           </button>
           <button
             onClick={onBookAppointment}
-            className="px-2.5 py-1.5 rounded-lg text-[11px] font-bold text-white bg-nexus-600 shadow-xs"
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-blue-600 shadow-xs"
           >
             {lang === 'bn' ? 'সিরিয়াল' : 'Serial'}
           </button>
@@ -179,11 +179,11 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center justify-between px-3.5 py-2.5 rounded-lg text-sm font-semibold ${
-                item.isAi ? 'bg-emerald-50 text-emerald-800 border border-emerald-200/60' : 'text-slate-700 hover:bg-nexus-50 hover:text-nexus-700'
+                item.isAi ? 'bg-blue-50 text-blue-800 border border-blue-200/60' : 'text-slate-700 hover:bg-slate-50 hover:text-blue-700'
               }`}
             >
               <div className="flex items-center gap-2">
-                {item.isAi && <Sparkles className="w-4 h-4 text-emerald-600" />}
+                {item.isAi && <Sparkles className="w-4 h-4 text-blue-600" />}
                 <span>{item.label}</span>
               </div>
               {item.badge && (
@@ -196,35 +196,35 @@ export default function Navbar({ lang, t, onBookAppointment, onDownloadReport, o
 
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
             
-            {/* 1. AI Doctor Select */}
+            {/* 1. AI Doctor Select - Solid Bright Blue */}
             <a
               href="#ai-doctor"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-white bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-blue-600 shadow-sm"
             >
-              <Sparkles className="w-4 h-4 text-emerald-200" />
+              <Sparkles className="w-4 h-4 text-white" />
               <span>{t.btnAiDoctorSelect}</span>
             </a>
 
-            {/* 2. Test Price */}
+            {/* 2. Test Price - Solid Bright Green */}
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenTestPrice();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-black text-emerald-800 bg-emerald-50 border-2 border-emerald-500 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-emerald-600 shadow-sm"
             >
-              <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
               <span>{t.btnTestPrice}</span>
             </button>
 
-            {/* 3. Doctor Appointment / Serial */}
+            {/* 3. Doctor Appointment / Serial - Solid Bright Royal Blue */}
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onBookAppointment();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-extrabold text-white bg-nexus-600 hover:bg-nexus-700 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-blue-700 hover:bg-blue-800 shadow-sm"
             >
               <Calendar className="w-4 h-4" />
               <span>{t.btnBookAppointment}</span>

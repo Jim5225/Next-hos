@@ -246,11 +246,11 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
             <button
               onClick={() => handleAnalyze()}
               disabled={analyzing}
-              className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-nexus-700 via-nexus-600 to-emerald-600 hover:from-nexus-800 hover:to-emerald-700 text-white font-extrabold text-xs shadow-md shadow-nexus-700/20 active:scale-95 transition-all flex items-center gap-1.5 flex-shrink-0 disabled:opacity-50"
+              className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-md shadow-blue-600/30 active:scale-95 transition-all flex items-center gap-1.5 flex-shrink-0 disabled:opacity-50"
             >
               {analyzing ? (
                 <>
-                  <Sparkles className="w-4 h-4 animate-spin text-emerald-200" />
+                  <Sparkles className="w-4 h-4 animate-spin text-white" />
                   <span>{lang === 'bn' ? "বিশ্লেষণ হচ্ছে..." : "Matching..."}</span>
                 </>
               ) : (
@@ -355,7 +355,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
                 <div className="lg:col-span-4 flex flex-col gap-2.5">
                   <button
                     onClick={() => onBookDoctor(recommendation.primaryDoctor.id)}
-                    className="w-full py-3 px-4 rounded-xl bg-nexus-600 hover:bg-nexus-700 text-white font-extrabold text-xs shadow-md shadow-nexus-600/30 flex items-center justify-center gap-2 active:scale-95 transition-all"
+                    className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs shadow-md shadow-emerald-600/30 flex items-center justify-center gap-2 active:scale-95 transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{lang === 'bn' ? "ডাক্তার সিরিয়াল বুক করুন" : "Book Doctor Serial"}</span>

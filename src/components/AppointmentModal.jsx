@@ -204,7 +204,7 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl bg-gradient-to-r from-nexus-600 to-nexus-700 hover:from-nexus-700 hover:to-nexus-800 text-white font-extrabold text-xs sm:text-sm shadow-md transition-all"
+                  className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs sm:text-sm shadow-md shadow-blue-600/30 transition-all"
                 >
                   {lang === 'bn' ? 'পরবর্তী ধাপ (রোগীর তথ্য)' : 'Next (Patient Information)'}
                 </button>
@@ -294,7 +294,7 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
                 </button>
                 <button
                   type="submit"
-                  className="w-2/3 py-2.5 rounded-xl bg-gradient-to-r from-nexus-600 to-nexus-700 text-white font-extrabold text-xs sm:text-sm shadow-md"
+                  className="w-2/3 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm shadow-md shadow-emerald-600/30 transition-all"
                 >
                   {lang === 'bn' ? 'সিরিয়াল কনফার্ম করুন' : 'Confirm Serial'}
                 </button>

@@ -185,7 +185,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <button
                     onClick={() => onBookAppointment(null)}
-                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-nexus-600 hover:bg-nexus-500 text-white font-black text-xs shadow-lg shadow-nexus-600/30 transition-all"
+                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-lg shadow-blue-600/30 transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{lang === 'bn' ? 'ক্যাথ ল্যাব অ্যাপয়েন্টমেন্ট' : 'Book Cath Lab Serial'}</span>
@@ -301,7 +301,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <button
                     onClick={() => onBookAppointment(null)}
-                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-nexus-600 to-emerald-600 hover:from-nexus-500 hover:to-emerald-500 text-white font-black text-xs shadow-lg transition-all"
+                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs shadow-lg shadow-emerald-600/30 transition-all"
                   >
                     <Calendar className="w-4 h-4" />
                     <span>{lang === 'bn' ? 'সিটি স্ক্যান বুক করুন' : 'Book CT Scan'}</span>

@@ -229,7 +229,7 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center gap-2">
                 <button
                   onClick={() => onBookDoctor(doc.id)}
-                  className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-gradient-to-r from-nexus-700 to-nexus-800 hover:from-nexus-800 hover:to-nexus-900 text-white font-extrabold text-xs shadow-md shadow-nexus-700/20 active:scale-95 transition-all"
+                  className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-md shadow-blue-600/25 active:scale-95 transition-all"
                 >
                   <Calendar className="w-3.5 h-3.5" />
                   <span>{lang === 'bn' ? 'সিরিয়াল বুকিং' : 'Book Serial'}</span>

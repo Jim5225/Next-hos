@@ -487,7 +487,7 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                       onClose();
                       onBookAppointment();
                     }}
-                    className="px-3 py-1.5 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-black text-xs shadow-2xs transition-all active:scale-95"
+                    className="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs shadow-md shadow-emerald-600/20 transition-all active:scale-95"
                   >
                     {lang === 'bn' ? 'বুক করুন' : 'Book Test'}
                   </button>
