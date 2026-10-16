@@ -19,7 +19,7 @@ import AdminModal from './components/AdminModal';
 import TestPriceModal from './components/TestPriceModal';
 import PrescriptionManager from './components/PrescriptionSoftware/PrescriptionManager';
 import { translations } from './data/translations';
-import { PhoneCall, Calendar, FileText, Sparkles, HeartPulse, Tag, Stethoscope } from 'lucide-react';
+import { PhoneCall } from 'lucide-react';
 
 export default function App() {
   const [lang, setLang] = useState(() => {
@@ -154,61 +154,18 @@ export default function App() {
         onAdminClick={() => setAdminModalOpen(true)}
       />
 
-      {/* Floating Action Buttons for Quick Access (Bottom Right) */}
-      <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-2.5 items-end no-print">
-        
-        {/* 1. Quick AI Doctor Finder Floating Pill - Solid Navy Blue */}
-        <a
-          href="#ai-doctor"
-          className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-xs font-black shadow-xl shadow-[#0f2942]/40 transition-all hover:scale-105 active:scale-95 border border-[#1a3b5c]"
-          title={t.btnAiDoctorSelect}
-        >
-          <Sparkles className="w-4 h-4 text-white animate-spin" style={{ animationDuration: '6s' }} />
-          <span>{t.btnAiDoctorSelect}</span>
-        </a>
-
-        {/* 2. Quick Test Price Floating Pill - Solid Green */}
-        <button
-          type="button"
-          onClick={() => setTestPriceModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xl shadow-emerald-600/35 transition-all hover:scale-105 active:scale-95 border border-emerald-500"
-          title={t.btnTestPrice}
-        >
-          <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-          <span>{t.btnTestPrice}</span>
-        </button>
-
-        {/* 3. Quick Doctor Appointment Floating Pill - Solid Navy Blue */}
-        <button
-          type="button"
-          onClick={() => handleOpenAppointment(null)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#0a2540] hover:bg-[#123860] text-white text-xs font-black shadow-xl shadow-[#0a2540]/35 transition-all hover:scale-105 active:scale-95 border border-[#123860]"
-          title={t.btnBookAppointment}
-        >
-          <Calendar className="w-4 h-4 text-white" />
-          <span>{t.btnBookAppointment}</span>
-        </button>
-
-        {/* 4. Quick Report Download Floating Pill - Solid Green */}
-        <button
-          type="button"
-          onClick={() => setReportModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 active:scale-95 border border-emerald-500"
-          title={lang === 'bn' ? 'অনলাইন টেস্ট রিপোর্ট ডাউনলোড' : 'Download Online Report'}
-        >
-          <FileText className="w-4 h-4 text-white" />
-          <span>{lang === 'bn' ? 'অনলাইন রিপোর্ট ডাউনলোড' : 'Download Report'}</span>
-        </button>
-
-        {/* 24/7 Emergency Hotline Floating Circle - Solid Navy Blue */}
+      {/* 24/7 Emergency Hotline Floating Button (Only floating action on screen) */}
+      <div className="fixed bottom-6 right-6 z-40 no-print">
         <a
           href="tel:09611678922"
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-[#0a2540] hover:bg-[#123860] text-white shadow-xl shadow-[#0a2540]/40 transition-all hover:scale-110 active:scale-95 border border-[#123860]"
-          title={lang === 'bn' ? 'জরুরি হটলাইন কল' : 'Emergency Hotline Call'}
+          className="flex items-center justify-center w-14 h-14 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white shadow-2xl shadow-emerald-600/40 transition-all hover:scale-110 active:scale-95 group relative border-2 border-white/80"
+          title={lang === 'bn' ? 'সেন্ট্রাল ইমার্জেন্সি হটলাইন: ০৯৬১১৬৭৮৯২২' : 'Central Emergency Hotline: 09611678922'}
         >
-          <PhoneCall className="w-5 h-5 text-emerald-400" />
+          <PhoneCall className="w-6 h-6 text-white animate-bounce" />
+          <span className="absolute right-full mr-3 px-3 py-1.5 rounded-xl bg-slate-900 text-white text-xs font-black whitespace-nowrap shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none hidden sm:block">
+            {lang === 'bn' ? '২৪/৭ হটলাইন: ০৯৬১১৬৭৮৯২২' : '24/7 Call: 09611678922'}
+          </span>
         </a>
-
       </div>
 
       {/* 5. Interactive Modals */}
