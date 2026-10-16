@@ -410,7 +410,7 @@ export default function TestPriceModal({ isOpen, onClose, lang, t, onBookAppoint
                 onClick={() => setSelectedCategory(cat.id)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all ${
                   selectedCategory === cat.id
-                    ? 'bg-nexus-600 text-white shadow-xs'
+                    ? 'bg-[#0f2942] text-white shadow-xs'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
                 }`}
               >

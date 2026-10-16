@@ -93,61 +93,61 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
                 3. ডাক্তার সিরিয়াল দিন (Doctor Serial) */}
             <div className="flex flex-wrap items-center gap-3 pt-2">
               
-              {/* 1. AI Doctor Select Button - Solid Bright Blue */}
+              {/* 1. AI Doctor Select Button - Solid Navy Blue */}
               <a
                 href="#ai-doctor"
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-sm shadow-lg shadow-blue-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-sm shadow-lg shadow-[#0f2942]/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
                 <Sparkles className="w-4 h-4 text-white animate-spin" style={{ animationDuration: '6s' }} />
                 <span>{t.btnAiDoctorSelect}</span>
               </a>
 
-              {/* 2. Test Price Button - Solid Bright Green */}
+              {/* 2. Test Price Button - Solid Green */}
               <button
                 type="button"
                 onClick={onOpenTestPrice}
-                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                className="flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
                 <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
                 <span>{t.btnTestPrice}</span>
               </button>
 
-              {/* 3. Book Doctor Serial Button - Solid Bright Royal Blue */}
+              {/* 3. Book Doctor Serial Button - Solid Navy Blue */}
               <button
                 type="button"
                 onClick={onBookAppointment}
-                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-700 hover:bg-blue-600 text-white font-black text-sm shadow-lg shadow-blue-700/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white font-black text-sm shadow-lg shadow-[#0a2540]/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
-                <Calendar className="w-4 h-4" />
+                <Calendar className="w-4 h-4 text-white" />
                 <span>{t.btnBookAppointment}</span>
               </button>
 
-              {/* 4. Online Report Download Button - Solid Bright Green (Placed right beside Appointment) */}
+              {/* 4. Online Report Download Button - Solid Green */}
               <button
                 type="button"
                 onClick={onDownloadReport}
-                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-sm shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
+                className="flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm shadow-lg shadow-emerald-600/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all"
               >
                 <FileText className="w-4 h-4 text-white" />
                 <span>{t.btnDownloadReport || (lang === 'bn' ? 'অনলাইন রিপোর্ট ডাউনলোড' : 'Download Online Report')}</span>
               </button>
 
-              {/* Cath Lab Package Explore - Solid Bright Green */}
+              {/* Cath Lab Package Explore - Solid Navy Blue */}
               <a
                 href="#cath-lab"
-                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm shadow-md transition-all"
+                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-bold text-sm shadow-md transition-all"
               >
-                <HeartPulse className="w-4 h-4 text-white" />
+                <HeartPulse className="w-4 h-4 text-emerald-400" />
                 <span>{lang === 'bn' ? 'ক্যাথ ল্যাব প্যাকেজ' : 'Cath Lab Packages'}</span>
               </a>
 
-              {/* Call Hotline */}
+              {/* Call Hotline - Solid Navy Blue */}
               <a
                 href="tel:09611678922"
-                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm transition-all shadow-md"
+                className="flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white font-bold text-sm transition-all shadow-md"
               >
                 <Phone className="w-4 h-4 text-emerald-400" />
-                <span className="font-mono">০৯৬১১৬৭৮৯২২</span>
+                <span className="font-mono text-white">০৯৬১১৬৭৮৯২২</span>
               </a>
 
               {/* Download Official Doctor Schedule PDF */}
@@ -281,7 +281,7 @@ export default function HeroSection({ lang, t, onBookAppointment, onDownloadRepo
                   </div>
                   <a
                     href="#cath-lab"
-                    className="px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-black transition-colors shadow-sm"
+                    className="px-2.5 py-1 rounded-lg bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-[11px] font-black transition-colors shadow-sm"
                   >
                     {lang === 'bn' ? 'অফার দেখুন' : 'View Offer'}
                   </a>

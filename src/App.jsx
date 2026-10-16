@@ -157,53 +157,53 @@ export default function App() {
       {/* Floating Action Buttons for Quick Access (Bottom Right) */}
       <div className="fixed bottom-5 right-5 z-40 flex flex-col gap-2.5 items-end no-print">
         
-        {/* 1. Quick AI Doctor Finder Floating Pill */}
+        {/* 1. Quick AI Doctor Finder Floating Pill - Solid Navy Blue */}
         <a
           href="#ai-doctor"
-          className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white text-xs font-black shadow-xl shadow-blue-600/40 transition-all hover:scale-105 active:scale-95 border border-blue-400/50"
+          className="flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-xs font-black shadow-xl shadow-[#0f2942]/40 transition-all hover:scale-105 active:scale-95 border border-[#1a3b5c]"
           title={t.btnAiDoctorSelect}
         >
           <Sparkles className="w-4 h-4 text-white animate-spin" style={{ animationDuration: '6s' }} />
           <span>{t.btnAiDoctorSelect}</span>
         </a>
 
-        {/* 2. Quick Test Price Floating Pill */}
+        {/* 2. Quick Test Price Floating Pill - Solid Green */}
         <button
           type="button"
           onClick={() => setTestPriceModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xl shadow-emerald-600/35 transition-all hover:scale-105 active:scale-95 border border-emerald-400/50"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xl shadow-emerald-600/35 transition-all hover:scale-105 active:scale-95 border border-emerald-500"
           title={t.btnTestPrice}
         >
           <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
           <span>{t.btnTestPrice}</span>
         </button>
 
-        {/* 3. Quick Doctor Appointment Floating Pill */}
+        {/* 3. Quick Doctor Appointment Floating Pill - Solid Navy Blue */}
         <button
           type="button"
           onClick={() => handleOpenAppointment(null)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-blue-700 hover:bg-blue-800 text-white text-xs font-black shadow-xl shadow-blue-700/35 transition-all hover:scale-105 active:scale-95 border border-blue-500/50"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-[#0a2540] hover:bg-[#123860] text-white text-xs font-black shadow-xl shadow-[#0a2540]/35 transition-all hover:scale-105 active:scale-95 border border-[#123860]"
           title={t.btnBookAppointment}
         >
           <Calendar className="w-4 h-4 text-white" />
           <span>{t.btnBookAppointment}</span>
         </button>
 
-        {/* 4. Quick Report Download Floating Pill - Solid Bright Green placed right with Appointment */}
+        {/* 4. Quick Report Download Floating Pill - Solid Green */}
         <button
           type="button"
           onClick={() => setReportModalOpen(true)}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 active:scale-95 border border-emerald-400/50"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-black shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 active:scale-95 border border-emerald-500"
           title={lang === 'bn' ? 'অনলাইন টেস্ট রিপোর্ট ডাউনলোড' : 'Download Online Report'}
         >
           <FileText className="w-4 h-4 text-white" />
           <span>{lang === 'bn' ? 'অনলাইন রিপোর্ট ডাউনলোড' : 'Download Report'}</span>
         </button>
 
-        {/* 24/7 Emergency Hotline Floating Circle */}
+        {/* 24/7 Emergency Hotline Floating Circle - Solid Navy Blue */}
         <a
           href="tel:09611678922"
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-slate-900 hover:bg-slate-800 text-white shadow-xl shadow-slate-900/40 transition-all hover:scale-110 active:scale-95"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-[#0a2540] hover:bg-[#123860] text-white shadow-xl shadow-[#0a2540]/40 transition-all hover:scale-110 active:scale-95 border border-[#123860]"
           title={lang === 'bn' ? 'জরুরি হটলাইন কল' : 'Emergency Hotline Call'}
         >
           <PhoneCall className="w-5 h-5 text-emerald-400" />

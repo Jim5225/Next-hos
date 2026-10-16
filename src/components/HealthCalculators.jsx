@@ -186,11 +186,11 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
               onClick={() => setActiveCalc('heartRisk')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeCalc === 'heartRisk'
-                  ? 'bg-cardiac-600 text-white shadow-md'
+                  ? 'bg-[#0f2942] text-white shadow-md'
                   : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
               }`}
             >
-              <HeartPulse className="w-4 h-4" />
+              <HeartPulse className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'হৃদরোগ ঝুঁকি যাচাই' : 'Heart Attack Risk'}</span>
             </button>
 
@@ -198,11 +198,11 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
               onClick={() => setActiveCalc('bp')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeCalc === 'bp'
-                  ? 'bg-nexus-700 text-white shadow-md'
+                  ? 'bg-[#0f2942] text-white shadow-md'
                   : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
               }`}
             >
-              <Activity className="w-4 h-4" />
+              <Activity className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'রক্তচাপ (BP) স্টেজ' : 'Blood Pressure (BP)'}</span>
             </button>
 
@@ -210,11 +210,11 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
               onClick={() => setActiveCalc('bmi')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeCalc === 'bmi'
-                  ? 'bg-nexus-700 text-white shadow-md'
+                  ? 'bg-[#0f2942] text-white shadow-md'
                   : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
               }`}
             >
-              <Calculator className="w-4 h-4" />
+              <Calculator className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'বিএমআই (BMI) ক্যালকুলেটর' : 'BMI Calculator'}</span>
             </button>
 
@@ -222,11 +222,11 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
               onClick={() => setActiveCalc('edd')}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
                 activeCalc === 'edd'
-                  ? 'bg-nexus-700 text-white shadow-md'
+                  ? 'bg-[#0f2942] text-white shadow-md'
                   : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
               }`}
             >
-              <Baby className="w-4 h-4" />
+              <Baby className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'গর্ভকালীন সম্ভাব্য তারিখ (EDD)' : 'Pregnancy Due Date'}</span>
             </button>
 
@@ -344,9 +344,9 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
 
             <button
               onClick={handleCalculateHeartRisk}
-              className="w-full py-3 rounded-xl bg-cardiac-600 hover:bg-cardiac-700 text-white font-extrabold text-xs shadow-md shadow-cardiac-600/30 transition-all active:scale-95 flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs shadow-md shadow-emerald-600/30 transition-all active:scale-95 flex items-center justify-center gap-2"
             >
-              <HeartPulse className="w-4 h-4" />
+              <HeartPulse className="w-4 h-4 text-white" />
               <span>{lang === 'bn' ? 'হার্ট রিস্ক হিসাব করুন' : 'Calculate Heart Risk'}</span>
             </button>
 
@@ -370,7 +370,7 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
                   </span>
                   <button
                     onClick={onBookAppointment}
-                    className="px-3 py-1 rounded-lg bg-cardiac-600 text-white text-xs font-bold shadow-xs hover:bg-cardiac-700 transition-colors"
+                    className="px-3 py-1.5 rounded-lg bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-xs font-bold shadow-xs transition-colors"
                   >
                     {lang === 'bn' ? 'কার্ডিওলজিস্টের সিরিয়াল নিন' : 'Book Cardiologist'}
                   </button>
@@ -426,9 +426,9 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
 
             <button
               onClick={handleCalculateBp}
-              className="w-full py-3 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-2"
             >
-              <Activity className="w-4 h-4" />
+              <Activity className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'রক্তচাপ স্টেজ নির্ণয় করুন' : 'Evaluate Blood Pressure'}</span>
             </button>
 
@@ -500,9 +500,9 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
 
             <button
               onClick={handleCalculateBmi}
-              className="w-full py-3 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-2"
             >
-              <Calculator className="w-4 h-4" />
+              <Calculator className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'বিএমআই হিসাব করুন' : 'Calculate BMI'}</span>
             </button>
 
@@ -552,9 +552,9 @@ export default function HealthCalculators({ lang, t, onBookAppointment }) {
 
             <button
               onClick={handleCalculateEdd}
-              className="w-full py-3 rounded-xl bg-pink-600 hover:bg-pink-700 text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-2"
             >
-              <Baby className="w-4 h-4" />
+              <Baby className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'সম্ভাব্য তারিখ হিসাব করুন' : 'Calculate Due Date'}</span>
             </button>
 

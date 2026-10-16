@@ -204,7 +204,7 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs sm:text-sm shadow-md shadow-blue-600/30 transition-all"
+                  className="w-full py-3 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs sm:text-sm shadow-md shadow-[#0f2942]/30 transition-all"
                 >
                   {lang === 'bn' ? 'পরবর্তী ধাপ (রোগীর তথ্য)' : 'Next (Patient Information)'}
                 </button>
@@ -273,7 +273,7 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
                         onClick={() => setPatientGender(g)}
                         className={`p-2 rounded-xl font-bold border transition-colors ${
                           patientGender === g 
-                            ? 'bg-nexus-600 text-white border-nexus-600' 
+                            ? 'bg-[#0f2942] text-white border-[#0f2942]' 
                             : 'bg-slate-50 text-slate-700 border-slate-200 hover:bg-slate-100'
                         }`}
                       >
@@ -294,7 +294,7 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
                 </button>
                 <button
                   type="submit"
-                  className="w-2/3 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs sm:text-sm shadow-md shadow-emerald-600/30 transition-all"
+                  className="w-2/3 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs sm:text-sm shadow-md shadow-emerald-600/30 transition-all"
                 >
                   {lang === 'bn' ? 'সিরিয়াল কনফার্ম করুন' : 'Confirm Serial'}
                 </button>
@@ -376,14 +376,14 @@ export default function AppointmentModal({ isOpen, onClose, lang, t, selectedDoc
               <div className="flex gap-2 no-print">
                 <button
                   onClick={handlePrint}
-                  className="flex-1 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all"
+                  className="flex-1 py-2.5 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white font-bold text-xs flex items-center justify-center gap-1.5 transition-all"
                 >
-                  <Printer className="w-4 h-4" />
+                  <Printer className="w-4 h-4 text-emerald-400" />
                   <span>{lang === 'bn' ? 'স্লিপ প্রিন্ট করুন' : 'Print Slip'}</span>
                 </button>
                 <button
                   onClick={resetModal}
-                  className="px-5 py-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs transition-colors"
+                  className="px-5 py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-bold text-xs transition-colors"
                 >
                   {lang === 'bn' ? 'সম্পন্ন' : 'Done'}
                 </button>

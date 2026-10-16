@@ -124,7 +124,7 @@ export default function AdminModal({ isOpen, onClose, lang, t }) {
 
               <button
                 type="submit"
-                className="w-full py-2.5 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-extrabold text-xs shadow-md transition-all"
+                className="w-full py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs shadow-md transition-all"
               >
                 {lang === 'bn' ? 'লগইন করুন' : 'Unlock Portal'}
               </button>
@@ -136,16 +136,16 @@ export default function AdminModal({ isOpen, onClose, lang, t }) {
               <div className="flex gap-2 border-b border-slate-200 pb-2">
                 <button
                   onClick={() => setActiveTab('appointments')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors ${
-                    activeTab === 'appointments' ? 'bg-nexus-700 text-white' : 'text-slate-600 hover:bg-slate-100'
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black transition-colors ${
+                    activeTab === 'appointments' ? 'bg-[#0f2942] text-white' : 'text-slate-600 hover:bg-slate-100'
                   }`}
                 >
                   {lang === 'bn' ? 'আজকের সিরিয়ালসমূহ' : 'Live Serials'}
                 </button>
                 <button
                   onClick={() => setActiveTab('doctors')}
-                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-colors ${
-                    activeTab === 'doctors' ? 'bg-nexus-700 text-white' : 'text-slate-600 hover:bg-slate-100'
+                  className={`px-3 py-1.5 rounded-xl text-xs font-black transition-colors ${
+                    activeTab === 'doctors' ? 'bg-[#0f2942] text-white' : 'text-slate-600 hover:bg-slate-100'
                   }`}
                 >
                   {lang === 'bn' ? 'ডাক্তার চেম্বার উপস্থিতি' : 'Doctor Chambers'}

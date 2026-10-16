@@ -138,8 +138,8 @@ export default function SaaSPricingModal({ isOpen, onClose, lang = 'bn', onSelec
               <button
                 type="button"
                 onClick={() => setBillingCycle('monthly')}
-                className={`px-4 py-1.5 rounded-full text-xs font-bold transition-all ${
-                  billingCycle === 'monthly' ? 'bg-nexus-600 text-white shadow-sm' : 'text-slate-300 hover:text-white'
+                className={`px-4 py-1.5 rounded-full text-xs font-black transition-all ${
+                  billingCycle === 'monthly' ? 'bg-[#0f2942] text-white shadow-sm' : 'text-slate-300 hover:text-white'
                 }`}
               >
                 মাসিক সাবস্ক্রিপশন
@@ -221,8 +221,8 @@ export default function SaaSPricingModal({ isOpen, onClose, lang = 'bn', onSelec
                           onClick={() => handleProceedToPayment(plan.id)}
                           className={`w-full py-2.5 px-4 rounded-xl text-xs font-black transition-all shadow-md flex items-center justify-center gap-1.5 ${
                             plan.popular
-                              ? 'bg-nexus-600 hover:bg-nexus-700 text-white'
-                              : 'bg-slate-900 hover:bg-slate-800 text-white'
+                              ? 'bg-emerald-600 hover:bg-emerald-700 text-white'
+                              : 'bg-[#0f2942] hover:bg-[#1a3b5c] text-white'
                           }`}
                         >
                           <span>এই প্ল্যানটি শুরু করুন</span>
@@ -375,7 +375,7 @@ export default function SaaSPricingModal({ isOpen, onClose, lang = 'bn', onSelec
                 <button
                   type="button"
                   onClick={onClose}
-                  className="w-full py-2.5 px-4 rounded-xl bg-nexus-600 hover:bg-nexus-700 text-white text-xs font-bold shadow-md transition-all"
+                  className="w-full py-2.5 px-4 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-xs font-black shadow-md transition-all"
                 >
                   প্রেসক্রিপশন লেখা শুরু করুন
                 </button>

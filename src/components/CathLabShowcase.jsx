@@ -87,9 +87,9 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
             <div className="inline-flex p-1 rounded-xl bg-slate-800/90 border border-slate-700/80 shadow-inner">
               <button
                 onClick={() => setActiveTab('cathlab')}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-black transition-all ${
                   activeTab === 'cathlab'
-                    ? 'bg-nexus-600 text-white shadow-md'
+                    ? 'bg-[#0f2942] text-white shadow-md'
                     : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
@@ -99,7 +99,7 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
 
               <button
                 onClick={() => setActiveTab('ctscan')}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-black transition-all ${
                   activeTab === 'ctscan'
                     ? 'bg-emerald-600 text-white shadow-md'
                     : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
@@ -111,9 +111,9 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
 
               <button
                 onClick={() => setActiveTab('why-nexus')}
-                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold transition-all ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-black transition-all ${
                   activeTab === 'why-nexus'
-                    ? 'bg-nexus-700 text-white shadow-md'
+                    ? 'bg-[#0f2942] text-white shadow-md'
                     : 'text-slate-200 hover:text-white hover:bg-slate-700/60'
                 }`}
               >
@@ -185,14 +185,14 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <button
                     onClick={() => onBookAppointment(null)}
-                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-lg shadow-blue-600/30 transition-all"
+                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs shadow-lg shadow-[#0f2942]/30 transition-all"
                   >
-                    <Calendar className="w-4 h-4" />
+                    <Calendar className="w-4 h-4 text-white" />
                     <span>{lang === 'bn' ? 'ক্যাথ ল্যাব অ্যাপয়েন্টমেন্ট' : 'Book Cath Lab Serial'}</span>
                   </button>
                   <a
                     href="tel:09611678922"
-                    className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 transition-colors font-mono"
+                    className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white font-bold text-xs border border-slate-700 transition-colors font-mono"
                   >
                     <Phone className="w-4 h-4 text-emerald-400" />
                     <span>০৯৬১১৬৭৮৯২২</span>
@@ -301,14 +301,14 @@ export default function CathLabShowcase({ lang, t, onBookAppointment }) {
                 <div className="mt-6 flex flex-wrap gap-3">
                   <button
                     onClick={() => onBookAppointment(null)}
-                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black text-xs shadow-lg shadow-emerald-600/30 transition-all"
+                    className="flex-1 min-w-[160px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-lg shadow-emerald-600/30 transition-all"
                   >
-                    <Calendar className="w-4 h-4" />
+                    <Calendar className="w-4 h-4 text-white" />
                     <span>{lang === 'bn' ? 'সিটি স্ক্যান বুক করুন' : 'Book CT Scan'}</span>
                   </button>
                   <a
                     href="tel:09611678922"
-                    className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs border border-slate-700 font-mono"
+                    className="flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white font-bold text-xs border border-slate-700 font-mono"
                   >
                     <Phone className="w-4 h-4 text-emerald-400" />
                     <span>০৯৬১১৬৭৮৯২২</span>

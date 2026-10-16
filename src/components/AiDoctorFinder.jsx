@@ -246,7 +246,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
             <button
               onClick={() => handleAnalyze()}
               disabled={analyzing}
-              className="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-md shadow-blue-600/30 active:scale-95 transition-all flex items-center gap-1.5 flex-shrink-0 disabled:opacity-50"
+              className="px-5 py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs shadow-md shadow-[#0f2942]/30 active:scale-95 transition-all flex items-center gap-1.5 flex-shrink-0 disabled:opacity-50"
             >
               {analyzing ? (
                 <>
@@ -256,7 +256,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
               ) : (
                 <>
                   <span>{lang === 'bn' ? "ডাক্তার খুঁজুন" : "Find Doctor"}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
                 </>
               )}
             </button>
@@ -363,7 +363,7 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
 
                   <a
                     href="tel:09611678922"
-                    className="w-full py-2.5 px-4 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-xs text-center flex items-center justify-center gap-1.5 font-mono shadow-sm transition-all"
+                    className="w-full py-2.5 px-4 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white font-bold text-xs text-center flex items-center justify-center gap-1.5 font-mono shadow-sm transition-all"
                   >
                     <span>হটলাইন: ০৯৬১১৬৭৮৯২২</span>
                   </a>

@@ -82,9 +82,9 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
               href="https://nexushospitalmymensingh.com/wp-content/uploads/2025/05/Nexus-doctors-schedule.pdf"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 text-xs font-bold shadow-xs hover:shadow transition-all group"
+              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-xs font-bold shadow-sm transition-all group"
             >
-              <Download className="w-4 h-4 text-nexus-600 group-hover:scale-110 transition-transform" />
+              <Download className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform" />
               <span>{lang === 'bn' ? 'নেক্সাস ডাক্তার শিডিউল সম্পূর্ণ তালিকা (PDF)' : 'Download Complete Doctor Schedule (PDF)'}</span>
             </a>
           </div>
@@ -122,7 +122,7 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
                 onClick={() => setSelectedDept(dept.id)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 ${
                   selectedDept === dept.id
-                    ? 'bg-nexus-700 text-white shadow-md shadow-nexus-700/25'
+                    ? 'bg-[#0f2942] text-white shadow-md shadow-[#0f2942]/25'
                     : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200'
                 }`}
               >
@@ -229,18 +229,18 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
               <div className="mt-5 pt-3 border-t border-slate-100 flex items-center gap-2">
                 <button
                   onClick={() => onBookDoctor(doc.id)}
-                  className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-black text-xs shadow-md shadow-blue-600/25 active:scale-95 transition-all"
+                  className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-md shadow-emerald-600/25 active:scale-95 transition-all"
                 >
-                  <Calendar className="w-3.5 h-3.5" />
+                  <Calendar className="w-3.5 h-3.5 text-white" />
                   <span>{lang === 'bn' ? 'সিরিয়াল বুকিং' : 'Book Serial'}</span>
                 </button>
 
                 <a
                   href="tel:09611678922"
-                  className="p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-colors"
+                  className="p-2.5 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white transition-colors"
                   title="Call Serial Hotline"
                 >
-                  <Phone className="w-4 h-4 text-nexus-700" />
+                  <Phone className="w-4 h-4 text-emerald-400" />
                 </a>
               </div>
 
@@ -260,7 +260,7 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
             </p>
             <button
               onClick={() => { setSelectedDept('all'); setSearchQuery(''); }}
-              className="mt-4 px-4 py-2 rounded-xl bg-nexus-600 text-white text-xs font-bold"
+              className="mt-4 px-4 py-2 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white text-xs font-bold"
             >
               {lang === 'bn' ? 'সকল ডাক্তার প্রদর্শন করুন' : 'Reset Filter'}
             </button>

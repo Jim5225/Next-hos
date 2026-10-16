@@ -15,20 +15,21 @@ This skill provides the complete design system, UI/UX architecture, component hi
 
 World-class, trustworthy clinical aesthetic with high contrast and zero visual clutter.
 
-### Primary Colors
-- **Medical Blue (Brand & Authority):** `#2563eb` (`bg-blue-600`), `#1d4ed8` (`bg-blue-700`), `#1e40af` (`bg-blue-800`)
-- **Clinical Accent Green (Health & Precision):** `#059669` (`bg-emerald-600`), `#047857` (`bg-emerald-700`)
+### Primary Colors & Solid Button System
+- **Navy Blue (Deep Clinical Authority & Trust):** `#0f2942` (`bg-[#0f2942] hover:bg-[#1a3b5c]`), `#0a2540` (`bg-[#0a2540] hover:bg-[#123860]`)
+- **Clinical Emerald Green (Health, Action & Precision):** `#059669` (`bg-emerald-600 hover:bg-emerald-700`), `#047857` (`bg-emerald-700`)
 - **Pure Medical White & Clean Slates:** `#ffffff`, `#f8fafc` (`bg-slate-50`), `#f1f5f9` (`bg-slate-100`)
 - **Text & Structure:** `#0f172a` (`text-slate-900`), `#334155` (`text-slate-700`), `#64748b` (`text-slate-500`)
 
-### 🚫 Strict Visual Rules
-- **NO clashing rainbow colors:** Do not use purple, violet, pink, orange, amber, or gold in the main UI.
-- **NO weak pastels or faded gradients on action buttons:** Action buttons MUST be solid, vibrant, and confident.
+### 🚫 Strict Button Design Rules (Mandatory)
+- **One Solid Color per Button:** Buttons MUST NEVER have multi-color gradients (no `bg-gradient-to-r`). Every button is strictly **ONE SOLID COLOR** — either **Navy Blue** (`#0f2942`) or **Emerald Green** (`bg-emerald-600`).
+- **Button Font Color:** Button text font is strictly **WHITE** (`text-white font-black` or `font-bold`).
+- **Other Page Fonts:** Headers, subtitles, cards, and body text remain standard clean slate/dark fonts (`text-slate-900`, `text-slate-700`, `text-slate-600`).
 - **Header & Action Button Hierarchy (Always follow this order):**
-  1. `[এআই দিয়ে ডাক্তার সিলেক্ট করুন]` (AI Doctor Finder) ➔ **Solid Bright Blue (`bg-blue-600 hover:bg-blue-700 text-white`)**
-  2. `[টেস্ট প্রাইজ]` (Test Price Catalog) ➔ **Solid Bright Clinical Green (`bg-emerald-600 hover:bg-emerald-700 text-white`)**
-  3. `[ডাক্তার সিরিয়াল দিন]` (Doctor Appointment / Serial) ➔ **Solid Bright Royal Blue (`bg-blue-700 hover:bg-blue-800 text-white`)**
-  4. `[অনলাইন রিপোর্ট ডাউনলোড]` (Report Download) ➔ **Solid Bright Clinical Green (`bg-emerald-600 hover:bg-emerald-700 text-white`) placed immediately beside Doctor Serial**
+  1. `[এআই দিয়ে ডাক্তার সিলেক্ট করুন]` (AI Doctor Finder) ➔ **Solid Navy Blue (`bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black`)**
+  2. `[টেস্ট প্রাইজ]` (Test Price Catalog) ➔ **Solid Navy Blue (`bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black`)**
+  3. `[ডাক্তার সিরিয়াল দিন]` (Doctor Appointment / Serial) ➔ **Solid Clinical Green (`bg-emerald-600 hover:bg-emerald-700 text-white font-black`)**
+  4. `[অনলাইন রিপোর্ট ডাউনলোড]` (Report Download) ➔ **Solid Clinical Green (`bg-emerald-600 hover:bg-emerald-700 text-white font-black`) placed immediately beside Doctor Serial**
 
 ---
 

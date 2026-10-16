@@ -73,31 +73,31 @@ export default function EmergencyModal({ isOpen, onClose, lang, t }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             <a
               href="tel:09611678922"
-              className="p-4 rounded-2xl bg-gradient-to-r from-cardiac-600 to-red-700 hover:from-cardiac-700 hover:to-red-800 text-white shadow-md flex items-center gap-3 transition-all active:scale-95 group"
+              className="p-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-black shadow-md flex items-center gap-3 transition-all active:scale-95 group"
             >
               <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
                 <PhoneCall className="w-5 h-5 animate-bounce" />
               </div>
               <div>
-                <span className="text-[10px] uppercase tracking-wider block font-bold text-amber-200">
+                <span className="text-[10px] uppercase tracking-wider block font-bold text-emerald-100">
                   {lang === 'bn' ? 'সেন্ট্রাল ইমার্জেন্সি হটলাইন' : 'Central Emergency Line'}
                 </span>
-                <span className="text-base font-black font-mono">০৯৬১১৬৭৮৯২২</span>
+                <span className="text-base font-black font-mono text-white">০৯৬১১৬৭৮৯২২</span>
               </div>
             </a>
 
             <a
               href="tel:01712421714"
-              className="p-4 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white shadow-md flex items-center gap-3 transition-all active:scale-95 group"
+              className="p-4 rounded-2xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black shadow-md flex items-center gap-3 transition-all active:scale-95 group"
             >
-              <div className="w-10 h-10 rounded-xl bg-cardiac-600/30 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                <Truck className="w-5 h-5 text-cardiac-400" />
+              <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <Truck className="w-5 h-5 text-white" />
               </div>
               <div>
-                <span className="text-[10px] uppercase tracking-wider block font-bold text-rose-300">
+                <span className="text-[10px] uppercase tracking-wider block font-bold text-slate-200">
                   {lang === 'bn' ? '২৪ ঘণ্টা ডেডিকেটেড এম্বুলেন্স' : '24/7 Direct Ambulance'}
                 </span>
-                <span className="text-base font-black font-mono">০১৭১২-৪২১৭১৪</span>
+                <span className="text-base font-black font-mono text-white">০১৭১২-৪২১৭১৪</span>
               </div>
             </a>
           </div>
@@ -173,7 +173,7 @@ export default function EmergencyModal({ isOpen, onClose, lang, t }) {
 
                 <button
                   type="submit"
-                  className="w-full py-2.5 rounded-xl bg-cardiac-600 hover:bg-cardiac-700 text-white font-extrabold text-xs shadow-md transition-all active:scale-95"
+                  className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-md transition-all active:scale-95"
                 >
                   {lang === 'bn' ? 'জরুরি এম্বুলেন্স রিকোয়েস্ট পাঠান' : 'Dispatch Emergency Ambulance'}
                 </button>

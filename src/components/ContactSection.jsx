@@ -255,7 +255,7 @@ export default function ContactSection({ lang, t }) {
 
                   <button
                     type="submit"
-                    className="w-full py-2.5 rounded-xl bg-nexus-700 hover:bg-nexus-800 text-white font-extrabold text-xs shadow-md transition-all flex items-center justify-center gap-1.5"
+                    className="w-full py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs shadow-md transition-all flex items-center justify-center gap-1.5"
                   >
                     <Send className="w-3.5 h-3.5" />
                     <span>{lang === 'bn' ? 'বার্তা পাঠান' : 'Submit Message'}</span>

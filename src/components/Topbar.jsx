@@ -58,12 +58,12 @@ export default function Topbar({ lang, setLang, t, onEmergencyClick, onAdminClic
           {/* Doctor Rx Portal (Prescription SaaS) */}
           <button
             onClick={onOpenPrescription}
-            className="flex items-center gap-1.5 text-white px-2.5 py-0.5 rounded-full bg-gradient-to-r from-emerald-600 to-nexus-600 hover:from-emerald-500 hover:to-nexus-500 transition-all text-[11px] font-bold shadow-sm"
+            className="flex items-center gap-1.5 text-white px-2.5 py-0.5 rounded-full bg-[#0f2942] hover:bg-[#1a3b5c] transition-all text-[11px] font-bold shadow-sm"
             title="ডাক্তার প্রেসক্রিপশন ও চেম্বার সফটওয়্যার (SmartRx)"
           >
-            <Sparkles className="w-3 h-3 text-amber-300" />
+            <Sparkles className="w-3 h-3 text-emerald-400" />
             <span>{lang === 'bn' ? 'ডক্টর Rx পোর্টাল' : 'Doctor Rx Portal'}</span>
-            <span className="bg-white/20 text-[9px] px-1 py-0.2 rounded font-black">SaaS</span>
+            <span className="bg-white/20 text-[9px] px-1 py-0.2 rounded font-black text-white">SaaS</span>
           </button>
 
           {/* Admin Notice Board */}
@@ -81,7 +81,7 @@ export default function Topbar({ lang, setLang, t, onEmergencyClick, onAdminClic
             <button
               onClick={() => setLang('bn')}
               className={`px-2 py-0.5 rounded-full text-[11px] font-bold transition-all ${
-                lang === 'bn' ? 'bg-nexus-600 text-white shadow-sm' : 'text-slate-300 hover:text-white'
+                lang === 'bn' ? 'bg-[#0f2942] text-white shadow-sm' : 'text-slate-300 hover:text-white'
               }`}
             >
               বাংলা
@@ -89,7 +89,7 @@ export default function Topbar({ lang, setLang, t, onEmergencyClick, onAdminClic
             <button
               onClick={() => setLang('en')}
               className={`px-2 py-0.5 rounded-full text-[11px] font-bold transition-all ${
-                lang === 'en' ? 'bg-nexus-600 text-white shadow-sm' : 'text-slate-300 hover:text-white'
+                lang === 'en' ? 'bg-[#0f2942] text-white shadow-sm' : 'text-slate-300 hover:text-white'
               }`}
             >
               EN

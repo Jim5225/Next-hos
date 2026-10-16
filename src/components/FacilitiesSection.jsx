@@ -174,7 +174,7 @@ export default function FacilitiesSection({ lang, t, onEmergencyClick }) {
                   {fac.id === 'ambulance' ? (
                     <a
                       href="tel:01712421714"
-                      className="px-2.5 py-1 rounded-lg bg-cardiac-600 hover:bg-cardiac-700 text-white text-[11px] font-bold shadow-xs transition-colors"
+                      className="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-700 text-white text-[11px] font-black shadow-xs transition-colors"
                     >
                       {lang === 'bn' ? 'কল দিন' : 'Call'}
                     </a>

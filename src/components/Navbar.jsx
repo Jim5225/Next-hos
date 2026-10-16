@@ -104,68 +104,68 @@ export default function Navbar({
         {/* Action Buttons: AI Doctor Select, Test Price, Doctor Serial, Report Download, Emergency */}
         <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
           
-          {/* SmartRx Prescription Software Portal Button */}
+          {/* SmartRx Prescription Software Portal Button - Solid Navy Blue */}
           <button
             onClick={onOpenPrescription}
-            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black text-white bg-gradient-to-r from-purple-700 via-indigo-700 to-nexus-700 hover:from-purple-600 hover:to-nexus-600 shadow-md shadow-purple-900/20 transition-all active:scale-95 border border-purple-400/30"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black text-white bg-[#0f2942] hover:bg-[#1a3b5c] shadow-md shadow-[#0f2942]/20 transition-all active:scale-95 border border-[#1a3b5c]"
             title="ডাক্তার প্রেসক্রিপশন সফটওয়্যার (SmartRx Pro)"
           >
-            <Stethoscope className="w-3.5 h-3.5 text-amber-300" />
+            <Stethoscope className="w-3.5 h-3.5 text-emerald-400" />
             <span className="hidden xl:inline">{lang === 'bn' ? 'প্রেসক্রিপশন Rx' : 'Prescription Rx'}</span>
             <span className="xl:hidden">Rx</span>
           </button>
 
-          {/* 1. AI Doctor Finder Button - Solid Bright Blue */}
+          {/* 1. AI Doctor Finder Button - Solid Navy Blue */}
           <a
             href="#ai-doctor"
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-blue-600 hover:bg-blue-500 shadow-md shadow-blue-600/30 transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-[#0f2942] hover:bg-[#1a3b5c] shadow-md shadow-[#0f2942]/30 transition-all active:scale-95"
             title={t.btnAiDoctorSelect}
           >
             <Sparkles className="w-3.5 h-3.5 text-white animate-spin" style={{ animationDuration: '6s' }} />
             <span>{t.btnAiDoctorSelect}</span>
           </a>
 
-          {/* 2. Test Price Button - Solid Bright Green */}
+          {/* 2. Test Price Button - Solid Green */}
           <button
             onClick={onOpenTestPrice}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/30 transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/30 transition-all active:scale-95"
             title={t.btnTestPrice}
           >
             <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
             <span>{t.btnTestPrice}</span>
           </button>
 
-          {/* 3. Doctor Appointment / Serial Button - Solid Bright Royal Blue */}
+          {/* 3. Doctor Appointment / Serial Button - Solid Navy Blue */}
           <button
             onClick={onBookAppointment}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black text-white bg-blue-700 hover:bg-blue-600 shadow-md shadow-blue-700/30 hover:shadow-lg transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-black text-white bg-[#0a2540] hover:bg-[#123860] shadow-md shadow-[#0a2540]/30 hover:shadow-lg transition-all active:scale-95"
           >
             <Calendar className="w-3.5 h-3.5 text-white" />
             <span>{t.btnBookAppointment}</span>
           </button>
 
-          {/* 4. Online Report Download Button - Solid Bright Green (Placed right beside Appointment) */}
+          {/* 4. Online Report Download Button - Solid Green */}
           <button
             onClick={onDownloadReport}
-            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-emerald-600 hover:bg-emerald-500 shadow-md shadow-emerald-600/30 hover:shadow-lg transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-black text-white bg-emerald-600 hover:bg-emerald-700 shadow-md shadow-emerald-600/30 hover:shadow-lg transition-all active:scale-95"
             title={lang === 'bn' ? 'অনলাইন টেস্ট রিপোর্ট ডাউনলোড' : 'Download Online Report'}
           >
             <FileText className="w-3.5 h-3.5 text-white" />
             <span>{lang === 'bn' ? 'রিপোর্ট ডাউনলোড' : 'Report'}</span>
           </button>
 
-          {/* Emergency Trigger */}
+          {/* Emergency Trigger - Solid Navy Blue */}
           <button
             onClick={onEmergencyClick}
-            className="flex items-center justify-center p-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white shadow-xs transition-colors"
+            className="flex items-center justify-center p-2 rounded-xl bg-[#0a2540] hover:bg-[#123860] text-white shadow-xs transition-colors"
             title={t.navEmergency}
           >
-            <PhoneCall className="w-4 h-4 animate-bounce" />
+            <PhoneCall className="w-4 h-4 animate-bounce text-emerald-400" />
           </button>
 
         </div>
 
-        {/* Mobile Action Buttons: Report, Serial, Test Price, Menu */}
+        {/* Mobile Action Buttons: Report, Serial, Menu */}
         <div className="flex md:hidden items-center gap-1.5">
           <button
             onClick={onDownloadReport}
@@ -176,7 +176,7 @@ export default function Navbar({
           </button>
           <button
             onClick={onBookAppointment}
-            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-blue-700 shadow-xs"
+            className="px-2.5 py-1.5 rounded-lg text-[11px] font-black text-white bg-[#0a2540] shadow-xs"
           >
             {lang === 'bn' ? 'সিরিয়াল' : 'Serial'}
           </button>
@@ -200,11 +200,11 @@ export default function Navbar({
               href={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center justify-between px-3.5 py-2.5 rounded-lg text-sm font-semibold ${
-                item.isAi ? 'bg-blue-50 text-blue-800 border border-blue-200/60' : 'text-slate-700 hover:bg-slate-50 hover:text-blue-700'
+                item.isAi ? 'bg-blue-50 text-[#0f2942] border border-blue-200/60' : 'text-slate-700 hover:bg-slate-50 hover:text-[#0f2942]'
               }`}
             >
               <div className="flex items-center gap-2">
-                {item.isAi && <Sparkles className="w-4 h-4 text-blue-600" />}
+                {item.isAi && <Sparkles className="w-4 h-4 text-emerald-600" />}
                 <span>{item.label}</span>
               </div>
               {item.badge && (
@@ -217,29 +217,29 @@ export default function Navbar({
 
           <div className="pt-3 border-t border-slate-100 flex flex-col gap-2">
             
-            {/* 0. SmartRx Prescription Software Portal */}
+            {/* 0. SmartRx Prescription Software Portal - Solid Navy Blue */}
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenPrescription();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-gradient-to-r from-purple-700 to-nexus-700 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-[#0f2942] shadow-sm"
             >
-              <Stethoscope className="w-4 h-4 text-amber-300" />
+              <Stethoscope className="w-4 h-4 text-emerald-400" />
               <span>{lang === 'bn' ? 'প্রেসক্রিপশন সফটওয়্যার (SmartRx)' : 'Prescription Software (SmartRx)'}</span>
             </button>
 
-            {/* 1. AI Doctor Select - Solid Bright Blue */}
+            {/* 1. AI Doctor Select - Solid Navy Blue */}
             <a
               href="#ai-doctor"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-blue-600 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-[#0f2942] shadow-sm"
             >
               <Sparkles className="w-4 h-4 text-white" />
               <span>{t.btnAiDoctorSelect}</span>
             </a>
 
-            {/* 2. Test Price - Solid Bright Green */}
+            {/* 2. Test Price - Solid Green */}
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
@@ -251,45 +251,48 @@ export default function Navbar({
               <span>{t.btnTestPrice}</span>
             </button>
 
-            {/* 3. Doctor Appointment / Serial - Solid Bright Royal Blue */}
+            {/* 3. Doctor Appointment / Serial - Solid Navy Blue */}
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onBookAppointment();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-blue-700 hover:bg-blue-800 shadow-sm"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-[#0a2540] shadow-sm"
             >
-              <Calendar className="w-4 h-4" />
+              <Calendar className="w-4 h-4 text-white" />
               <span>{t.btnBookAppointment}</span>
+            </button>
+
+            {/* 4. Report Download - Solid Green */}
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onDownloadReport();
+              }}
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-emerald-600 shadow-sm"
+            >
+              <FileText className="w-4 h-4 text-white" />
+              <span>{t.btnDownloadReport || (lang === 'bn' ? 'অনলাইন রিপোর্ট ডাউনলোড' : 'Download Online Report')}</span>
             </button>
 
             <a
               href="https://nexushospitalmymensingh.com/wp-content/uploads/2025/05/Nexus-doctors-schedule.pdf"
               target="_blank"
               rel="noreferrer"
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-[#0f2942] hover:bg-[#1a3b5c] shadow-sm"
             >
-              <Download className="w-4 h-4 text-slate-600" />
+              <Download className="w-4 h-4 text-white" />
               <span>{t.navDoctorSchedulePdf}</span>
             </a>
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onDownloadReport();
-              }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold text-nexus-900 bg-nexus-100"
-            >
-              <FileText className="w-4 h-4" />
-              <span>{t.navReportPortal}</span>
-            </button>
+
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onEmergencyClick();
               }}
-              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-lg text-xs font-bold text-emerald-800 bg-emerald-100 border border-emerald-300"
+              className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl text-xs font-black text-white bg-[#0a2540] shadow-sm"
             >
-              <PhoneCall className="w-4 h-4" />
+              <PhoneCall className="w-4 h-4 text-emerald-400" />
               <span>{t.navEmergency}</span>
             </button>
           </div>
