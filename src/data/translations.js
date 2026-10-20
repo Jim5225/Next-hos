@@ -20,7 +20,7 @@ export const translations = {
     navHome: "হোম",
     navCathLab: "ক্যাথ ল্যাব ও হার্ট",
     navAiDoctor: "এআই ডক্টর ফাইন্ডার",
-    navDoctors: "৩৮+ বিশেষজ্ঞ ডাক্তার",
+    navDoctors: "৪৬+ বিশেষজ্ঞ ডাক্তার",
     navServices: "সার্ভিস ও টেস্ট",
     navFacilities: "সিসিইউ/আইসিইউ ও ওটি",
     navCalculators: "হার্ট ও স্বাস্থ্য ক্যালকুলেটর",
@@ -39,7 +39,7 @@ export const translations = {
     heroDescription: "নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিমিটেড ময়মনসিংহে হৃদরোগসহ সকল রোগের চিকিৎসায় অগ্রগামী। আধুনিক ক্যাথ ল্যাব, করোনারি এনজিওগ্রাম (CAG ২০,০০০/- প্যাকেজ), ২৪/৭ সিসিইউ, এনআইসিইউ, ডায়ালাইসিস ও বিশ্বখ্যাত জার্মান সিমেন্স সিটি স্ক্যানে রোগী পাচ্ছেন সর্বোচ্চ আস্থার সেবা।",
     heroStatPatients: "৫,৫০,০০০+",
     heroStatPatientsLabel: "সন্তুষ্ট রোগী সেবা গ্রহণ করেছেন",
-    heroStatDoctors: "৩৮+",
+    heroStatDoctors: "৪৬+",
     heroStatDoctorsLabel: "ময়মনসিংহ মেডিকেলের শীর্ষ বিশেষজ্ঞ",
     heroStatCcuBeds: "২৪/৭",
     heroStatCcuBedsLabel: "সিসিইউ, আইসিইউ ও এনআইসিইউ সেবা",
@@ -53,7 +53,7 @@ export const translations = {
     card2Title: "ক্যাথ ল্যাব ও এনজিওগ্রাম (CAG)",
     card2Desc: "মাত্র ২০,০০০/- টাকায় সম্পূর্ণ এনজিওগ্রাম প্যাকেজ ও রিং পরানো।",
     card2Action: "প্যাকেজ বিস্তারিত",
-    card3Title: "৩৮+ স্পেশালিস্ট ডাক্তার শিডিউল",
+    card3Title: "৪৬+ স্পেশালিস্ট ডাক্তার শিডিউল",
     card3Desc: "কার্ডিওলজি, নিউরো, শিশু, সার্জারিসহ অভিজ্ঞ ডাক্তারদের চেম্বার।",
     card3Action: "ডাক্তার তালিকা দেখুন",
     card4Title: "অনলাইন রিপোর্ট পোর্টাল",
@@ -70,7 +70,7 @@ export const translations = {
     btnLearnMore: "বিস্তারিত জানুন",
     btnEmergencyCall: "জরুরি অ্যাম্বুলেন্স ডাকুন",
     btnExploreServices: "সকল সার্ভিস ও ডায়াগনস্টিক",
-    btnViewAllDoctors: "সকল ৩৮ জন ডাক্তার দেখুন",
+    btnViewAllDoctors: "সকল ৪৬ জন ডাক্তার দেখুন",
 
     // Cath Lab & CT Section
     cathLabHeading: "অত্যাধুনিক কার্ডিয়াক ক্যাথ ল্যাব ও হার্ট সেন্টার",
@@ -80,11 +80,11 @@ export const translations = {
 
     // AI Doctor Finder
     aiTitle: "এআই ডক্টর ফাইন্ডার ও লক্ষণ মিলিয়ে ডাক্তার খুঁজুন",
-    aiSubtitle: "রোগের লক্ষণ নির্বাচন করুন — আমাদের স্মার্ট সিস্টেম নেক্সাসের ৩৮ জন বিশেষজ্ঞের মধ্য থেকে সঠিক বিভাগ ও ডাক্তার সাজেস্ট করবে।",
+    aiSubtitle: "রোগের লক্ষণ নির্বাচন করুন — আমাদের স্মার্ট সিস্টেম নেক্সাসের ৪৬ জন বিশেষজ্ঞের মধ্য থেকে সঠিক বিভাগ ও ডাক্তার সাজেস্ট করবে।",
 
     // Doctors Section
     doctorsHeading: "আমাদের বিশেষজ্ঞ চিকিৎসকমণ্ডলী",
-    doctorsSubheading: "ময়মনসিংহ মেডিকেল কলেজ ও দেশের শীর্ষ হাসপাতালের ৩৮+ অভিজ্ঞ অধ্যাপক ও কনসালট্যান্ট",
+    doctorsSubheading: "ময়মনসিংহ মেডিকেল কলেজ ও দেশের শীর্ষ হাসপাতালের ৪৬+ অভিজ্ঞ অধ্যাপক ও কনসালট্যান্ট",
     searchDoctorPlaceholder: "ডাক্তারের নাম, পদবি বা রোগের নাম লিখে খুঁজুন...",
     filterAll: "সকল বিভাগ",
 
@@ -154,7 +154,7 @@ export const translations = {
     navHome: "Home",
     navCathLab: "Cath Lab & Heart",
     navAiDoctor: "AI Doctor Finder",
-    navDoctors: "38+ Specialist Doctors",
+    navDoctors: "46+ Specialist Doctors",
     navServices: "Services & Tests",
     navFacilities: "CCU/ICU & OT",
     navCalculators: "Heart & Health Tools",
@@ -173,7 +173,7 @@ export const translations = {
     heroDescription: "Nexus Cardiac Hospital & Research Ltd. is the pioneer in specialized cardiac and clinical healthcare in Greater Mymensingh. Featuring a state-of-the-art digital Cath Lab, full CAG package at 20,000 BDT, 24/7 CCU, NICU, Dialysis, and German Siemens CT Scanner.",
     heroStatPatients: "550,000+",
     heroStatPatientsLabel: "Patients Treated with Distinction",
-    heroStatDoctors: "38+",
+    heroStatDoctors: "46+",
     heroStatDoctorsLabel: "Senior Professors & Specialists",
     heroStatCcuBeds: "24/7",
     heroStatCcuBedsLabel: "CCU, ICU & NICU Support",
@@ -187,7 +187,7 @@ export const translations = {
     card2Title: "Cath Lab & Angiogram (CAG)",
     card2Desc: "Complete CAG package at only 20,000 BDT and PTCA heart stenting.",
     card2Action: "Package Details",
-    card3Title: "38+ Specialist Doctors Schedule",
+    card3Title: "46+ Specialist Doctors Schedule",
     card3Desc: "Senior consultants across Cardiology, Neuro, Pediatrics, Surgery, and Medicine.",
     card3Action: "View Doctor Directory",
     card4Title: "Online Diagnostic Reports",
@@ -204,7 +204,7 @@ export const translations = {
     btnLearnMore: "Learn More",
     btnEmergencyCall: "Call Ambulance (24/7)",
     btnExploreServices: "Explore All Diagnostic Services",
-    btnViewAllDoctors: "Browse All 38 Doctors",
+    btnViewAllDoctors: "Browse All 46 Doctors",
 
     // Cath Lab & CT Section
     cathLabHeading: "Advanced Cardiac Cath Lab & Heart Center",
@@ -214,11 +214,11 @@ export const translations = {
 
     // AI Doctor Finder
     aiTitle: "AI Doctor Finder & Symptom Matcher",
-    aiSubtitle: "Select your symptoms — our intelligent engine matches you with the right department and specialist from Nexus Hospital's 38 consultants.",
+    aiSubtitle: "Select your symptoms — our intelligent engine matches you with the right department and specialist from Nexus Hospital's 46 consultants.",
 
     // Doctors Section
     doctorsHeading: "Our Distinguished Specialist Doctors",
-    doctorsSubheading: "38+ highly acclaimed professors and consultants from Mymensingh Medical College & top tertiary hospitals",
+    doctorsSubheading: "46+ highly acclaimed professors and consultants from Mymensingh Medical College & top tertiary hospitals",
     searchDoctorPlaceholder: "Search by doctor name, designation, disease or degree...",
     filterAll: "All Departments",
 

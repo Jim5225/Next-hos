@@ -1,22 +1,19 @@
 import React, { useState, useMemo } from 'react';
 import { 
   Search, 
-  Stethoscope, 
-  Calendar, 
-  Clock, 
   MapPin, 
+  Clock, 
   Phone, 
-  Award, 
-  ChevronRight, 
-  UserCheck, 
-  Filter, 
-  Sparkles,
+  Calendar, 
+  CheckCircle2, 
+  ExternalLink,
+  Filter,
+  UserCheck,
+  ChevronRight,
+  ShieldCheck,
   HeartPulse,
-  Brain,
-  Baby,
-  Bone,
   Download,
-  ShieldCheck
+  Building
 } from 'lucide-react';
 import { doctorsData } from '../data/doctorsData';
 
@@ -29,16 +26,20 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
     { id: "cardiology", labelBn: "হৃদরোগ ও কার্ডিওলজি", labelEn: "Cardiology & Heart", count: doctorsData.filter(d => d.department === 'cardiology').length },
     { id: "neurology", labelBn: "স্নায়ুরোগ ও ব্রেন", labelEn: "Neuromedicine", count: doctorsData.filter(d => d.department === 'neurology').length },
     { id: "pediatrics", labelBn: "শিশু ও নবজাতক (NICU)", labelEn: "Pediatrics & NICU", count: doctorsData.filter(d => d.department === 'pediatrics').length },
-    { id: "nephrology", labelBn: "কিডনি ও ডায়ালাইসিস", labelEn: "Nephrology & Dialysis", count: doctorsData.filter(d => d.department === 'nephrology').length },
     { id: "surgery", labelBn: "সার্জারি ও ল্যাপারোস্কোপিক", labelEn: "General & Lap Surgery", count: doctorsData.filter(d => d.department === 'surgery').length },
-    { id: "orthopedics", labelBn: "হাড়, জোড়া ও ট্রমা", labelEn: "Orthopedics & Spine", count: doctorsData.filter(d => d.department === 'orthopedics').length },
+    { id: "medicine", labelBn: "মেডিসিন ও বাতজ্বর", labelEn: "Internal Medicine", count: doctorsData.filter(d => d.department === 'medicine').length },
+    { id: "orthopedics", labelBn: "হাড়, জোড়া ও বাতব্যথা", labelEn: "Orthopedics & Spine", count: doctorsData.filter(d => d.department === 'orthopedics').length },
     { id: "gynecology", labelBn: "গাইনী ও প্রসূতি", labelEn: "Gynecology & Obs", count: doctorsData.filter(d => d.department === 'gynecology').length },
-    { id: "medicine", labelBn: "মেডিসিন ও হরমোন", labelEn: "Medicine & Diabetes", count: doctorsData.filter(d => d.department === 'medicine').length },
-    { id: "dermatology", labelBn: "চর্ম ও যৌন রোগ", labelEn: "Dermatology & Laser", count: doctorsData.filter(d => d.department === 'dermatology').length },
+    { id: "pulmonology", labelBn: "বক্ষব্যাধি ও অ্যাজমা", labelEn: "Chest & Asthma", count: doctorsData.filter(d => d.department === 'pulmonology').length },
+    { id: "nephrology", labelBn: "কিডনি ও হাইপারটেনশন", labelEn: "Nephrology & Kidney", count: doctorsData.filter(d => d.department === 'nephrology').length },
+    { id: "urology", labelBn: "ইউরোলজি ও অ্যান্ড্রোলজি", labelEn: "Urology", count: doctorsData.filter(d => d.department === 'urology').length },
+    { id: "ophthalmology", labelBn: "চক্ষু রোগ ও ফ্যাকো", labelEn: "Ophthalmology (Eye)", count: doctorsData.filter(d => d.department === 'ophthalmology').length },
     { id: "ent", labelBn: "নাক, কান ও গলা", labelEn: "ENT & Head Neck", count: doctorsData.filter(d => d.department === 'ent').length },
-    { id: "urology", labelBn: "ইউরোলজি", labelEn: "Urology", count: doctorsData.filter(d => d.department === 'urology').length },
-    { id: "ophthalmology", labelBn: "চক্ষু রোগ", labelEn: "Ophthalmology (Eye)", count: doctorsData.filter(d => d.department === 'ophthalmology').length },
-    { id: "dental", labelBn: "দন্ত ও মুখ রোগ", labelEn: "Dental & Oral", count: doctorsData.filter(d => d.department === 'dental').length }
+    { id: "dermatology", labelBn: "চর্ম, যৌন ও লেজার", labelEn: "Dermatology & Skin", count: doctorsData.filter(d => d.department === 'dermatology').length },
+    { id: "endocrinology", labelBn: "ডায়াবেটিস ও হরমোন", labelEn: "Endocrinology", count: doctorsData.filter(d => d.department === 'endocrinology').length },
+    { id: "dental", labelBn: "দন্ত ও মুখ রোগ", labelEn: "Dental & Oral", count: doctorsData.filter(d => d.department === 'dental').length },
+    { id: "psychiatry", labelBn: "মনোরোগ", labelEn: "Psychiatry", count: doctorsData.filter(d => d.department === 'psychiatry').length },
+    { id: "nutrition", labelBn: "পুষ্টি ও ডায়েট", labelEn: "Nutrition & Diet", count: doctorsData.filter(d => d.department === 'nutrition').length }
   ];
 
   const filteredDoctors = useMemo(() => {
@@ -51,8 +52,9 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
       const matchSpecialty = doc.specialty.toLowerCase().includes(q) || doc.specialtyBn.toLowerCase().includes(q);
       const matchDegrees = doc.degrees.toLowerCase().includes(q) || doc.degreesBn.toLowerCase().includes(q);
       const matchDeptName = doc.department.toLowerCase().includes(q);
+      const matchRoom = (doc.room || "").toLowerCase().includes(q) || (doc.roomBn || "").toLowerCase().includes(q);
 
-      return matchDept && (matchName || matchSpecialty || matchDegrees || matchDeptName);
+      return matchDept && (matchName || matchSpecialty || matchDegrees || matchDeptName || matchRoom);
     });
   }, [selectedDept, searchQuery]);
 
@@ -65,7 +67,7 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
           
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-nexus-100 text-nexus-900 text-xs font-black tracking-wide uppercase border border-nexus-200 shadow-xs">
             <UserCheck className="w-3.5 h-3.5 text-nexus-700" />
-            <span>{lang === 'bn' ? '৩৮+ শীর্ষ কনসালট্যান্ট ও সার্জন' : '38+ Distinguished Consultants'}</span>
+            <span>{lang === 'bn' ? '৪৬+ শীর্ষ কনসালট্যান্ট ও সার্জন' : '46+ Distinguished Consultants'}</span>
           </div>
 
           <h2 className="text-2xl sm:text-4xl font-black tracking-tight text-slate-900">
@@ -183,13 +185,21 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
                   </div>
 
                   <div className="flex-1 min-w-0">
-                    <span className={`inline-block px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider mb-1 ${
-                      doc.department === 'cardiology'
-                        ? 'bg-cardiac-50 text-cardiac-700 border border-cardiac-200'
-                        : 'bg-nexus-50 text-nexus-800 border border-nexus-200'
-                    }`}>
-                      {lang === 'bn' ? doc.specialtyBn.split(' ')[0] : doc.department}
-                    </span>
+                    <div className="flex items-center gap-1.5 flex-wrap mb-1">
+                      <span className={`inline-block px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider ${
+                        doc.department === 'cardiology'
+                          ? 'bg-cardiac-50 text-cardiac-700 border border-cardiac-200'
+                          : 'bg-nexus-50 text-nexus-800 border border-nexus-200'
+                      }`}>
+                        {lang === 'bn' ? doc.specialtyBn.split(' ')[0] : doc.department}
+                      </span>
+
+                      {/* Prominent Room Badge */}
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-black bg-slate-900 text-white">
+                        <Building className="w-2.5 h-2.5 text-emerald-400" />
+                        <span>{lang === 'bn' ? doc.roomBn : doc.room}</span>
+                      </span>
+                    </div>
 
                     <h3 className="font-extrabold text-base text-slate-900 leading-snug group-hover:text-nexus-700 transition-colors">
                       {lang === 'bn' ? doc.nameBn : doc.name}
@@ -214,7 +224,7 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
                 {/* Chamber Room & Visiting Schedule */}
                 <div className="space-y-1.5 text-xs text-slate-700">
                   <div className="flex items-center gap-1.5 font-bold text-slate-900">
-                    <MapPin className="w-3.5 h-3.5 text-nexus-700 flex-shrink-0" />
+                    <MapPin className="w-3.5 h-3.5 text-emerald-600 flex-shrink-0" />
                     <span>{lang === 'bn' ? doc.roomBn : doc.room}</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-slate-700 font-medium">
@@ -223,10 +233,31 @@ export default function DoctorsSection({ lang, t, onBookDoctor }) {
                   </div>
                 </div>
 
+                {/* Consultation Fee Display (New vs Old Patient) */}
+                <div className="p-2.5 rounded-xl bg-emerald-50/80 border border-emerald-200 text-xs flex items-center justify-between">
+                  <div>
+                    <span className="text-[10px] text-emerald-800 font-bold block">
+                      {lang === 'bn' ? 'পরামর্শ ফি (চেম্বারে প্রদেয়):' : 'Consultation Fee (Chamber):'}
+                    </span>
+                    <div className="font-black text-slate-900 text-xs">
+                      {doc.feeOld && doc.feeOld !== doc.feeNew ? (
+                        <span>
+                          নতুন: <strong className="text-emerald-700">{doc.feeNew}</strong> | পুরাতন: <strong className="text-slate-700">{doc.feeOld}</strong>
+                        </span>
+                      ) : (
+                        <span>ফি: <strong className="text-emerald-700">{doc.feeNew || doc.fee}</strong></span>
+                      )}
+                    </div>
+                  </div>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-900 font-bold border border-emerald-300">
+                    {lang === 'bn' ? 'চেম্বারে দিন' : 'Pay at Chamber'}
+                  </span>
+                </div>
+
               </div>
 
               {/* Action Buttons: Book Serial & Hotline Call */}
-              <div className="mt-5 pt-3 border-t border-slate-100 flex items-center gap-2">
+              <div className="mt-4 pt-3 border-t border-slate-100 flex items-center gap-2">
                 <button
                   onClick={() => onBookDoctor(doc.id)}
                   className="flex-1 flex items-center justify-center gap-1.5 py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-black text-xs shadow-md shadow-emerald-600/25 active:scale-95 transition-all"

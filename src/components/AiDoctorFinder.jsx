@@ -33,12 +33,12 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "বুকে ব্যথা, চাপ ধরা, বুক ধড়ফড় ও শ্বাসকষ্ট",
       labelEn: "Chest Pain, Heaviness & Heart Palpitations",
       queryText: "হঠাৎ বুকে তীব্র ব্যথা, বাম হাতে ব্যথা ছড়ানো, শ্বাসকষ্ট ও বুক ধড়ফড় করছে",
-      doctorId: "nexus-doc-2", // Dr. Gobinda Kanti Pal
-      altDoctorId: "nexus-doc-13", // Dr. T. I. Khan Wasim
+      doctorId: "nexus-doc-4", // Assoc. Prof. Dr. Gobinda Kanti Pal
+      altDoctorId: "nexus-doc-1", // Dr. T. I. Khan Wasim
       urgency: "Immediate Emergency (CCU / Cath Lab)",
       urgencyBn: "জরুরি কার্ডিয়াক ইমার্জেন্সি (সিসিইউ / ক্যাথ ল্যাব)",
-      reason: "Dr. Gobinda Kanti Pal is Associate Professor & Head of Cardiology at MMCH, specializing in coronary angiogram (CAG), heart stenting, and acute myocardial infarction management.",
-      reasonBn: "ডাঃ গোবিন্দ কান্তি পাল ময়মনসিংহ মেডিকেল কলেজ হাসপাতালের কার্ডিওলজি বিভাগীয় প্রধান; হার্ট অ্যাটাক, এনজিওগ্রাম ও রিং পরানোর শীর্ষ বিশেষজ্ঞ।",
+      reason: "Dr. Gobinda Kanti Pal is Associate Professor & Ex-Head of Cardiology at MMCH, specializing in coronary angiogram (CAG), heart stenting, and acute myocardial infarction management.",
+      reasonBn: "ডাঃ গোবিন্দ কান্তি পাল ময়মনসিংহ মেডিকেল কলেজ হাসপাতালের কার্ডিওলজি বিভাগীয় সাবেক প্রধান; হার্ট অ্যাটাক, এনজিওগ্রাম ও রিং পরানোর শীর্ষ বিশেষজ্ঞ।",
       tests: ["ECG 12-Lead Stat", "Troponin-I Biomarker", "Color Doppler Echocardiogram", "Coronary Angiogram (CAG Package 20k)"],
       testsBn: ["জরুরি ১২-লিড ইসিজি", "ট্রপোনিন-আই (Troponin-I)", "কালার ডপলার ইকোকার্ডিওগ্রাম", "করোনারি এনজিওগ্রাম (২০,০০০/- প্যাকেজ)"]
     },
@@ -48,8 +48,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "মাথা ঘোরা, প্যারালাইসিস, তীব্র মাথাব্যথা ও স্ট্রোক",
       labelEn: "Severe Headache, Stroke & Paralysis",
       queryText: "মাথা তীব্র ঘোরা, এক পাশ দুর্বল লাগা, কথা জড়িয়ে যাওয়া এবং তীব্র মাথাব্যথা",
-      doctorId: "nexus-doc-1", // Prof. Dr. Jalal Uddin
-      altDoctorId: "nexus-doc-8", // Dr. Farhana Akhter
+      doctorId: "nexus-doc-9", // Prof. Dr. Jalal Uddin
+      altDoctorId: "nexus-doc-10", // Asst. Prof. Dr. Mohammad Anwarul Islam
       urgency: "Immediate Emergency (Golden Hour)",
       urgencyBn: "জরুরি স্নায়ুরোগ ও স্ট্রোক ইমার্জেন্সি",
       reason: "Prof. Dr. Jalal Uddin is former Professor & Head of Neuromedicine at MMCH, a renowned authority in brain stroke, nerve disorders, and epilepsy.",
@@ -63,8 +63,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "নবজাতকের জটিলতা, কম ওজন, জন্ডিস ও শিশুর জ্বর",
       labelEn: "Newborn Jaundice, Preterm Baby & Child Fever",
       queryText: "বাচ্চার তীব্র জ্বর, শ্বাসকষ্ট, নবজাতকের গায়ের রঙ হলুদ ও দুধ টানতে পারছে না",
-      doctorId: "nexus-doc-4", // Dr. Bilkis Begum
-      altDoctorId: "nexus-doc-23", // Prof. Dr. Azizul Haque
+      doctorId: "nexus-doc-19", // Assoc. Prof. Dr. Bilkis Begum
+      altDoctorId: "nexus-doc-17", // Prof. Dr. Azizul Hoque
       urgency: "Urgent Pediatric / NICU Care",
       urgencyBn: "জরুরি শিশু ও নবজাতক নিবিড় পরিচর্যা (NICU)",
       reason: "Dr. Bilkis Begum is Associate Professor in Pediatrics with special fellowship in Neonatal Health, managing Nexus Hospital's 24/7 NICU.",
@@ -78,8 +78,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "কিডনির সমস্যা, ক্রিয়েটিনিন বৃদ্ধি ও ডায়ালাইসিস",
       labelEn: "High Creatinine, Kidney Swelling & Dialysis",
       queryText: "পা ও মুখ ফুলে যাওয়া, প্রস্রাবের সমস্যা ও রক্তে ক্রিয়েটিনিন বেশি আসা",
-      doctorId: "nexus-doc-11", // Dr. Mahmud Javed Hasan Parag
-      altDoctorId: "nexus-doc-21", // Dr. Abu Zafor Salahuddin
+      doctorId: "nexus-doc-28", // Prof. Dr. Mahmud Javed Hasan Parag
+      altDoctorId: "nexus-doc-29", // Prof. Dr. Md. Badr Uddin
       urgency: "Specialist Nephrology Consult",
       urgencyBn: "বিশেষজ্ঞ কিডনি ও ডায়ালাইসিস পরামর্শ",
       reason: "Dr. Mahmud Javed Hasan (Parag) is MD (Nephrology) and FASN (USA), expert in acute kidney injury, chronic kidney disease (CKD), and hemodialysis.",
@@ -93,8 +93,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "কোমর ব্যথা, হাড় ভাঙা, বাতব্যথা ও জয়েন্ট পেইন",
       labelEn: "Severe Back Pain, Disc PLID & Bone Trauma",
       queryText: "কোমরে তীব্র ব্যথা পায়ে নেমে যাওয়া, হাড়ের জয়েন্টে ব্যথা ও হাটাচলায় কষ্ট",
-      doctorId: "nexus-doc-20", // Dr. Mamunur Rashid Chowdhury
-      altDoctorId: "nexus-doc-9", // Prof. Dr. M. A. K. Azad
+      doctorId: "nexus-doc-30", // Assoc. Prof. Dr. Mamunur Rashid Chowdhury
+      altDoctorId: "nexus-doc-31", // Dr. Sadbir Zaman Roki
       urgency: "Orthopedic & Trauma Care",
       urgencyBn: "অর্থোপেডিক ও ট্রমা কনসালটেশন",
       reason: "Dr. Mamunur Rashid Chowdhury is a renowned trauma and spine surgeon experienced in fracture fixation, arthritis, and sciatica.",
@@ -108,8 +108,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "পেটে ব্যথা, পিত্তথলির পাথর, পাইলস ও হার্নিয়া",
       labelEn: "Abdominal Pain, Gallstone, Piles & Hernia",
       queryText: "পেটের ডানপাশে তীব্র ব্যথা, বমি ভাব, পিত্তথলিতে পাথর ধরা পড়েছে বা পাইলসের রক্তপাত",
-      doctorId: "nexus-doc-9", // Prof. Dr. M. A. K. Azad
-      altDoctorId: "nexus-doc-6", // Dr. Ashek Mahmud Ferdaus
+      doctorId: "nexus-doc-11", // Prof. Dr. M. A. K. Azad
+      altDoctorId: "nexus-doc-12", // Asst. Prof. Dr. Ashek Mahmud Ferdous
       urgency: "Surgical Consult / Laparoscopy",
       urgencyBn: "ল্যাপারোস্কোপিক ও জেনারেল সার্জারি পরামর্শ",
       reason: "Prof. Dr. M. A. K. Azad is senior professor of surgery at MMCH, specializing in laparoscopic cholecystectomy, laser piles surgery, and hernia repairs.",
@@ -123,8 +123,8 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "গর্ভকালীন সেবা, নরমাল ডেলিভারি ও গাইনী সমস্যা",
       labelEn: "Pregnancy Care, Normal Delivery & Gynecology",
       queryText: "গর্ভকালীন নিয়মিত চেকআপ, তলপেটে ব্যথা, সাদাস্রাব বা অনিয়মিত মাসিক",
-      doctorId: "nexus-doc-10", // Dr. Mushahida Annoor Renu
-      altDoctorId: "nexus-doc-3", // Dr. Afroza Islam
+      doctorId: "nexus-doc-23", // Assoc. Prof. Dr. Mushahida Annoor Renu
+      altDoctorId: "nexus-doc-13", // Asst. Prof. Dr. Afroza Islam
       urgency: "Gynecology & Obstetric Consult",
       urgencyBn: "গাইনী ও প্রসূতি কনসালটেশন",
       reason: "Dr. Mushahida Annoor (Renu) is a senior gynecologist and obstetrician providing comprehensive antenatal care, normal delivery, and cesarean section.",
@@ -138,12 +138,12 @@ export default function AiDoctorFinder({ lang, t, onBookDoctor }) {
       label: "অনিয়ন্ত্রিত ডায়াবেটিস, থাইরয়েড ও হরমোন রোগ",
       labelEn: "Uncontrolled Diabetes, Thyroid & Endocrine",
       queryText: "রক্তে সুগার নিয়ন্ত্রণে নেই, ওজন দ্রুত বাড়ছে বা কমছে, গলা ফোলা ও অতিরিক্ত ক্লান্তি",
-      doctorId: "nexus-doc-18", // Dr. Noor-E-Musabbir Punam
-      altDoctorId: "nexus-doc-17", // Dr. Rayhan Rotap Khan
+      doctorId: "nexus-doc-37", // Asst. Prof. Dr. Noor-E-Mubashir Punam
+      altDoctorId: "nexus-doc-26", // Prof. Dr. A. K. M. Sajidur Rahman Siddiq
       urgency: "Diabetology & Endocrinology",
       urgencyBn: "ডায়াবেটিস ও হরমোন বিশেষজ্ঞ পরামর্শ",
-      reason: "Dr. Noor-E-Musabbir (Punam) is specialist in Diabetes, Thyroid, and Endocrine disorders at MMCH.",
-      reasonBn: "ডাঃ নূর-এ-মুছাব্বির (পুনম) ডায়াবেটিস, থাইরয়েড ও হরমোন রোগের বিশেষজ্ঞ কনসালট্যান্ট।",
+      reason: "Dr. Noor-E-Mubashir (Punam) is specialist in Diabetes, Thyroid, and Endocrine disorders at MMCH.",
+      reasonBn: "ডাঃ নূর-এ-মুবাশ্বির (পুনম) ডায়াবেটিস, থাইরয়েড ও হরমোন রোগের বিশেষজ্ঞ কনসালট্যান্ট।",
       tests: ["HbA1c Glycated Hemoglobin", "Thyroid Profile (TSH, FT4)", "Fasting Lipid Profile"],
       testsBn: ["এইচবিএ১সি (HbA1c ৩ মাসের গড় সুগার)", "থাইরয়েড প্যানেল (TSH, FT4)", "লিপিড প্রোফাইল"]
     }

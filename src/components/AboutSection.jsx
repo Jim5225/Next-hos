@@ -99,7 +99,7 @@ export default function AboutSection({ lang, t, onBookAppointment }) {
                   </div>
                   <div className="flex items-center gap-2 text-slate-200">
                     <CheckCircle2 className="w-4 h-4 text-emerald-400 flex-shrink-0" />
-                    <span>{lang === 'bn' ? '৩৮+ ময়মনসিংহ মেডিকেল কলেজের সিনিয়র অধ্যাপক' : '38+ Senior MMC Professors & Consultants'}</span>
+                    <span>{lang === 'bn' ? '৪৬+ ময়মনসিংহ মেডিকেল কলেজের সিনিয়র অধ্যাপক' : '46+ Senior MMC Professors & Consultants'}</span>
                   </div>
                 </div>
 
