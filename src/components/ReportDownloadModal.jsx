@@ -26,10 +26,11 @@ export default function ReportDownloadModal({ isOpen, onClose, lang, t }) {
   const [activeReport, setActiveReport] = useState(sampleReports[0]);
   const [searched, setSearched] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   if (!isOpen) return null;
 
-  const handleSearch = (e) => {
+  const handleSearch = async (e) => {
     if (e) e.preventDefault();
     const cleanUid = uid.trim().toUpperCase();
     const cleanPhone = phone.trim();
@@ -43,12 +44,60 @@ export default function ReportDownloadModal({ isOpen, onClose, lang, t }) {
       return;
     }
 
-    // Match billId and phone
-    const found = sampleReports.find(r => 
-      r.billId.toUpperCase() === cleanUid && 
-      (r.phone === cleanPhone || cleanPhone === "01711234567") // fallback for demo ease
-    );
+    setLoading(true);
+    let found = null;
 
+    // Try Live Dagor ERP Sync Bridge API if configured
+    const apiBase = import.meta.env.VITE_SYNC_API_URL;
+    if (apiBase) {
+      try {
+        const res = await fetch(`${apiBase}/api/reports/status?uid=${encodeURIComponent(cleanUid)}&phone=${encodeURIComponent(cleanPhone)}`, {
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          const liveData = await res.json();
+          if (liveData && liveData.success) {
+            found = {
+              billId: liveData.invoice_no,
+              patientName: liveData.patient_name,
+              patientNameBn: liveData.patient_name,
+              age: liveData.age || "N/A",
+              gender: liveData.gender || "N/A",
+              phone: liveData.phone,
+              date: liveData.delivery_date || new Date().toISOString().split('T')[0],
+              testName: liveData.tests?.[0]?.name || "Diagnostic Investigation",
+              testNameBn: liveData.tests?.[0]?.name || "ডায়াগনস্টিক পরীক্ষা",
+              department: liveData.tests?.[0]?.department || "Clinical Laboratory",
+              departmentBn: liveData.tests?.[0]?.department || "ক্লিনিক্যাল ল্যাবরেটরি",
+              status: liveData.status || "Ready",
+              statusBn: liveData.status === "Ready" ? "রিপোর্ট প্রস্তুত (Ready)" : "প্রসেসিং চলছে (Processing)",
+              consultant: liveData.verified_by || "Verified by Senior Consultant",
+              consultantBn: liveData.verified_by || "কনসালটেন্ট কর্তৃক অনুমোদিত",
+              summary: liveData.tests?.[0]?.findings || "Report verified and released.",
+              findings: liveData.tests?.map(t => ({
+                param: t.name,
+                result: t.findings || "Normal",
+                normal: "Standard Range",
+                status: t.status || "Ready"
+              })) || [],
+              pdfUrl: liveData.pdf_url
+            };
+          }
+        }
+      } catch (err) {
+        console.warn("Live Dagor Bridge not reachable, using local registry:", err);
+      }
+    }
+
+    // Fallback to sampleReports
+    if (!found) {
+      found = sampleReports.find(r => 
+        r.billId.toUpperCase() === cleanUid && 
+        (r.phone === cleanPhone || cleanPhone === "01711234567")
+      );
+    }
+
+    setLoading(false);
     if (found) {
       setActiveReport(found);
       setErrorMessage("");
@@ -143,10 +192,19 @@ export default function ReportDownloadModal({ isOpen, onClose, lang, t }) {
             <div className="flex flex-wrap items-center justify-between gap-2 pt-1">
               <button
                 type="submit"
-                className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs shadow-md shadow-[#0f2942]/30 transition-all flex items-center justify-center gap-2 active:scale-95"
+                disabled={loading}
+                className="w-full sm:w-auto px-6 py-2.5 rounded-xl bg-[#0f2942] hover:bg-[#1a3b5c] text-white font-black text-xs shadow-md shadow-[#0f2942]/30 transition-all flex items-center justify-center gap-2 active:scale-95 disabled:opacity-75"
               >
-                <Search className="w-4 h-4 text-emerald-400" />
-                <span>{lang === 'bn' ? 'রিপোর্ট ও স্ট্যাটাস যাচাই করুন' : 'Verify & View Report'}</span>
+                {loading ? (
+                  <RefreshCw className="w-4 h-4 text-emerald-400 animate-spin" />
+                ) : (
+                  <Search className="w-4 h-4 text-emerald-400" />
+                )}
+                <span>
+                  {loading 
+                    ? (lang === 'bn' ? 'সার্ভার ভেরিফিকেশন চলছে...' : 'Verifying with Server...') 
+                    : (lang === 'bn' ? 'রিপোর্ট ও স্ট্যাটাস যাচাই করুন' : 'Verify & View Report')}
+                </span>
               </button>
 
               {/* Status Indicator Legend */}
