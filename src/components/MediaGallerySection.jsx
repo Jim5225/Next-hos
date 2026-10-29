@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Play, 
   Pause, 
@@ -23,6 +23,16 @@ export default function MediaGallerySection({ lang, t }) {
   
   // Audio playback state
   const [playingAudioId, setPlayingAudioId] = useState(null);
+
+  useEffect(() => {
+    const handleSetTab = (e) => {
+      if (e.detail && ['video', 'audio', 'photo'].includes(e.detail)) {
+        setActiveTab(e.detail);
+      }
+    };
+    window.addEventListener('set-media-tab', handleSetTab);
+    return () => window.removeEventListener('set-media-tab', handleSetTab);
+  }, []);
 
   const toggleAudioPlay = (id) => {
     if (playingAudioId === id) {
