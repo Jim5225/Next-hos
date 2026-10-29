@@ -1,0 +1,110 @@
+export const aboutData = {
+  atAGlance: {
+    titleBn: "এক নজরে নেক্সাস কার্ডিয়াক হসপিটাল",
+    titleEn: "At a Glance - Nexus Cardiac Hospital",
+    subtitleBn: "বৃহত্তর ময়মনসিংহের স্বাস্থ্যসেবায় একটি বিশ্বস্ত ও দালালমুক্ত প্রতিষ্ঠান",
+    subtitleEn: "A trusted, broker-free medical institute in Greater Mymensingh",
+    storyBn: "২০১১ সালের ৩০ নভেম্বর ১৮.৪০ শতাংশ জমি ক্রয়ের মধ্য দিয়ে নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিমিটেডের পথচলা শুরু হয়। পরবর্তীতে ২০১২ সালে বৃহত্তর ময়মনসিংহের জনসাধারণের মাঝে আন্তর্জাতিক মানের আধুনিক চিকিৎসা সেবা পৌঁছে দিতে কার্যক্রম চালু করা হয়। ময়মনসিংহের প্রাণকেন্দ্রে নিজস্ব অর্থায়নে প্রখ্যাত ইঞ্জিনিয়ার ও আর্কিটেক্টের তত্ত্বাবধানে নির্মিত ১৩ তলা বিশিষ্ট সুবিশাল আধুনিক ভবনে হাসপাতালটি পরিচালিত হচ্ছে।",
+    storyEn: "Founded in November 2011 and launched in 2012, Nexus Cardiac Hospital & Research Ltd. is established on a prime location with a 13-story modern facility built under renowned engineers to provide world-class, broker-free healthcare.",
+    stats: [
+      { count: "১৩ তলা", countEn: "13 Stories", labelBn: "আধুনিক নিজস্ব ভবন", labelEn: "Modern Campus" },
+      { count: "১ম CCU", countEn: "1st CCU", labelBn: "ময়মনসিংহে বেসরকারি খাতে ১ম সিসিইউ (২০১৭)", labelEn: "Pioneer Private CCU (2017)" },
+      { count: "২০,০০০/-", countEn: "20,000 BDT", labelBn: "করোনারি এনজিওগ্রাম (CAG) স্পেশাল প্যাকেজ", labelEn: "Complete CAG Package" },
+      { count: "৪৬+ জন", countEn: "46+ Doctors", labelBn: "বিশেষজ্ঞ কনসালট্যান্ট ও প্রফেসর", labelEn: "Specialist Physicians" },
+      { count: "১০০%", countEn: "100%", labelBn: "দালালমুক্ত ও কমিশনমুক্ত নিশ্চয়তা", labelEn: "Broker-Free Guarantee" },
+      { count: "২৪/৭ ঘণ্টা", countEn: "24/7 Hours", labelBn: "জরুরি কার্ডিয়াক কেয়ার, আইসিইউ ও অ্যাম্বুলেন্স", labelEn: "Emergency Care & ICU" }
+    ]
+  },
+  chairman: {
+    nameBn: "আলহাজ্ব মোঃ আতিয়ার রহমান",
+    nameEn: "Hazi Md. Atiar Rahman",
+    designationBn: "চেয়ারম্যান, পরিচালনা পর্ষদ",
+    designationEn: "Chairman, Board of Directors",
+    hospitalBn: "নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিঃ",
+    hospitalEn: "Nexus Cardiac Hospital & Research Ltd.",
+    quoteBn: "“বৃহত্তর ময়মনসিংহে সেবার মৌলিক নীতি সংরক্ষণ করে আন্তর্জাতিক মানের স্বাস্থ্যসেবা প্রদান করাই নেক্সাসের মূল ব্রত।”",
+    quoteEn: "“Preserving the fundamental ethos of healthcare and delivering international quality service is the prime objective of Nexus.”",
+    speechBn: [
+      "আসসালামু আলাইকুম। বৃহত্তর ময়মনসিংহে সেবার মৌলিক নীতি সংরক্ষণ করে আন্তর্জাতিক মানের সেবা প্রদান করার মহতী উদ্দেশ্য নিয়েই নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিমিটেডের গোড়াপত্তন।",
+      "আলহামদুলিল্লাহ, প্রতিষ্ঠানটি এই ভাবধারা অক্ষুণ্ন রেখেই এগিয়ে চলছে। সব ডাইরেক্টরবৃন্দ ও সকল শেয়ার হোল্ডারবৃন্দ হলেন নেক্সাসের প্রাণ। সবার ঐকান্তিক আগ্রহ, চেষ্টা ও সহযোগিতায় ইনশাআল্লাহ অচিরেই নেক্সাস তার অভিষ্ট লক্ষ্যে পৌঁছতে পারবে।",
+      "আমাদের লক্ষ্য ময়মনসিংহ এবং আশপাশের প্রতিটি সাধারণ ও সংকটাপন্ন রোগী যেন নিজ শহরেই সর্বোচ্চ চিকিৎসা সেবা স্বচ্ছ এবং সাশ্রয়ী খরচে গ্রহণ করতে পারেন।"
+    ],
+    speechEn: [
+      "Assalamu Alaikum. Nexus Cardiac Hospital & Research Ltd. was established with the noble intention of delivering international standard healthcare while preserving core medical ethics in Greater Mymensingh.",
+      "By the grace of Almighty, the institution marches forward keeping this ideology intact. All honorable directors, shareholders, and staff are the heart of Nexus.",
+      "Our mission is to ensure every patient receives top-tier, trustworthy and ethical healthcare right here in Mymensingh without having to travel elsewhere."
+    ]
+  },
+  managingDirector: {
+    nameBn: "ক্যাপ্টেন মোহাম্মদ শফিক সালাহউদ্দিন",
+    nameEn: "Capt. Mohammad Shafique Salahuddin",
+    designationBn: "ম্যানেজিং ডিরেক্টর",
+    designationEn: "Managing Director",
+    hospitalBn: "নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিঃ",
+    hospitalEn: "Nexus Cardiac Hospital & Research Ltd.",
+    quoteBn: "“বাস্তবিক সেবার ব্রত নিয়েই নেক্সাস এর প্রতিষ্ঠা। সম্পূর্ণ কমিশন ও দালালমুক্ত স্বাস্থ্যসেবাই আমাদের অহংকার।”",
+    quoteEn: "“Nexus is founded on authentic service. Completely broker-free and commission-free healthcare is our proud commitment.”",
+    speechBn: [
+      "বাস্তবিক সেবার ব্রত নিয়েই নেক্সাস কার্ডিয়াক হসপিটাল এন্ড রিসার্চ লিঃ এর গোড়াপত্তন। চিকিৎসার ক্ষেত্রে বাস্তবিক সেবার উপাদান অনেক, আর এই উপাদানগুলোর প্রতিষ্ঠা ও বাস্তবায়ন অনেক বড় এক চ্যালেঞ্জ।",
+      "যেমন—হাসপাতালটি উন্নত ও পরিষ্কার-পরিচ্ছন্ন পরিবেশসম্পন্ন হওয়া, হাসপাতালটি দালালমুক্ত হওয়া, কমিশনমুক্ত হওয়া এবং গরীব ও অসহায়দের চিকিৎসার সু-ব্যবস্থা থাকা।",
+      "আপনারা জেনে খুশি হবেন, ময়মনসিংহের প্রাণকেন্দ্রে নিজস্ব অর্থায়নে ১৩ তলা বিশিষ্ট সুবিশাল আধুনিক ভবনে নেক্সাস পরিচালিত হচ্ছে। এখানে ময়মনসিংহে বেসরকারি খাতে একমাত্র ২৪ ঘণ্টা CCU সেবা, উন্নত ক্যাথ ল্যাব, জার্মানির সিমেন্স সিটি স্ক্যান, এনআইসিইউ ও কিডনি ডায়ালাইসিস ইউনিট নিরবচ্ছিন্নভাবে রোগীদের সেবা দিয়ে যাচ্ছে।",
+      "রোগীর খরচ যৌক্তিক ও সমীচীন রাখা, নারী রোগীর সম্মান রক্ষা এবং রোগীদের অতিথি পরায়ণ সেবা প্রদান করাই আমাদের অঙ্গীকার।"
+    ],
+    speechEn: [
+      "Nexus Cardiac Hospital & Research Ltd. was founded with the resolute spirit of genuine humanitarian service. True healthcare demands high standards and relentless integrity.",
+      "A clean clinical ambiance, total eradication of brokers and commissions, affordable care for underprivileged patients, and world-class diagnostic equipment are the pillars of our hospital.",
+      "Nexus proudly operates from its self-funded 13-story modern facility with 24/7 CCU, full Cath Lab, German Siemens CT scan, NICU, Dialysis, and ethical medical care.",
+      "We pledge transparent and dignified treatment for every patient coming through our doors."
+    ]
+  },
+  boardMembers: [
+    { nameBn: "আলহাজ্ব মোঃ আতিয়ার রহমান", nameEn: "Hazi Md. Atiar Rahman", roleBn: "চেয়ারম্যান", roleEn: "Chairman" },
+    { nameBn: "ক্যাপ্টেন মোহাম্মদ শফিক সালাহউদ্দিন", nameEn: "Capt. Mohammad Shafique Salahuddin", roleBn: "ম্যানেজিং ডিরেক্টর", roleEn: "Managing Director" },
+    { nameBn: "প্রফেসর ডাঃ মুহাম্মদ হাসিবুর রহমান", nameEn: "Prof. Dr. Muhammad Hasibur Rahman", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ডাঃ মোঃ শফিউল বারী", nameEn: "Dr. Md. Shafiul Bari", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ডাঃ মোঃ তোফায়েল উদ্দিন আহমেদ", nameEn: "Dr. Md. Tofayel Uddin Ahmed", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ডাঃ বীণা সেন", nameEn: "Dr. Bina Sen", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ডাঃ নিতাই চন্দ্র রায়", nameEn: "Dr. Nitai Chandra Ray", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ক্যাপ্টেন মোঃ আমরান উদ্দিন সরকার", nameEn: "Capt. Md. Amran Uddin Sarkar", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ক্যাপ্টেন মোহাম্মদ শামসুর রহমান", nameEn: "Capt. Mohammad Shamsur Rahman", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মিসেস তাহমিনা সাইফুল", nameEn: "Mrs. Tahmina Saiful", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মিসেস রাবেয়া খাতুন", nameEn: "Mrs. Rabeya Khatun", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মিসেস তাসলিমা আক্তার", nameEn: "Mrs. Taslima Akhter", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "রোকেয়া আক্তার", nameEn: "Rokeya Akter", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "ময়মুনা আক্তার", nameEn: "Mymuna Akter", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "সামিনা ইয়াসমিন", nameEn: "Samina Yasmin", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "তাজরিয়া জামান সাথী", nameEn: "Tazria Jaman Shathi", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মনসুরা আহমেদ", nameEn: "Monsura Ahmed", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "জান্নাতুল ফেরদৌস", nameEn: "Jannatul Ferdous", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ আরিফুর রহমান", nameEn: "Md. Arifur Rahman", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "তানভীর আহমেদ", nameEn: "Tanvir Ahmed", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মীর আবু হেনা মোস্তফা জামাল", nameEn: "Mir Abu Hena Mustofa Jamal", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ ফজর আলী", nameEn: "Md. Fazar Ali", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ শফিকুর রহমান", nameEn: "Md. Shofiqur Rahman", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "জাবেদ বিন ইউসুফ", nameEn: "Jabed Bin Yusuf", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মির্জা মোঃ নাজমুস সাকিব", nameEn: "Mirza Md. Nazmus Sakib", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোহাম্মদ আল-আমিন", nameEn: "Mohammad Al-Amin", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ নুরুল ইসলাম", nameEn: "Md. Nurul Islam", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ সিরাজুল ইসলাম", nameEn: "Md. Sirajul Islam", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোহিতুর রহমান শান্ত", nameEn: "Mohitur Rahman Shanto", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "আল-মাসুদ", nameEn: "Al-Masud", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মাহবুব আলম মাসুম", nameEn: "Mahbub Alam Masum", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মুহাম্মদ মাহমুদুল হাসান আরিফ", nameEn: "Muhammad Mahmudul Hassan Arif", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ আজহারুল ইসলাম বিপুল", nameEn: "Md. Azharul Islam Bipul", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "সৈয়দ আবুল বাশার", nameEn: "Sayed Abul Bashar", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "আশেক মাহমুদ", nameEn: "Ashek Mahmud", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ ইব্রাহিম", nameEn: "Md. Ibrahim", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "নুর-ই-আলম সিদ্দিকী", nameEn: "Noor-E-Alam Siddique", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ শরীফ আব্দুল্লাহ", nameEn: "Md. Sharif Abdullah", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ বজলুর রহমান", nameEn: "Md. Bozlur Rahman", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "সৈয়দ আহমেদ সোহম", nameEn: "Syed Ahmed Shohom", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ ইমরান ওমর", nameEn: "Md. Imran Omer", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মুহাম্মদ বিন আব্দুর রহমান", nameEn: "Muhammad Bin Abdur Rahman", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "রাফাত উল ইসলাম", nameEn: "Rafat UL Islam", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "রুহুল এহসান সুমন", nameEn: "Ruhul Ehsan Sumon", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ সালমান ওমর", nameEn: "Md. Salman Omer", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "শাহাব উদ্দিন আহমেদ", nameEn: "Shahab Uddin Ahmmed", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "আব্দুল মালেক", nameEn: "Abdul Malek", roleBn: "পরিচালক", roleEn: "Director" },
+    { nameBn: "মোঃ রুহুল আমিন", nameEn: "Md. Ruhul Amin", roleBn: "পরিচালক", roleEn: "Director" }
+  ]
+};

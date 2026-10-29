@@ -9,6 +9,7 @@ import ServicesSection from './components/ServicesSection';
 import FacilitiesSection from './components/FacilitiesSection';
 import HealthCalculators from './components/HealthCalculators';
 import AboutSection from './components/AboutSection';
+import MediaGallerySection from './components/MediaGallerySection';
 import TestimonialsSection from './components/TestimonialsSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -129,6 +130,12 @@ export default function App() {
           lang={lang} 
           t={t} 
           onBookAppointment={() => handleOpenAppointment(null)}
+        />
+
+        {/* Media Hub: Video Gallery, Audio Podcasts & Photo Gallery */}
+        <MediaGallerySection 
+          lang={lang} 
+          t={t} 
         />
 
         {/* Patient Recovery Stories & Testimonials */}

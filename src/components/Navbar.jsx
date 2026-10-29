@@ -26,13 +26,14 @@ export default function Navbar({
 
   const navLinks = [
     { label: t.navHome, href: "#home" },
-    { label: t.navCathLab, href: "#cath-lab", badge: lang === 'bn' ? 'CAG ২০k' : 'CAG 20k' },
-    { label: t.navAiDoctor, href: "#ai-doctor", isAi: true },
-    { label: t.navDoctors, href: "#doctors", count: "৩৮+" },
+    { label: lang === 'bn' ? 'আমাদের সম্পর্কে' : 'About Us', href: "#about" },
+    { label: t.navDoctors, href: "#doctors", count: "৪৬+" },
     { label: t.navServices, href: "#services" },
+    { label: t.navCathLab, href: "#cath-lab", badge: lang === 'bn' ? 'CAG ২০k' : 'CAG 20k' },
+    { label: lang === 'bn' ? 'মিডিয়া হাব' : 'Media Hub', href: "#media", badge: lang === 'bn' ? 'ভিডিও/অডিও' : 'Media' },
     { label: t.navFacilities, href: "#facilities" },
+    { label: t.navAiDoctor, href: "#ai-doctor", isAi: true },
     { label: t.navCalculators, href: "#calculators" },
-    { label: t.navAbout, href: "#about" },
     { label: t.navContact, href: "#contact" },
   ];
 
